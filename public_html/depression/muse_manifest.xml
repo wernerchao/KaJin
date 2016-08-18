@@ -1,0 +1,135 @@
+<manifest alg="2" build="2015.2.1.352" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="kajinonline.com/depression" resolutions="1x" timestamp="1470391809461">
+  <folder name="phone">
+    <folder name="css">
+      <file name="index.css" crc="4032300001" ref="phone>index"/>
+      <file name="answer_me.css" crc="4166619810" ref="phone>answer_me"/>
+      <file name="1on1_session.css" crc="468306445" ref="phone>1on1_session"/>
+      <file name="about_kajinhealth.css" crc="4150012725" ref="phone>about_kajinhealth"/>
+      <file name="blog_post_4.css" crc="290081" ref="phone>blog_post_4"/>
+      <file name="blog_post_3.css" crc="24490798" ref="phone>blog_post_3"/>
+      <file name="blog_post_2.css" crc="3853700297" ref="phone>blog_post_2"/>
+      <file name="blog_post_5.css" crc="86910274" ref="phone>blog_post_5"/>
+      <file name="blog_post_1.css" crc="4231040455" ref="phone>blog_post_1"/>
+      <file name="blog.css" crc="204298234" ref="phone>blog"/>
+      <file name="blog_post_6.css" crc="5339156" ref="phone>blog_post_6"/>
+      <file name="master_a-master.css" crc="4032308506" ref="phone>1on1_session:phone>about_kajinhealth:phone>blog_post_3:phone>answer_me:phone>blog_post_5:phone>blog_post_1:phone>blog_post_2:phone>blog_post_4:phone>blog:phone>blog_post_6:phone>index:phone>questionnaire"/>
+      <file name="questionnaire.css" crc="4276205581" ref="phone>questionnaire"/>
+    </folder>
+    <file name="index.html" crc="509260620" seo="true" mt="1470389398850" redirect="true"/>
+    <file name="answer_me.html" crc="203622688" seo="true" mt="1470391771544" redirect="true"/>
+    <file name="about_kajinhealth.html" crc="3977139893" seo="true" mt="1470389398850" redirect="true"/>
+    <file name="1on1_session.html" crc="3821214406" seo="true" mt="1470389398850" redirect="true"/>
+    <file name="blog.html" crc="3883301016" seo="true" mt="1470389398850" redirect="true"/>
+    <file name="blog_post_1.html" crc="124683982" seo="true" mt="1470389398850" redirect="true"/>
+    <file name="blog_post_2.html" crc="390934014" seo="true" mt="1470389398850" redirect="true"/>
+    <file name="blog_post_3.html" crc="4087243846" seo="true" mt="1470389398850" redirect="true"/>
+    <file name="blog_post_5.html" crc="180196529" seo="true" mt="1470389398850" redirect="true"/>
+    <file name="blog_post_4.html" crc="5662559" seo="true" mt="1470389398850" redirect="true"/>
+    <file name="blog_post_6.html" crc="3906322097" seo="true" mt="1470389398850" redirect="true"/>
+    <file name="questionnaire.html" crc="166084755" seo="true" mt="1470391806810" redirect="true"/>
+  </folder>
+  <folder name="css">
+    <file name="site_global.css" crc="4008188227"/>
+    <file name="index.css" crc="3769952734" ref="index"/>
+    <file name="answer_me.css" crc="200881255" ref="answer_me"/>
+    <file name="1on1_session.css" crc="4083809256" ref="1on1_session"/>
+    <file name="about_kajinhealth.css" crc="254818588" ref="about_kajinhealth"/>
+    <file name="blog_post_1.css" crc="4037914326" ref="blog_post_1"/>
+    <file name="blog.css" crc="340270571" ref="blog"/>
+    <file name="blog_post_3.css" crc="66708185" ref="blog_post_3"/>
+    <file name="blog_post_5.css" crc="3835858208" ref="blog_post_5"/>
+    <file name="blog_post_4.css" crc="196714213" ref="blog_post_4"/>
+    <file name="blog_post_6.css" crc="4276962781" ref="blog_post_6"/>
+    <file name="blog_post_2.css" crc="337524542" ref="blog_post_2"/>
+    <file name="master_a-master.css" crc="300553874" ref="blog_post_2:answer_me:blog_post_5:blog_post_6:about_kajinhealth:blog_post_3:index:blog_post_4:questionnaire:1on1_session:blog_post_1:blog"/>
+    <file name="questionnaire.css" crc="3915774459" ref="questionnaire"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="169078940" ref="index:answer_me:1on1_session:phone>index:phone>answer_me:phone>about_kajinhealth:phone>1on1_session:about_kajinhealth:phone>blog:phone>blog_post_1:phone>blog_post_2:phone>blog_post_3:phone>blog_post_5:phone>blog_post_4:phone>blog_post_6:blog:blog_post_1:blog_post_2:blog_post_3:blog_post_4:blog_post_5:blog_post_6:questionnaire:phone>questionnaire"/>
+    <file name="museutils.js" crc="3851988764" ref="index:answer_me:1on1_session:phone>index:phone>answer_me:phone>about_kajinhealth:phone>1on1_session:about_kajinhealth:phone>blog:phone>blog_post_1:phone>blog_post_2:phone>blog_post_3:phone>blog_post_5:phone>blog_post_4:phone>blog_post_6:blog:blog_post_1:blog_post_2:blog_post_3:blog_post_4:blog_post_5:blog_post_6:questionnaire:phone>questionnaire"/>
+    <file name="whatinput.js" crc="86476730" ref="index:answer_me:1on1_session:phone>index:phone>answer_me:phone>about_kajinhealth:phone>1on1_session:about_kajinhealth:phone>blog:phone>blog_post_1:phone>blog_post_2:phone>blog_post_3:phone>blog_post_5:phone>blog_post_4:phone>blog_post_6:blog:blog_post_1:blog_post_2:blog_post_3:blog_post_4:blog_post_5:blog_post_6:questionnaire:phone>questionnaire"/>
+    <file name="museconfig.js" crc="169177150" ref="index:answer_me:1on1_session:phone>index:phone>answer_me:phone>about_kajinhealth:phone>1on1_session:about_kajinhealth:phone>blog:phone>blog_post_1:phone>blog_post_2:phone>blog_post_3:phone>blog_post_5:phone>blog_post_4:phone>blog_post_6:blog:blog_post_1:blog_post_2:blog_post_3:blog_post_4:blog_post_5:blog_post_6:questionnaire:phone>questionnaire"/>
+    <file name="pie.js" crc="3831537696" ref="index:answer_me:1on1_session:phone>index:phone>answer_me:phone>about_kajinhealth:phone>1on1_session:about_kajinhealth:phone>blog:phone>blog_post_1:phone>blog_post_2:phone>blog_post_3:phone>blog_post_5:phone>blog_post_4:phone>blog_post_6:blog:blog_post_1:blog_post_2:blog_post_3:blog_post_4:blog_post_5:blog_post_6:questionnaire:phone>questionnaire"/>
+    <file name="require.js" crc="4108833657" ref="index:answer_me:1on1_session:phone>index:phone>answer_me:phone>about_kajinhealth:phone>1on1_session:about_kajinhealth:phone>blog:phone>blog_post_1:phone>blog_post_2:phone>blog_post_3:phone>blog_post_5:phone>blog_post_4:phone>blog_post_6:blog:blog_post_1:blog_post_2:blog_post_3:blog_post_4:blog_post_5:blog_post_6:questionnaire:phone>questionnaire"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="271560940" ref="answer_me:1on1_session:phone>index:phone>answer_me:phone>1on1_session:phone>blog:phone>blog_post_1:phone>blog_post_2:phone>blog_post_3:phone>blog_post_5:phone>blog_post_4:phone>blog_post_6:blog:blog_post_1:blog_post_2:blog_post_3:blog_post_4:blog_post_5:blog_post_6:questionnaire:phone>questionnaire"/>
+    <file name="webpro.js" crc="4067903014" ref="answer_me:1on1_session:phone>answer_me:phone>1on1_session"/>
+    <file name="form_check.php" crc="121412709" ref="phone>answer_me"/>
+    <file name="form_throttle.php" crc="4268640971" ref="phone>answer_me"/>
+    <file name="form_process.php" crc="444429785" ref="phone>answer_me"/>
+    <file name="form-u1572.php" crc="321305046" ref="answer_me"/>
+    <file name="form-u1187.php" crc="4180149795" ref="1on1_session"/>
+    <file name="jquery.watch.js" crc="3842844514" ref="phone>index:phone>answer_me:phone>about_kajinhealth:phone>1on1_session:phone>blog:phone>blog_post_1:phone>blog_post_2:phone>blog_post_3:phone>blog_post_5:phone>blog_post_4:phone>blog_post_6:phone>questionnaire"/>
+    <file name="form-u2351.php" crc="3845990131" ref="phone>answer_me"/>
+    <file name="form-u2620.php" crc="4017069041" ref="phone>1on1_session"/>
+  </folder>
+  <folder name="images">
+    <file name="pasted-svg-22916x90.svg" crc="446216245" seo="true" ref="index:phone>index:phone>answer_me:phone>about_kajinhealth:phone>1on1_session:phone>blog:phone>blog_post_1:phone>blog_post_2:phone>blog_post_3:phone>blog_post_5:phone>blog_post_4:phone>blog_post_6:answer_me:about_kajinhealth:1on1_session:blog:blog_post_1:blog_post_2:blog_post_3:blog_post_4:blog_post_5:blog_post_6:questionnaire:phone>questionnaire"/>
+    <file name="pasted svg 22916x90_poster_.png" crc="4112570967" ref="phone>index:phone>answer_me"/>
+    <file name="de_2.jpg" crc="4214759241" ref="index"/>
+    <file name="de_3.jpg" crc="118799803" ref="index:phone>index"/>
+    <file name="pasted-svg-26547x26.svg" crc="431310285" seo="true" ref="index:answer_me:1on1_session:phone>index:phone>answer_me:phone>about_kajinhealth:phone>1on1_session:about_kajinhealth:phone>blog:phone>blog_post_1:phone>blog_post_2:phone>blog_post_3:phone>blog_post_5:phone>blog_post_4:phone>blog_post_6:blog:blog_post_1:blog_post_2:blog_post_3:blog_post_4:blog_post_5:blog_post_6:questionnaire:phone>questionnaire"/>
+    <file name="pasted svg 26547x26_poster_.png" crc="4188402359" ref="phone>index:phone>answer_me"/>
+    <file name="de_4.jpg" crc="107252381" ref="answer_me:phone>answer_me"/>
+    <file name="u1574-17.png" crc="532049015" ref="answer_me"/>
+    <file name="u1574-17-r.png" crc="532261528" ref="answer_me"/>
+    <file name="u1574-17-m.png" crc="4034262649" ref="answer_me"/>
+    <file name="u1574-17-fs.png" crc="197292476" ref="answer_me"/>
+    <file name="de_5.jpg" crc="270982385" ref="phone>about_kajinhealth:about_kajinhealth"/>
+    <file name="pasted-svg-11574x81.svg" crc="224941082" seo="true" ref="phone>about_kajinhealth:about_kajinhealth"/>
+    <file name="pasted svg 11574x81_poster_.png" crc="4185298738" ref="phone>about_kajinhealth"/>
+    <file name="pasted-svg-23231x39.svg" crc="297390794" seo="true" ref="phone>about_kajinhealth:about_kajinhealth"/>
+    <file name="pasted svg 23231x39_poster_.png" crc="4287905069" ref="phone>about_kajinhealth"/>
+    <file name="pasted-svg-12197x93.svg" crc="4105012571" seo="true" ref="phone>about_kajinhealth:about_kajinhealth"/>
+    <file name="pasted svg 12197x93_poster_.png" crc="283094238" ref="phone>about_kajinhealth"/>
+    <file name="pasted-svg-24519x68.svg" crc="441680814" seo="true" ref="phone>about_kajinhealth:about_kajinhealth"/>
+    <file name="pasted svg 24519x68_poster_.png" crc="155794217" ref="phone>about_kajinhealth"/>
+    <file name="pasted-svg-26537x156.svg" crc="261942333" seo="true" ref="phone>about_kajinhealth:about_kajinhealth"/>
+    <file name="pasted svg 26537x156_poster_.png" crc="3967608268" ref="phone>about_kajinhealth"/>
+    <file name="u1211-17.png" crc="274661908" ref="1on1_session"/>
+    <file name="u1211-17-r.png" crc="3974474526" ref="1on1_session"/>
+    <file name="u1211-17-m.png" crc="3974474526" ref="1on1_session"/>
+    <file name="u1211-17-fs.png" crc="274661908" ref="1on1_session"/>
+    <file name="radiobuttonunchecked.png" crc="232010369" ref="1on1_session:phone>1on1_session"/>
+    <file name="radiobuttonuncheckedrollover.png" crc="173297973" ref="1on1_session:phone>1on1_session"/>
+    <file name="radiobuttonuncheckedmousedown.png" crc="210422217" ref="1on1_session:phone>1on1_session"/>
+    <file name="radiobuttonchecked.png" crc="424951658" ref="1on1_session:phone>1on1_session"/>
+    <file name="radiobuttoncheckedrollover.png" crc="135556972" ref="1on1_session:phone>1on1_session"/>
+    <file name="radiobuttoncheckedmousedown.png" crc="475385202" ref="1on1_session:phone>1on1_session"/>
+    <file name="favicon.ico" crc="4183062411" ref="phone>index:phone>answer_me"/>
+    <file name="de_2-u1852-fr.jpg" crc="81259520" ref="phone>index"/>
+    <file name="pasted-svg-6946x63.svg" crc="179342638" seo="true" ref="phone>answer_me:phone>about_kajinhealth:phone>1on1_session:phone>blog:phone>blog_post_1:phone>blog_post_2:phone>blog_post_3:phone>blog_post_5:phone>blog_post_4:phone>blog_post_6:answer_me:about_kajinhealth:1on1_session:blog:blog_post_1:blog_post_2:blog_post_3:blog_post_4:blog_post_5:blog_post_6:questionnaire:phone>questionnaire"/>
+    <file name="pasted svg 6946x63_poster_.png" crc="241451627" ref="phone>answer_me"/>
+    <file name="u2352-17.png" crc="532049015" ref="phone>answer_me"/>
+    <file name="u2352-17-r.png" crc="532261528" ref="phone>answer_me"/>
+    <file name="u2352-17-m.png" crc="4034262649" ref="phone>answer_me"/>
+    <file name="u2352-17-fs.png" crc="197292476" ref="phone>answer_me"/>
+    <file name="u2638-17.png" crc="274661908" ref="phone>1on1_session"/>
+    <file name="u2638-17-r.png" crc="3974474526" ref="phone>1on1_session"/>
+    <file name="u2638-17-m.png" crc="3974474526" ref="phone>1on1_session"/>
+    <file name="u2638-17-fs.png" crc="274661908" ref="phone>1on1_session"/>
+    <file name="1.jpg" crc="3812674124" ref="phone>blog:phone>blog_post_2:phone>blog_post_3:phone>blog_post_5:phone>blog_post_4:phone>blog_post_6:blog:blog_post_2:blog_post_3:blog_post_4:blog_post_5:blog_post_6:answer_me"/>
+    <file name="2.jpg" crc="3960931212" ref="phone>blog:phone>blog_post_1:phone>blog_post_3:phone>blog_post_5:phone>blog_post_4:phone>blog_post_6:blog:blog_post_1:blog_post_3:blog_post_4:blog_post_5:blog_post_6"/>
+    <file name="5.jpg" crc="380476877" ref="phone>blog:phone>blog_post_1:phone>blog_post_2:phone>blog_post_5:phone>blog_post_4:phone>blog_post_6:blog:blog_post_1:blog_post_2:blog_post_4:blog_post_5:blog_post_6"/>
+    <file name="4.jpg" crc="100929714" ref="phone>blog:phone>blog_post_1:phone>blog_post_2:phone>blog_post_3:phone>blog_post_5:phone>blog_post_6:blog:blog_post_1:blog_post_2:blog_post_3:blog_post_5:blog_post_6"/>
+    <file name="3.jpg" crc="485793959" ref="phone>blog:phone>blog_post_1:phone>blog_post_2:phone>blog_post_3:phone>blog_post_4:phone>blog_post_6:blog:blog_post_1:blog_post_2:blog_post_3:blog_post_4:blog_post_6"/>
+    <file name="6.jpg" crc="3884940215" ref="phone>blog:phone>blog_post_1:phone>blog_post_2:phone>blog_post_3:phone>blog_post_5:phone>blog_post_4:blog:blog_post_1:blog_post_2:blog_post_3:blog_post_4:blog_post_5:blog_post_6"/>
+    <file name="questionaaire-01-u7229-fr.png" crc="148929531" ref="phone>questionnaire"/>
+    <file name="qrcode_1.png" crc="3981819963" seo="true" ref="questionnaire:phone>questionnaire"/>
+    <file name="pasted-svg-7894x78.svg" crc="105544973" seo="true" ref="questionnaire:phone>questionnaire"/>
+    <file name="pasted svg 7894x78_poster_.png" crc="38634621" ref="phone>questionnaire"/>
+    <file name="questionaaire-01.jpg" crc="164688805" ref="questionnaire"/>
+    <file name="wechat qrcode2.png" crc="4021736331" ref="questionnaire"/>
+  </folder>
+  <file name="index.html" crc="3979498172" seo="true" mt="1470389584331" redirect="true"/>
+  <file name="answer_me.html" crc="48677233" seo="true" mt="1470381072789" redirect="true"/>
+  <file name="1on1_session.html" crc="140889888" seo="true" mt="1470379622335" redirect="true"/>
+  <file name="about_kajinhealth.html" crc="4048721089" seo="true" mt="1470371197244" redirect="true"/>
+  <file name="blog.html" crc="4238708623" seo="true" mt="1470371197244" redirect="true"/>
+  <file name="blog_post_1.html" crc="39629928" seo="true" mt="1470371197244" redirect="true"/>
+  <file name="blog_post_2.html" crc="262172380" seo="true" mt="1470371197244" redirect="true"/>
+  <file name="blog_post_3.html" crc="362978389" seo="true" mt="1470371197244" redirect="true"/>
+  <file name="blog_post_4.html" crc="4181183419" seo="true" mt="1470371197244" redirect="true"/>
+  <file name="blog_post_5.html" crc="4174117406" seo="true" mt="1470371197244" redirect="true"/>
+  <file name="blog_post_6.html" crc="212824" seo="true" mt="1470371197244" redirect="true"/>
+  <file name="questionnaire.html" crc="265575233" seo="true" mt="1470391806838" redirect="true"/>
+</manifest>

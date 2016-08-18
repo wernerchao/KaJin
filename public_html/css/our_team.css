@@ -1,0 +1,565 @@
+@charset "UTF-8";
+.icon {
+  background-image: url("../images/sprite.png");
+}
+
+.icon {
+  background-image: url("../images/sprite.png");
+}
+
+html {
+  overflow-x: hidden;
+  min-width: 100%;
+}
+
+body {
+  font-family: Helvetica, "Helvetica Neue", Arial, "Heiti SC", "Microsoft JhengHei", "微軟正黑體", "Microsoft Yahei", "微軟雅黑", sans-serif;
+  line-height: 1.8rem;
+  position: initial;
+  font-size: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+button {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+input {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i,
+center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output,
+ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+article, aside, details, figcaption, figure, footer,
+header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+a:active, a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+small {
+  font-size: 80%;
+}
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input::-webkit-search-cancel-button, input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:before {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  zoom: 1;
+}
+
+p {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 20px;
+}
+
+.red-word {
+  color: #F8A094 !important;
+}
+
+.green-word {
+  color: #67C4CB !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .no960 {
+    display: none;
+  }
+}
+
+body {
+  color: #A1A1A1;
+  background: #F7F7F7;
+  font-family: Arial, "Heiti SC", "Microsoft JhengHei", "微軟正黑體", "Microsoft Yahei", "微軟雅黑", sans-serif;
+}
+
+.container {
+  max-width: 970px;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.page {
+  border: none 2px #ECECEC;
+  border-bottom-style: solid;
+}
+
+.navbar-wrapper {
+  background: #FFFFFF;
+  letter-spacing: 1px;
+}
+.navbar-wrapper .icon-bar {
+  background: #000000;
+}
+.navbar-wrapper .navbar {
+  margin: 10px;
+}
+.navbar-wrapper ul.navbar-nav {
+  width: 585px;
+}
+@media only screen and (max-width: 1030px) {
+  .navbar-wrapper ul.navbar-nav {
+    width: auto;
+  }
+}
+.navbar-wrapper ul.navbar-nav > li.right {
+  float: right;
+}
+@media only screen and (max-width: 768px) {
+  .navbar-wrapper ul.navbar-nav > li.right {
+    float: none;
+  }
+}
+.navbar-wrapper ul.navbar-nav > li:hover > a, .navbar-wrapper ul.navbar-nav > li:focus > a {
+  background: none;
+  color: #67C4CB;
+}
+.navbar-wrapper ul.navbar-nav > li > a {
+  padding: 15px 5px;
+  color: #A1A1A1;
+}
+.navbar-wrapper .navbar-header > .logo-img {
+  background: url("https://kajinonline.com/images/icon.png") no-repeat left top;
+  float: left;
+  margin-right: 10px;
+  height: 46px;
+  width: 46px;
+}
+.navbar-wrapper .navbar-header > .icon-word {
+  font-weight: 400;
+  color: #67C4CB;
+  font-size: 16px;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 1011px) {
+  .navbar-wrapper .navbar-header > .icon-word {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .navbar-wrapper .navbar-header > .icon-word {
+    display: none;
+  }
+}
+
+.green-title {
+  width: 100%;
+  background: linear-gradient(to right, #66c5cc, #a1d9dd 80%);
+  min-height: 243px;
+  color: white;
+  padding: 74px 0 34px;
+}
+.green-title h1 {
+  font-size: 35px;
+  font-size: 2.1875rem;
+  letter-spacing: 5px;
+}
+.green-title h3 {
+  margin-top: 5px;
+  font-size: 16px;
+  font-size: 1rem;
+  width: 380px;
+  letter-spacing: 2px;
+  line-height: 29px;
+}
+
+.teacher-big-block .col-sm-4 {
+  margin: 10px 0;
+}
+
+.profile-link {
+  color: #A1A1A1;
+}
+.profile-link:hover, .profile-link:focus {
+  color: #A1A1A1;
+}
+
+.teacher-block {
+  min-height: 375px;
+  box-shadow: 1px 1px 8px rgba(217, 213, 206, 0.5);
+  text-align: center;
+}
+.teacher-block .join {
+  color: #67C4CB;
+  letter-spacing: 2px;
+}
+.teacher-block .teacher-photo {
+  background: transparent url("https://kajinonline.com/images/yiting_hung-u108637-fr.jpg?crc=4211874797") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 205px;
+}
+.teacher-block .teacher-info {
+  padding: 20px;
+}
+.teacher-block .teacher-name {
+  color: #67C4CB;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 29px;
+  letter-spacing: 4px;
+}
+.teacher-block .teacher-position {
+  color: #67C4CB;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 18px;
+  letter-spacing: 4px;
+}
+.teacher-block .teacher-tag-block {
+  padding: 15px 0 0;
+}
+.teacher-block .teacher-tag-block > .teacher-tag {
+  font-size: 14px;
+  border: solid #B3AAA1 1px;
+  border-radius: 5px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 6px 10px;
+  margin: 3px;
+}
+
+.kajin-consult {
+  width: 241px;
+  height: 145px;
+  background: url("https://kajinonline.com/images/kajin-consult.png") no-repeat left top;
+}
+
+.press-report {
+  width: 271px;
+  height: 112px;
+  background: url("https://kajinonline.com/images/press-report.png") no-repeat left top;
+}
+
+.clinic {
+  width: 179px;
+  height: 58px;
+  background: url("https://kajinonline.com/images/thewaycliniclogo-02.png?crc=3965607018") no-repeat left top;
+  background-size: contain;
+}
+
+footer {
+  width: 100%;
+  padding: 50px 0;
+  background: #FFFFFF;
+}
+footer .icon {
+  margin: 0 auto;
+}
+footer .link {
+  width: calc(50% - 3px);
+  display: inline-block;
+  text-align: center;
+  line-height: 36px;
+}
+@media only screen and (max-width: 768px) {
+  footer .link {
+    width: 35%;
+  }
+}
+footer .link > a {
+  color: #A1A1A1;
+}
+footer .link-block {
+  margin: 5px 0 15px;
+}
+@media only screen and (max-width: 768px) {
+  footer .link-block {
+    text-align: center;
+  }
+}
+footer .link-block .subtitle {
+  margin-left: 10px;
+}
+@media only screen and (max-width: 768px) {
+  footer .link-block .subtitle {
+    float: none;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer .col-sm-4 {
+    text-align: center;
+  }
+}
+footer .col-sm-4 h5 {
+  text-align: center;
+  margin-top: 5px;
+}
+footer .greyline {
+  width: 100%;
+  background-color: #ECECEC;
+  height: 2px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+footer .social-link {
+  text-align: center;
+  margin-top: 20px;
+}
+footer .social-icon {
+  background-size: contain;
+  height: 35px;
+  width: 35px;
+  margin: 0 3px;
+  opacity: 0.6;
+  display: inline-block;
+}
+footer .social-icon.fb {
+  background: url("https://kajinonline.com/images/social_media_icon-01%20copy.png?crc=4191846272") no-repeat left top;
+}
+footer .social-icon.fb:hover {
+  opacity: 1;
+  background: url("https://kajinonline.com/images/social_media_icon-01.png?crc=294820166") no-repeat left top;
+}
+footer .social-icon.line {
+  background: url("https://kajinonline.com/images/social_media_icon-03%20copy.png?crc=4255508732") no-repeat left top;
+}
+footer .social-icon.line:hover {
+  opacity: 1;
+  background: url("https://kajinonline.com/images/social_media_icon-03.png?crc=3837892263") no-repeat left top;
+}
+footer .social-icon.youtube {
+  background: url("https://kajinonline.com/images/youtube-10.png?crc=360276217") no-repeat left top;
+}
+footer .social-icon.youtube:hover {
+  opacity: 1;
+  background: url("https://kajinonline.com/images/youtube-09.png?crc=498467228") no-repeat left top;
+}
+footer .social-icon.twitter {
+  background: url("https://kajinonline.com/images/twitter-12.png?crc=162838660") no-repeat left top;
+}
+footer .social-icon.twitter:hover {
+  opacity: 1;
+  background: url("https://kajinonline.com/images/twitter-11.png?crc=150276172") no-repeat left top;
+}
+
+div.copyright {
+  border-top: 2px #ECECEC solid;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  background: #404040;
+  color: #ADADAD;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+@media only screen and (max-width: 443px) {
+  div.copyright {
+    font-size: 15px;
+    font-size: 0.9375rem;
+  }
+}
+@media only screen and (max-width: 370px) {
+  div.copyright {
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 20px 0;
+  }
+}

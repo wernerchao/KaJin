@@ -1,0 +1,822 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: One Page\n"
+"POT-Creation-Date: 2015-09-03 12:13+0530\n"
+"PO-Revision-Date: 2015-09-03 12:13+0530\n"
+"Last-Translator: Urooj Khan <uroojkhan171@gmail.com>\n"
+"Language-Team: Inkthemes <inkthemes@gmail.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;_n_noop\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: attachment.php:26
+#, php-format
+msgid "<span>&larr;</span> %s"
+msgstr ""
+
+#: comments.php:16
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:26
+msgid " so far."
+msgstr ""
+
+#: comments.php:43
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:48
+msgid "Leave a Comment"
+msgstr ""
+
+#: footer.php:22
+msgid "One page"
+msgstr ""
+
+#: footer.php:22
+msgid " Theme Powered By "
+msgstr ""
+
+#: footer.php:22
+msgid "WordPress"
+msgstr ""
+
+#: functions/admin-interface.php:69
+msgid "Get BusinessGrow Theme PRO!"
+msgstr ""
+
+#: functions/admin-interface.php:70
+msgid ""
+"You are using the One page Lite Version of BusinessGrow Theme. Upgrade to "
+"Pro for extra features like Home Page Slider, Homepage Hexagonal Gallery, "
+"FullWidth Page Templates, Multiple Color Options, Life time theme support "
+"and much more."
+msgstr ""
+
+#: functions/admin-interface.php:71
+msgid "Upgrade to BusinessGrow PRO Theme here >>"
+msgstr ""
+
+#: functions/admin-interface.php:75
+msgid "Options Updated"
+msgstr ""
+
+#: functions/admin-interface.php:78
+msgid "Options Reset"
+msgstr ""
+
+#: functions/admin-interface.php:84
+msgid " Options"
+msgstr ""
+
+#: functions/define_template.php:2
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: functions/define_template.php:3
+msgid "Gallery and Portfolio"
+msgstr ""
+
+#: functions/define_template.php:4
+msgid "Portfolio"
+msgstr ""
+
+#: functions/define_template.php:5
+msgid "Search Filter Tags"
+msgstr ""
+
+#: functions/define_template.php:6
+msgid "Popular Filter Tags"
+msgstr ""
+
+#: functions/define_template.php:7
+msgid "All Filter Tags"
+msgstr ""
+
+#: functions/define_template.php:8
+msgid "Edit Filter Tags"
+msgstr ""
+
+#: functions/define_template.php:9
+msgid "Update Filter Tags"
+msgstr ""
+
+#: functions/define_template.php:10
+msgid "New Filter Tags Name"
+msgstr ""
+
+#: functions/define_template.php:11
+msgid "Separate filter tags with commas"
+msgstr ""
+
+#: functions/define_template.php:12
+msgid "Add New Filter Tags"
+msgstr ""
+
+#: functions/define_template.php:13
+msgid "Add or remove filter tags"
+msgstr ""
+
+#: functions/define_template.php:14
+msgid "Choose from the most used filter tags"
+msgstr ""
+
+#: functions/define_template.php:15
+msgid "Filter"
+msgstr ""
+
+#: functions/define_template.php:16
+msgid "Categories"
+msgstr ""
+
+#: functions/define_template.php:17
+msgid "Archives"
+msgstr ""
+
+#: functions/define_template.php:18
+msgid "Title:"
+msgstr ""
+
+#: functions/define_template.php:19
+msgid "Number of posts to show:"
+msgstr ""
+
+#: functions/define_template.php:20
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: functions/define_template.php:21
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: functions/define_template.php:22
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: functions/define_template.php:23
+msgid "Read More"
+msgstr ""
+
+#: functions/define_template.php:24
+msgid "Primary Widget Area"
+msgstr ""
+
+#: functions/define_template.php:25
+msgid "The primary widget area"
+msgstr ""
+
+#: functions/define_template.php:26
+msgid "Secondary Widget Area"
+msgstr ""
+
+#: functions/define_template.php:27
+msgid "The secondary widget area"
+msgstr ""
+
+#: functions/define_template.php:28
+msgid "First Footer Widget Area"
+msgstr ""
+
+#: functions/define_template.php:29
+msgid "The first footer widget area"
+msgstr ""
+
+#: functions/define_template.php:30
+msgid "Second Footer Widget Area"
+msgstr ""
+
+#: functions/define_template.php:31
+msgid "The second footer widget area"
+msgstr ""
+
+#: functions/define_template.php:32
+msgid "Third Footer Widget Area"
+msgstr ""
+
+#: functions/define_template.php:33
+msgid "The third footer widget area"
+msgstr ""
+
+#: functions/define_template.php:34
+msgid "Fourth Footer Widget Area"
+msgstr ""
+
+#: functions/define_template.php:35
+msgid "The fourth footer widget area"
+msgstr ""
+
+#: functions/define_template.php:36 functions/inkthemes-functions.php:54
+msgid "Home"
+msgstr ""
+
+#: functions/define_template.php:37
+msgid "Most used categories"
+msgstr ""
+
+#: functions/define_template.php:38
+msgid "Bookmark the"
+msgstr ""
+
+#: functions/define_template.php:39
+msgid "&nbsp;permalink"
+msgstr ""
+
+#: functions/define_template.php:40
+msgid "Newer posts &rarr;"
+msgstr ""
+
+#: functions/define_template.php:41
+msgid "&larr; Older posts"
+msgstr ""
+
+#: functions/define_template.php:42
+msgid "Nothing Found"
+msgstr ""
+
+#: functions/define_template.php:43
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: functions/define_template.php:44
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: functions/define_template.php:45
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: functions/define_template.php:46
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: functions/define_template.php:47
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: functions/define_template.php:48
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: functions/define_template.php:49
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: functions/define_template.php:50
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: functions/define_template.php:51
+msgid "Blog Archives"
+msgstr ""
+
+#: functions/define_template.php:52
+msgid "Main Menu"
+msgstr ""
+
+#: functions/define_template.php:53
+#, php-format
+msgid "Return to %s"
+msgstr ""
+
+#: functions/define_template.php:54
+#, php-format
+msgid "By %2$s"
+msgstr ""
+
+#: functions/define_template.php:55
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: functions/define_template.php:56
+#, php-format
+msgid "Published %2$s"
+msgstr ""
+
+#: functions/define_template.php:57
+#, php-format
+msgid "Full size is %s pixels"
+msgstr ""
+
+#: functions/define_template.php:58
+msgid "Link to full-size image"
+msgstr ""
+
+#: functions/define_template.php:59
+msgid "Edit"
+msgstr ""
+
+#: functions/define_template.php:60 single.php:45
+msgid "Pages:"
+msgstr ""
+
+#: functions/define_template.php:61
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: functions/define_template.php:62 functions/inkthemes-functions.php:130
+msgid "Page"
+msgstr ""
+
+#: functions/inkthemes-functions.php:69
+msgid "Archive by category"
+msgstr ""
+
+#: functions/inkthemes-functions.php:117
+msgid "Search results for"
+msgstr ""
+
+#: functions/inkthemes-functions.php:119
+msgid "Posts tagged "
+msgstr ""
+
+#: functions/inkthemes-functions.php:123
+msgid "Articles posted by "
+msgstr ""
+
+#: functions/inkthemes-functions.php:125
+msgid "Error 404"
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:50
+msgid "Install Recommended Plugins"
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:51
+#: functions/plugin-activation.php:301
+msgid "Install Plugins"
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:52
+#: functions/plugin-activation.php:302
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:53
+#: functions/plugin-activation.php:303
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:55
+#, php-format
+msgid ""
+"This theme recommends the following plugin to add lead form on landing page: "
+"%1$s."
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:58
+#: functions/plugin-activation.php:310
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:61
+#: functions/plugin-activation.php:315
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugin."
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:64
+#: functions/plugin-activation.php:320
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:67
+#: functions/plugin-activation.php:325
+#, php-format
+msgid "There is an update available for: %1$s."
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:70
+#: functions/plugin-activation.php:330
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:73
+#, php-format
+msgid ""
+"This theme recommends the following plugin to add lead form on landing page "
+"is currently inactive: %1$s."
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:76
+#: functions/plugin-activation.php:340
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:79
+#: functions/plugin-activation.php:345
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugin."
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:82
+#: functions/plugin-activation.php:350
+msgid "Begin installing plugin"
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:85
+#: functions/plugin-activation.php:355
+msgid "Begin updating plugin"
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:88
+#: functions/plugin-activation.php:360
+msgid "Begin activating plugin"
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:90
+#: functions/plugin-activation.php:364
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:91
+#: functions/plugin-activation.php:366 functions/plugin-activation.php:2640
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:92
+#: functions/plugin-activation.php:367
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:93
+#: functions/plugin-activation.php:368
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:94
+#: functions/plugin-activation.php:369
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:95
+#: functions/plugin-activation.php:370
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: functions/inkthemes-plugin-notify.php:96
+#: functions/plugin-activation.php:372
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: functions/plugin-activation.php:300
+msgid "Install Required Plugins"
+msgstr ""
+
+#: functions/plugin-activation.php:305
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgstr ""
+
+#: functions/plugin-activation.php:335
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgstr ""
+
+#: functions/plugin-activation.php:365
+msgid "Return to the dashboard"
+msgstr ""
+
+#: functions/plugin-activation.php:371
+msgid "Dismiss this notice"
+msgstr ""
+
+#: functions/plugin-activation.php:1907
+msgid "Required"
+msgstr ""
+
+#: functions/plugin-activation.php:1909
+msgid "Recommended"
+msgstr ""
+
+#: functions/plugin-activation.php:1923
+msgid "WordPress Repository"
+msgstr ""
+
+#: functions/plugin-activation.php:1926
+msgid "External Source"
+msgstr ""
+
+#: functions/plugin-activation.php:1929
+msgid "Pre-Packaged"
+msgstr ""
+
+#: functions/plugin-activation.php:1944
+msgid "Not Installed"
+msgstr ""
+
+#: functions/plugin-activation.php:1947
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: functions/plugin-activation.php:1949
+msgid "Active"
+msgstr ""
+
+#: functions/plugin-activation.php:1953
+msgid "Required Update not Available"
+msgstr ""
+
+#: functions/plugin-activation.php:1955
+msgid "Requires Update"
+msgstr ""
+
+#: functions/plugin-activation.php:1957
+msgid "Update recommended"
+msgstr ""
+
+#: functions/plugin-activation.php:2090
+msgid "Installed version:"
+msgstr ""
+
+#: functions/plugin-activation.php:2097
+msgid "Minimum required version:"
+msgstr ""
+
+#: functions/plugin-activation.php:2107
+msgid "Available version:"
+msgstr ""
+
+#: functions/plugin-activation.php:2128
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: functions/plugin-activation.php:2141
+msgid "Plugin"
+msgstr ""
+
+#: functions/plugin-activation.php:2142
+msgid "Source"
+msgstr ""
+
+#: functions/plugin-activation.php:2143
+msgid "Type"
+msgstr ""
+
+#: functions/plugin-activation.php:2146
+msgid "Version"
+msgstr ""
+
+#: functions/plugin-activation.php:2147
+msgid "Status"
+msgstr ""
+
+#: functions/plugin-activation.php:2290
+msgid "Install"
+msgstr ""
+
+#: functions/plugin-activation.php:2295
+msgid "Update"
+msgstr ""
+
+#: functions/plugin-activation.php:2298
+msgid "Activate"
+msgstr ""
+
+#: functions/plugin-activation.php:2323
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: functions/plugin-activation.php:2325
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: functions/plugin-activation.php:2354
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: functions/plugin-activation.php:2356
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: functions/plugin-activation.php:2639
+msgid "Plugin activation failed."
+msgstr ""
+
+#: functions/plugin-activation.php:2920
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: functions/plugin-activation.php:2922
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: functions/plugin-activation.php:2923
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: functions/plugin-activation.php:2926
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: functions/plugin-activation.php:2927
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: functions/plugin-activation.php:2928
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: functions/plugin-activation.php:2929
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: functions/plugin-activation.php:2932
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: functions/plugin-activation.php:2934
+msgid "All installations have been completed."
+msgstr ""
+
+#: functions/plugin-activation.php:2935
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: header.php:25
+msgid "Call us on&nbsp;&nbsp;"
+msgstr ""
+
+#: header.php:27
+msgid "Call us on 2514578498"
+msgstr ""
+
+#: header.php:47
+msgid "Mobile Menu"
+msgstr ""
+
+#: home.php:32
+msgid "A bene placito."
+msgstr ""
+
+#: home.php:38
+msgid ""
+"You have just dined, and however scrupulously the slaughterhouse is "
+"concealed in the graceful distance of miles, there is complicity."
+msgstr ""
+
+#: home.php:56
+msgid "Premium WordPress Themes with Single Click Installation"
+msgstr ""
+
+#: home.php:61 home.php:116 home.php:152 home.php:188 home.php:225
+msgid ""
+"Just a Click and your website is ready for use. Your Site is faster to "
+"built, easy to use & Search Engine Optimized."
+msgstr ""
+
+#: home.php:71
+msgid "Our Services"
+msgstr ""
+
+#: home.php:110 home.php:146 home.php:182 home.php:219
+msgid "Single Click Installation"
+msgstr ""
+
+#: home.php:242
+msgid "Recent Blogs"
+msgstr ""
+
+#: home.php:299 loop.php:31
+msgid "by&nbsp;"
+msgstr ""
+
+#: home.php:342
+msgid "Contact"
+msgstr ""
+
+#: home.php:363
+msgid "Address"
+msgstr ""
+
+#: home.php:370
+msgid "Address -  The Address"
+msgstr ""
+
+#: home.php:377
+msgid "Phone - 1245 213 689"
+msgstr ""
+
+#: home.php:384
+msgid "Email - name@example.com"
+msgstr ""
+
+#: home.php:391
+msgid "Website - www.example.com"
+msgstr ""
+
+#: sidebar-footer.php:6
+msgid "Footer Widgets"
+msgstr ""
+
+#: sidebar-footer.php:7
+msgid ""
+"Footer is widgetized. To setup the footer, drag the required Widgets in "
+"Appearance -> Widgets Tab in the First, Second, Third and Fourth Footer "
+"Widget Areas."
+msgstr ""
+
+#: sidebar-footer.php:16
+msgid "Latest Posts"
+msgstr ""
+
+#: sidebar-footer.php:18
+msgid "Entertainment"
+msgstr ""
+
+#: sidebar-footer.php:19
+msgid "Following problems"
+msgstr ""
+
+#: sidebar-footer.php:20
+msgid "FAQ"
+msgstr ""
+
+#: sidebar-footer.php:21
+msgid "Music And Sports"
+msgstr ""
+
+#: sidebar-footer.php:31
+msgid "Search Anything"
+msgstr ""
+
+#: sidebar-footer.php:32
+msgid ""
+"Address: Magnet Brains 10 No. Arera Colony, Bhopal India<br/>\n"
+"            Contact No : +91-9926465653<br/>     \n"
+"            Email : support@inkthemes.com"
+msgstr ""
+
+#: sidebar-footer.php:43
+msgid "Use Of Widgets"
+msgstr ""
+
+#: sidebar-footer.php:44
+msgid ""
+"You can easily drag and drop the widgets here to display under the footer. "
+"You just need to go to your dashboard and there you can choose the "
+"appearance option and then widgets."
+msgstr ""
+
+#: sidebar.php:3
+msgid "Search:"
+msgstr ""
+
+#: single.php:60
+msgid "<span class=\"meta-nav\">&larr;</span> Previous Post "
+msgstr ""
+
+#: single.php:62
+msgid "Next Post <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""

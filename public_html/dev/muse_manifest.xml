@@ -1,0 +1,282 @@
+<manifest alg="2" build="2015.1.2.344" opt="true" iceEnabled="false" exportTarget="other" domain="kajinonline.com" resolutions="1x" timestamp="1463558889273">
+  <folder name="css">
+    <file name="site_global.css" crc="133550462"/>
+    <file name="master_cn.css" crc="4196305998" ref="cn"/>
+    <file name="master_master.css" crc="4046600167" ref="corporation:our_team:about_us:compare:index"/>
+    <file name="master_minor.css" crc="4056566725" ref="4_jincha_chang:1_yingyu_chou:13_huide_fang:6_li_chu:5_joyce_chen:17_xiaolan_ho:16_zichi_liu:8_yihsien_su:philip_tong:12_yiting_hung:qiong_hua:yuki_meng:3_jhehong_chang:7_yaoshin_wang:10_chiwei_huang:9_pinhao_chen"/>
+    <file name="4_jincha_chang.css" crc="168741878" ref="4_jincha_chang"/>
+    <file name="1_yingyu_chou.css" crc="4161024058" ref="1_yingyu_chou"/>
+    <file name="corporation.css" crc="324629412" ref="corporation"/>
+    <file name="13_huide_fang.css" crc="3884668350" ref="13_huide_fang"/>
+    <file name="our_team.css" crc="486953720" ref="our_team"/>
+    <file name="6_li_chu.css" crc="80127805" ref="6_li_chu"/>
+    <file name="about_us.css" crc="10199805" ref="about_us"/>
+    <file name="5_joyce_chen.css" crc="510689361" ref="5_joyce_chen"/>
+    <file name="17_xiaolan_ho.css" crc="4060288498" ref="17_xiaolan_ho"/>
+    <file name="compare.css" crc="269698477" ref="compare"/>
+    <file name="16_zichi_liu.css" crc="81653439" ref="16_zichi_liu"/>
+    <file name="index.css" crc="220496089" ref="index"/>
+    <file name="8_yihsien_su.css" crc="183526902" ref="8_yihsien_su"/>
+    <file name="philip_tong.css" crc="366756460" ref="philip_tong"/>
+    <file name="12_yiting_hung.css" crc="4195703436" ref="12_yiting_hung"/>
+    <file name="qiong_hua.css" crc="4271098207" ref="qiong_hua"/>
+    <file name="yuki_meng.css" crc="4263950252" ref="yuki_meng"/>
+    <file name="3_jhehong_chang.css" crc="4031544905" ref="3_jhehong_chang"/>
+    <file name="cn.css" crc="4041355085" ref="cn"/>
+    <file name="7_yaoshin_wang.css" crc="4139105520" ref="7_yaoshin_wang"/>
+    <file name="10_chiwei_huang.css" crc="16715557" ref="10_chiwei_huang"/>
+    <file name="9_pinhao_chen.css" crc="4217799400" ref="9_pinhao_chen"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="207176553" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>our_team:phone>1_yingyu_chou:phone>3_jhehong_chang:phone>4_jincha_chang:phone>5_joyce_chen:phone>6_li_chu:phone>7_yaoshin_wang:phone>8_yihsien_su:phone>9_pinhao_chen:phone>10_chiwei_huang:phone>12_yiting_hung:phone>13_huide_fang:phone>16_zichi_liu:phone>17_xiaolan_ho:phone>philip_tong:phone>qiong_hua:phone>yuki-meng:phone>cn:index:corporation:our_team:about_us:compare:8_yihsien_su:12_yiting_hung:9_pinhao_chen:3_jhehong_chang:7_yaoshin_wang:10_chiwei_huang:4_jincha_chang:1_yingyu_chou:13_huide_fang:6_li_chu:5_joyce_chen:17_xiaolan_ho:16_zichi_liu:philip_tong:qiong_hua:yuki_meng:cn"/>
+    <file name="museutils.js" crc="3790713428" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>our_team:phone>1_yingyu_chou:phone>3_jhehong_chang:phone>4_jincha_chang:phone>5_joyce_chen:phone>6_li_chu:phone>7_yaoshin_wang:phone>8_yihsien_su:phone>9_pinhao_chen:phone>10_chiwei_huang:phone>12_yiting_hung:phone>13_huide_fang:phone>16_zichi_liu:phone>17_xiaolan_ho:phone>philip_tong:phone>qiong_hua:phone>yuki-meng:phone>cn:index:corporation:our_team:about_us:compare:8_yihsien_su:12_yiting_hung:9_pinhao_chen:3_jhehong_chang:7_yaoshin_wang:10_chiwei_huang:4_jincha_chang:1_yingyu_chou:13_huide_fang:6_li_chu:5_joyce_chen:17_xiaolan_ho:16_zichi_liu:philip_tong:qiong_hua:yuki_meng:cn"/>
+    <file name="whatinput.js" crc="84559013" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>our_team:phone>1_yingyu_chou:phone>3_jhehong_chang:phone>4_jincha_chang:phone>5_joyce_chen:phone>6_li_chu:phone>7_yaoshin_wang:phone>8_yihsien_su:phone>9_pinhao_chen:phone>10_chiwei_huang:phone>12_yiting_hung:phone>13_huide_fang:phone>16_zichi_liu:phone>17_xiaolan_ho:phone>philip_tong:phone>qiong_hua:phone>yuki-meng:phone>cn:index:corporation:our_team:about_us:compare:8_yihsien_su:12_yiting_hung:9_pinhao_chen:3_jhehong_chang:7_yaoshin_wang:10_chiwei_huang:4_jincha_chang:1_yingyu_chou:13_huide_fang:6_li_chu:5_joyce_chen:17_xiaolan_ho:16_zichi_liu:philip_tong:qiong_hua:yuki_meng:cn"/>
+    <file name="jquery.watch.js" crc="4244854265" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>our_team:phone>1_yingyu_chou:phone>3_jhehong_chang:phone>4_jincha_chang:phone>5_joyce_chen:phone>6_li_chu:phone>7_yaoshin_wang:phone>8_yihsien_su:phone>9_pinhao_chen:phone>10_chiwei_huang:phone>12_yiting_hung:phone>13_huide_fang:phone>16_zichi_liu:phone>17_xiaolan_ho:phone>philip_tong:phone>qiong_hua:phone>yuki-meng:phone>cn:index:corporation:our_team:about_us:compare:8_yihsien_su:12_yiting_hung:9_pinhao_chen:3_jhehong_chang:7_yaoshin_wang:10_chiwei_huang:4_jincha_chang:1_yingyu_chou:13_huide_fang:6_li_chu:5_joyce_chen:17_xiaolan_ho:16_zichi_liu:philip_tong:qiong_hua:yuki_meng:cn"/>
+    <file name="webpro.js" crc="329496574" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>our_team:phone>1_yingyu_chou:phone>3_jhehong_chang:phone>4_jincha_chang:phone>5_joyce_chen:phone>6_li_chu:phone>7_yaoshin_wang:phone>8_yihsien_su:phone>9_pinhao_chen:phone>10_chiwei_huang:phone>12_yiting_hung:phone>13_huide_fang:phone>16_zichi_liu:phone>17_xiaolan_ho:phone>philip_tong:phone>qiong_hua:phone>yuki-meng:phone>cn:index:corporation:cn"/>
+    <file name="musewpdisclosure.js" crc="4234230767" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>our_team:phone>1_yingyu_chou:phone>3_jhehong_chang:phone>4_jincha_chang:phone>5_joyce_chen:phone>6_li_chu:phone>7_yaoshin_wang:phone>8_yihsien_su:phone>9_pinhao_chen:phone>10_chiwei_huang:phone>12_yiting_hung:phone>13_huide_fang:phone>16_zichi_liu:phone>17_xiaolan_ho:phone>philip_tong:phone>qiong_hua:phone>yuki-meng:phone>cn:index:cn"/>
+    <file name="pie.js" crc="3827607177" ref="phone>index:phone>corporation:phone>compare:phone>our_team:phone>1_yingyu_chou:phone>3_jhehong_chang:phone>4_jincha_chang:phone>5_joyce_chen:phone>6_li_chu:phone>7_yaoshin_wang:phone>8_yihsien_su:phone>9_pinhao_chen:phone>10_chiwei_huang:phone>12_yiting_hung:phone>13_huide_fang:phone>16_zichi_liu:phone>17_xiaolan_ho:phone>philip_tong:phone>qiong_hua:phone>yuki-meng:phone>cn:index:corporation:our_team:about_us:compare:8_yihsien_su:12_yiting_hung:9_pinhao_chen:3_jhehong_chang:7_yaoshin_wang:10_chiwei_huang:4_jincha_chang:1_yingyu_chou:13_huide_fang:6_li_chu:5_joyce_chen:17_xiaolan_ho:16_zichi_liu:philip_tong:qiong_hua:yuki_meng:cn"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3918880840" ref="phone>index:phone>corporation:phone>1_yingyu_chou:phone>3_jhehong_chang:phone>4_jincha_chang:phone>5_joyce_chen:phone>6_li_chu:phone>7_yaoshin_wang:phone>8_yihsien_su:phone>9_pinhao_chen:phone>10_chiwei_huang:phone>12_yiting_hung:phone>13_huide_fang:phone>16_zichi_liu:phone>17_xiaolan_ho:phone>philip_tong:phone>qiong_hua:phone>yuki-meng:phone>cn:index:corporation:compare:8_yihsien_su:12_yiting_hung:9_pinhao_chen:3_jhehong_chang:7_yaoshin_wang:10_chiwei_huang:4_jincha_chang:1_yingyu_chou:13_huide_fang:6_li_chu:5_joyce_chen:17_xiaolan_ho:16_zichi_liu:philip_tong:qiong_hua:yuki_meng:cn"/>
+    <file name="form_check.php" crc="3805695515" ref="phone>index:phone>corporation:phone>cn:index:corporation:cn"/>
+    <file name="form_throttle.php" crc="3802629389" ref="phone>index:phone>corporation:phone>cn:index:corporation:cn"/>
+    <file name="form_process.php" crc="54267062" ref="phone>index:phone>corporation:phone>cn:index:corporation:cn"/>
+    <file name="form-u181504.php" crc="16927376" ref="phone>index"/>
+    <file name="jquery.musemenu.js" crc="238543590" ref="phone>index:index:corporation:our_team:about_us:compare:8_yihsien_su:12_yiting_hung:9_pinhao_chen:3_jhehong_chang:7_yaoshin_wang:10_chiwei_huang:4_jincha_chang:1_yingyu_chou:13_huide_fang:6_li_chu:5_joyce_chen:17_xiaolan_ho:16_zichi_liu:philip_tong:qiong_hua:yuki_meng:cn"/>
+    <file name="html5shiv.js" crc="4241844378" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>our_team:phone>1_yingyu_chou:phone>3_jhehong_chang:phone>4_jincha_chang:phone>5_joyce_chen:phone>6_li_chu:phone>7_yaoshin_wang:phone>8_yihsien_su:phone>9_pinhao_chen:phone>10_chiwei_huang:phone>12_yiting_hung:phone>13_huide_fang:phone>16_zichi_liu:phone>17_xiaolan_ho:phone>philip_tong:phone>qiong_hua:phone>yuki-meng:phone>cn:index:corporation:our_team:about_us:compare:8_yihsien_su:12_yiting_hung:9_pinhao_chen:3_jhehong_chang:7_yaoshin_wang:10_chiwei_huang:4_jincha_chang:1_yingyu_chou:13_huide_fang:6_li_chu:5_joyce_chen:17_xiaolan_ho:16_zichi_liu:philip_tong:qiong_hua:yuki_meng:cn"/>
+    <file name="form-u176482.php" crc="523302984" ref="phone>corporation"/>
+    <file name="form-u183568.php" crc="148935657" ref="phone>cn"/>
+    <file name="museredirect.js" crc="71780213" ref="index:corporation:our_team:about_us:compare:8_yihsien_su:12_yiting_hung:9_pinhao_chen:3_jhehong_chang:7_yaoshin_wang:10_chiwei_huang:4_jincha_chang:1_yingyu_chou:13_huide_fang:6_li_chu:5_joyce_chen:17_xiaolan_ho:16_zichi_liu:philip_tong:qiong_hua:cn"/>
+    <file name="musewpslideshow.js" crc="394033048" ref="index:cn"/>
+    <file name="jquery.museoverlay.js" crc="4265131668" ref="index:cn"/>
+    <file name="touchswipe.js" crc="497316881" ref="index:cn"/>
+    <file name="form-u44092.php" crc="331748353" ref="index"/>
+    <file name="form-u86430.php" crc="4108973569" ref="corporation"/>
+    <file name="form-u86411.php" crc="514081609" ref="corporation"/>
+    <file name="form-u182917.php" crc="451367713" ref="cn"/>
+  </folder>
+  <folder name="images">
+    <file name="favicon.ico" crc="311132942" ref="phone>index:index"/>
+    <file name="logo_phone-09.png" crc="21162607" seo="true" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>our_team:phone>1_yingyu_chou:phone>3_jhehong_chang:phone>4_jincha_chang:phone>5_joyce_chen:phone>6_li_chu:phone>7_yaoshin_wang:phone>8_yihsien_su:phone>9_pinhao_chen:phone>10_chiwei_huang:phone>12_yiting_hung:phone>13_huide_fang:phone>16_zichi_liu:phone>17_xiaolan_ho:phone>philip_tong:phone>qiong_hua:phone>yuki-meng:phone>cn"/>
+    <file name="banner.gif" crc="4068444166" ref="phone>index:phone>cn:index:cn"/>
+    <file name="u181524-17.png" crc="337126277" ref="phone>index"/>
+    <file name="u181524-17-r.png" crc="3797453200" ref="phone>index"/>
+    <file name="u181524-17-m.png" crc="3797453200" ref="phone>index"/>
+    <file name="u181524-17-fs.png" crc="337126277" ref="phone>index"/>
+    <file name="radiobuttonunchecked.png" crc="232010369" ref="phone>index:phone>cn:index:cn"/>
+    <file name="radiobuttonuncheckedrollover.png" crc="173297973" ref="phone>index:phone>cn:index:cn"/>
+    <file name="radiobuttonuncheckedmousedown.png" crc="210422217" ref="phone>index:phone>cn:index:cn"/>
+    <file name="radiobuttonchecked.png" crc="424951658" ref="phone>index:phone>cn:index:cn"/>
+    <file name="radiobuttoncheckedrollover.png" crc="135556972" ref="phone>index:phone>cn:index:cn"/>
+    <file name="radiobuttoncheckedmousedown.png" crc="475385202" ref="phone>index:phone>cn:index:cn"/>
+    <file name="feature icon_artboard 44.png" crc="3800494166" seo="true" ref="phone>index:phone>cn:index:cn"/>
+    <file name="feature icon-20.png" crc="4171469448" seo="true" ref="phone>index:phone>cn:index:cn"/>
+    <file name="chenjoyce-u181641-fr.jpg" crc="4130742862" ref="phone>index:phone>our_team:phone>cn"/>
+    <file name="yiting_hung-u181633-fr.jpg" crc="3830912973" ref="phone>index:phone>our_team:phone>cn"/>
+    <file name="juli-u181653-fr.jpg" crc="3863589919" ref="phone>index:phone>our_team:phone>cn"/>
+    <file name="pinhao_chen-u181663-fr.jpg" crc="117316049" ref="phone>index:phone>our_team:phone>cn"/>
+    <file name="section_faq.png" crc="329607113" seo="true" ref="phone>index:phone>cn:index:cn"/>
+    <file name="logo_tw-08.png" crc="282024829" ref="phone>index:index"/>
+    <file name="social_media_icon-01 copy.png" crc="4191846272" ref="phone>index:index:cn"/>
+    <file name="social_media_icon-01.png" crc="294820166" ref="phone>index:phone>9_pinhao_chen:index:9_pinhao_chen:cn"/>
+    <file name="social_media_icon-03 copy.png" crc="4255508732" ref="phone>index:index:cn"/>
+    <file name="social_media_icon-03.png" crc="3837892263" ref="phone>index:index:cn"/>
+    <file name="youtube-10.png" crc="360276217" ref="phone>index:index:cn"/>
+    <file name="youtube-09.png" crc="498467228" ref="phone>index:index:cn"/>
+    <file name="twitter-12.png" crc="162838660" ref="phone>index:index:cn"/>
+    <file name="twitter-11.png" crc="150276172" ref="phone>index:index:cn"/>
+    <file name="all.jpg" crc="3888344126" ref="phone>index:index:cn"/>
+    <file name="thewaycliniclogo-02.png" crc="3965607018" ref="phone>index:index"/>
+    <file name="kajin process-08.png" crc="470386440" ref="phone>corporation:corporation"/>
+    <file name="u176487-17.png" crc="50389070" ref="phone>corporation"/>
+    <file name="u176487-17-r.png" crc="3957965803" ref="phone>corporation"/>
+    <file name="u176487-17-m.png" crc="221670997" ref="phone>corporation"/>
+    <file name="u176487-17-fs.png" crc="3796884621" ref="phone>corporation"/>
+    <file name="jinwilsonpic.jpg" crc="140496728" ref="phone>about_us"/>
+    <file name="jin_cha chang-u180628-fr.jpg" crc="273625367" ref="phone>our_team"/>
+    <file name="chou-u180703-fr.jpg" crc="3852822369" ref="phone>our_team"/>
+    <file name="jhehong_chang-u180718-fr.jpg" crc="59854488" ref="phone>our_team"/>
+    <file name="su-u180793-fr.jpg" crc="364020795" ref="phone>our_team"/>
+    <file name="xiaolan_ho-u180828-fr.jpg" crc="3813379994" ref="phone>our_team"/>
+    <file name="liu-u180868-fr.jpg" crc="386786379" ref="phone>our_team"/>
+    <file name="huachon-u180929-fr.jpg" crc="4232852987" ref="phone>our_team"/>
+    <file name="philip-u180957-fr.jpg" crc="4158537665" ref="phone>our_team"/>
+    <file name="huide_fang-u180981-fr.jpg" crc="4247885666" ref="phone>our_team"/>
+    <file name="yuku_meng-u181478-fr.jpg" crc="3773760281" ref="phone>our_team"/>
+    <file name="chinyi_chen-u181234-fr.jpg" crc="200884906" ref="phone>our_team"/>
+    <file name="the_way_client-ieu181287-4-fr.png" crc="3928449291" ref="phone>our_team"/>
+    <file name="the_way_client.jpg" crc="437616775" ref="phone>our_team:our_team:7_yaoshin_wang"/>
+    <file name="kristy_chu-u176806-fr.jpg" crc="339817285" ref="phone>1_yingyu_chou"/>
+    <file name="kajin telemedical-09-u176810-fr.png" crc="4132818016" ref="phone>1_yingyu_chou:phone>3_jhehong_chang:phone>4_jincha_chang:phone>5_joyce_chen:phone>6_li_chu:phone>7_yaoshin_wang:phone>8_yihsien_su:phone>9_pinhao_chen:phone>10_chiwei_huang:phone>12_yiting_hung:phone>13_huide_fang:phone>16_zichi_liu:phone>17_xiaolan_ho:phone>philip_tong:phone>qiong_hua:phone>yuki-meng"/>
+    <file name="jhehong_chang-u177111-fr.jpg" crc="435494636" ref="phone>3_jhehong_chang"/>
+    <file name="jin_cha chang-u177264-fr.jpg" crc="353245944" ref="phone>4_jincha_chang"/>
+    <file name="chenjoyce-u177443-fr.jpg" crc="3993798016" ref="phone>5_joyce_chen"/>
+    <file name="juli-u177579-fr.jpg" crc="4143020490" ref="phone>6_li_chu"/>
+    <file name="the_way_client-u177713-fr.jpg" crc="3760389938" ref="phone>7_yaoshin_wang"/>
+    <file name="su-u177991-fr.jpg" crc="4273107034" ref="phone>8_yihsien_su"/>
+    <file name="pinhao_chen-ieu178144-fr.png" crc="275383018" ref="phone>9_pinhao_chen"/>
+    <file name="pinhao_chen.jpg" crc="437459137" ref="phone>9_pinhao_chen:index:9_pinhao_chen:cn"/>
+    <file name="social_media_icon-012.png" crc="294820166" ref="phone>9_pinhao_chen:9_pinhao_chen"/>
+    <file name="chinyi_chen-u178303-fr.jpg" crc="293129959" ref="phone>10_chiwei_huang"/>
+    <file name="yiting_hung-u178420-fr.jpg" crc="338387857" ref="phone>12_yiting_hung"/>
+    <file name="huide_fang-u178555-fr.jpg" crc="4127875236" ref="phone>13_huide_fang"/>
+    <file name="liu-ieu178672-fr.png" crc="3807723351" ref="phone>16_zichi_liu"/>
+    <file name="liu.jpg" crc="3873762505" ref="phone>16_zichi_liu:our_team:16_zichi_liu"/>
+    <file name="xiaolan_ho.jpg" crc="460813201" ref="phone>17_xiaolan_ho:our_team:17_xiaolan_ho"/>
+    <file name="philip.jpg" crc="438673664" ref="phone>philip_tong:our_team:philip_tong"/>
+    <file name="huachon.jpg" crc="4270389081" ref="phone>qiong_hua:our_team:qiong_hua"/>
+    <file name="yuku_meng.jpg" crc="4147727115" ref="phone>yuki-meng:our_team:yuki_meng"/>
+    <file name="u183574-17.png" crc="3897369670" ref="phone>cn"/>
+    <file name="u183574-17-r.png" crc="4014101819" ref="phone>cn"/>
+    <file name="u183574-17-m.png" crc="4014101819" ref="phone>cn"/>
+    <file name="u183574-17-fs.png" crc="3897369670" ref="phone>cn"/>
+    <file name="navlogo-07.png" crc="4204318105" seo="true" ref="index:corporation:our_team:about_us:compare:8_yihsien_su:12_yiting_hung:9_pinhao_chen:3_jhehong_chang:7_yaoshin_wang:10_chiwei_huang:4_jincha_chang:1_yingyu_chou:13_huide_fang:6_li_chu:5_joyce_chen:17_xiaolan_ho:16_zichi_liu:philip_tong:qiong_hua:yuki_meng"/>
+    <file name="section_service.png" crc="297208188" seo="true" ref="index:cn"/>
+    <file name="feature icon-09.png" crc="35472761" seo="true" ref="index:cn"/>
+    <file name="blank.gif" crc="4208392903" ref="index:cn"/>
+    <file name="loading.gif" crc="3815509949" ref="index:cn"/>
+    <file name="pick.gif" crc="58845375" ref="index:cn"/>
+    <file name="yiting_hung-u23591-fr.jpg" crc="4270511994" ref="index:cn"/>
+    <file name="chenjoyce-u23582-fr.jpg" crc="107407266" ref="index:cn"/>
+    <file name="kristy_chu-u23593-fr.jpg" crc="3947849410" ref="index:cn"/>
+    <file name="juli-u23589-fr.jpg" crc="4028853837" ref="index:cn"/>
+    <file name="section_team.png" crc="164472986" seo="true" ref="index:cn"/>
+    <file name="section_message.png" crc="391500172" seo="true" ref="index:cn"/>
+    <file name="u44094-17.png" crc="337126277" ref="index"/>
+    <file name="u44094-17-r.png" crc="3797453200" ref="index"/>
+    <file name="u44094-17-m.png" crc="3797453200" ref="index"/>
+    <file name="u44094-17-fs.png" crc="337126277" ref="index"/>
+    <file name="section_payment.png" crc="58294386" seo="true" ref="index:cn"/>
+    <file name="section_feature.png" crc="437480884" seo="true" ref="index:cn"/>
+    <file name="feature icon3.png" crc="3795162241" ref="index:cn"/>
+    <file name="feature icon2.png" crc="4088526311" ref="index:cn"/>
+    <file name="feature icon1.png" crc="265588210" ref="index:cn"/>
+    <file name="feature icon5.png" crc="3810815341" ref="index:cn"/>
+    <file name="feature icon4.png" crc="337085385" ref="index:cn"/>
+    <file name="kajin process-11.png" crc="440686159" ref="corporation"/>
+    <file name="u86446-17.png" crc="3783139290" ref="corporation"/>
+    <file name="u86446-17-r.png" crc="3897313666" ref="corporation"/>
+    <file name="u86446-17-m.png" crc="99229272" ref="corporation"/>
+    <file name="u86446-17-fs.png" crc="451690784" ref="corporation"/>
+    <file name="u86414-17.png" crc="50389070" ref="corporation"/>
+    <file name="u86414-17-r.png" crc="3957965803" ref="corporation"/>
+    <file name="u86414-17-m.png" crc="221670997" ref="corporation"/>
+    <file name="u86414-17-fs.png" crc="3796884621" ref="corporation"/>
+    <file name="yiting_hung-u108637-fr.jpg" crc="257368650" ref="our_team"/>
+    <file name="chenjoyce-u108661-fr.jpg" crc="3924062835" ref="our_team"/>
+    <file name="jin_cha chang-u108636-fr.jpg" crc="3829794835" ref="our_team"/>
+    <file name="juli-u108700-fr.jpg" crc="4226964182" ref="our_team"/>
+    <file name="chou-u108665-fr.jpg" crc="4216227012" ref="our_team"/>
+    <file name="jhehong_chang-ieu108633-fr.png" crc="4266169641" ref="our_team"/>
+    <file name="jhehong_chang.jpg" crc="4289990448" ref="our_team:3_jhehong_chang"/>
+    <file name="huachon-ieu179859-fr.png" crc="4193874211" ref="our_team"/>
+    <file name="xiaolan_ho-ieu108647-fr.png" crc="385873344" ref="our_team"/>
+    <file name="su-ieu108632-fr.png" crc="511256610" ref="our_team"/>
+    <file name="su.jpg" crc="282942487" ref="our_team"/>
+    <file name="pinhao_chen-u108634-fr.jpg" crc="464563574" ref="our_team"/>
+    <file name="philip-ieu179886-fr.png" crc="3850127" ref="our_team"/>
+    <file name="yuku_meng-ieu181290-3-fr.png" crc="3839453160" ref="our_team"/>
+    <file name="chinyi_chen-ieu108570-fr.png" crc="348127348" ref="our_team"/>
+    <file name="chinyi_chen.jpg" crc="4113077079" ref="our_team:10_chiwei_huang"/>
+    <file name="huide_fang-u108592-fr.jpg" crc="3908154495" ref="our_team"/>
+    <file name="the_way_client-ieu181403-4-fr.png" crc="248839143" ref="our_team"/>
+    <file name="noname-02.png" crc="4136978960" ref="compare"/>
+    <file name="puzzle-02.png" crc="3911806522" ref="compare"/>
+    <file name="su2.jpg" crc="165045268" ref="8_yihsien_su"/>
+    <file name="yiting_hung-ieu128705-fr.png" crc="4252828115" ref="12_yiting_hung"/>
+    <file name="yiting_hung.jpg" crc="376160594" ref="12_yiting_hung"/>
+    <file name="pinhao_chen-ieu130300-fr.png" crc="4214340955" ref="9_pinhao_chen"/>
+    <file name="jhehong_chang-ieu132885-fr.png" crc="3805929327" ref="3_jhehong_chang"/>
+    <file name="the_way_client-ieu133662-fr.png" crc="3887456987" ref="7_yaoshin_wang"/>
+    <file name="chinyi_chen-ieu134514-fr.png" crc="453385695" ref="10_chiwei_huang"/>
+    <file name="jin_cha chang-ieu135460-fr.png" crc="4281530889" ref="4_jincha_chang"/>
+    <file name="jin_cha chang.jpg" crc="3974275890" ref="4_jincha_chang"/>
+    <file name="kristy_chu-ieu136809-fr.png" crc="3874689703" ref="1_yingyu_chou"/>
+    <file name="kristy_chu.jpg" crc="4217900244" ref="1_yingyu_chou"/>
+    <file name="huide_fang-ieu137424-fr.png" crc="523241861" ref="13_huide_fang"/>
+    <file name="huide_fang.jpg" crc="3870647762" ref="13_huide_fang"/>
+    <file name="juli.jpg" crc="4123053270" ref="6_li_chu"/>
+    <file name="chenjoyce.jpg" crc="4072128070" ref="5_joyce_chen"/>
+    <file name="navlogo_artboard 67.png" crc="4061435431" seo="true" ref="cn"/>
+    <file name="u182918-17.png" crc="3897369670" ref="cn"/>
+    <file name="u182918-17-r.png" crc="4014101819" ref="cn"/>
+    <file name="u182918-17-m.png" crc="4014101819" ref="cn"/>
+    <file name="u182918-17-fs.png" crc="3897369670" ref="cn"/>
+    <file name="logo_cn-08.png" crc="149574037" ref="cn"/>
+    <file name="thewaycliniclogo-02-u180097-fr.png" crc="3878109136" ref="cn"/>
+    <file name="qrcode_for_gh_4a90ff07f987_430120x120.jpg" crc="446319447" seo="true" ref="cn"/>
+    <file name="untitled-1.jpg" crc="4173396244" ref="cn"/>
+    <file name="kajin telemedical-09-u127252-fr.png" crc="4132818016" ref="8_yihsien_su:12_yiting_hung:9_pinhao_chen:3_jhehong_chang:7_yaoshin_wang:10_chiwei_huang:4_jincha_chang:1_yingyu_chou:13_huide_fang:6_li_chu:5_joyce_chen:17_xiaolan_ho:16_zichi_liu:philip_tong:qiong_hua:yuki_meng"/>
+    <file name="liu-ieu141891-fr.png" crc="3807723351" ref="16_zichi_liu"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="master_master.css" crc="94071770" ref="phone>index"/>
+      <file name="master_minor.css" crc="355916426" ref="phone>corporation:phone>5_joyce_chen:phone>10_chiwei_huang:phone>4_jincha_chang:phone>cn:phone>9_pinhao_chen:phone>yuki-meng:phone>8_yihsien_su:phone>3_jhehong_chang:phone>qiong_hua:phone>1_yingyu_chou:phone>philip_tong:phone>our_team:phone>17_xiaolan_ho:phone>compare:phone>16_zichi_liu:phone>6_li_chu:phone>7_yaoshin_wang:phone>13_huide_fang:phone>about_us:phone>12_yiting_hung"/>
+      <file name="corporation.css" crc="431546403" ref="phone>corporation"/>
+      <file name="5_joyce_chen.css" crc="4189815802" ref="phone>5_joyce_chen"/>
+      <file name="index.css" crc="476411725" ref="phone>index"/>
+      <file name="10_chiwei_huang.css" crc="440651134" ref="phone>10_chiwei_huang"/>
+      <file name="4_jincha_chang.css" crc="160334887" ref="phone>4_jincha_chang"/>
+      <file name="cn.css" crc="325234088" ref="phone>cn"/>
+      <file name="9_pinhao_chen.css" crc="4276501890" ref="phone>9_pinhao_chen"/>
+      <file name="yuki-meng.css" crc="3883313049" ref="phone>yuki-meng"/>
+      <file name="8_yihsien_su.css" crc="228439294" ref="phone>8_yihsien_su"/>
+      <file name="3_jhehong_chang.css" crc="488883045" ref="phone>3_jhehong_chang"/>
+      <file name="qiong_hua.css" crc="4178857859" ref="phone>qiong_hua"/>
+      <file name="1_yingyu_chou.css" crc="4071065676" ref="phone>1_yingyu_chou"/>
+      <file name="philip_tong.css" crc="162188473" ref="phone>philip_tong"/>
+      <file name="our_team.css" crc="483005227" ref="phone>our_team"/>
+      <file name="17_xiaolan_ho.css" crc="3826904653" ref="phone>17_xiaolan_ho"/>
+      <file name="compare.css" crc="15966120" ref="phone>compare"/>
+      <file name="16_zichi_liu.css" crc="3990703520" ref="phone>16_zichi_liu"/>
+      <file name="6_li_chu.css" crc="3763022635" ref="phone>6_li_chu"/>
+      <file name="7_yaoshin_wang.css" crc="4044134375" ref="phone>7_yaoshin_wang"/>
+      <file name="13_huide_fang.css" crc="45882488" ref="phone>13_huide_fang"/>
+      <file name="about_us.css" crc="278639811" ref="phone>about_us"/>
+      <file name="12_yiting_hung.css" crc="204253652" ref="phone>12_yiting_hung"/>
+    </folder>
+    <file name="index.html" crc="298007121" seo="true" mt="1463553921318" redirect="true"/>
+    <file name="corporation.html" crc="520634032" seo="true" mt="1463543155179" redirect="true"/>
+    <file name="about_us.html" crc="25962547" seo="true" mt="1463543155179" redirect="true"/>
+    <file name="compare.html" crc="278351306" seo="true" mt="1463543155179" redirect="true"/>
+    <file name="our_team.html" crc="184877289" seo="true" mt="1463553920710" redirect="true"/>
+    <file name="1_yingyu_chou.html" crc="418287825" seo="true" mt="1463543155179" redirect="true"/>
+    <file name="3_jhehong_chang.html" crc="4017153243" seo="true" mt="1463543155179" redirect="true"/>
+    <file name="4_jincha_chang.html" crc="60933547" seo="true" mt="1463553919671" redirect="true"/>
+    <file name="5_joyce_chen.html" crc="3943005397" seo="true" mt="1463543155179" redirect="true"/>
+    <file name="6_li_chu.html" crc="4020908431" seo="true" mt="1463553920714" redirect="true"/>
+    <file name="7_yaoshin_wang.html" crc="4071571002" seo="true" mt="1463543155179" redirect="true"/>
+    <file name="8_yihsien_su.html" crc="3822173636" seo="true" mt="1463543155179" redirect="true"/>
+    <file name="9_pinhao_chen.html" crc="3975807645" seo="true" mt="1463553919749" redirect="true"/>
+    <file name="10_chiwei_huang.html" crc="454963416" seo="true" mt="1463543155179" redirect="true"/>
+    <file name="12_yiting_hung.html" crc="5560962" seo="true" mt="1463543155179" redirect="true"/>
+    <file name="13_huide_fang.html" crc="322858495" seo="true" mt="1463553920637" redirect="true"/>
+    <file name="16_zichi_liu.html" crc="150839536" seo="true" mt="1463543155179" redirect="true"/>
+    <file name="17_xiaolan_ho.html" crc="20436251" seo="true" mt="1463543155179" redirect="true"/>
+    <file name="philip_tong.html" crc="3888268541" seo="true" mt="1463543155179" redirect="true"/>
+    <file name="qiong_hua.html" crc="4239076125" seo="true" mt="1463543155179" redirect="true"/>
+    <file name="yuki-meng.html" crc="4273481178" seo="true" mt="1463543155179" redirect="true"/>
+    <file name="cn.html" crc="509364193" seo="true" mt="1463553920705" redirect="true"/>
+  </folder>
+  <file name="index.html" crc="81272904" seo="true" mt="1463556723291" redirect="true"/>
+  <file name="corporation.html" crc="4197775763" seo="true" mt="1463556454374" redirect="true"/>
+  <file name="our_team.html" crc="4194161461" seo="true" mt="1463556454374" redirect="true"/>
+  <file name="about_us.html" crc="3911890254" seo="true" mt="1463556454374" redirect="true"/>
+  <file name="compare.html" crc="3892698764" seo="true" mt="1463556454374" redirect="true"/>
+  <file name="8_yihsien_su.html" crc="195629032" seo="true" mt="1463558642767" redirect="true"/>
+  <file name="12_yiting_hung.html" crc="99305015" seo="true" mt="1463558693251" redirect="true"/>
+  <file name="9_pinhao_chen.html" crc="308608785" seo="true" mt="1463558660763" redirect="true"/>
+  <file name="3_jhehong_chang.html" crc="362822492" seo="true" mt="1463558464367" redirect="true"/>
+  <file name="7_yaoshin_wang.html" crc="138398587" seo="true" mt="1463558627022" redirect="true"/>
+  <file name="10_chiwei_huang.html" crc="80690724" seo="true" mt="1463558676313" redirect="true"/>
+  <file name="4_jincha_chang.html" crc="29601537" seo="true" mt="1463558513219" redirect="true"/>
+  <file name="1_yingyu_chou.html" crc="518990901" seo="true" mt="1463558490583" redirect="true"/>
+  <file name="13_huide_fang.html" crc="483009426" seo="true" mt="1463558710950" redirect="true"/>
+  <file name="6_li_chu.html" crc="3788520324" seo="true" mt="1463558612649" redirect="true"/>
+  <file name="5_joyce_chen.html" crc="393096289" seo="true" mt="1463558594210" redirect="true"/>
+  <file name="17_xiaolan_ho.html" crc="260706406" seo="true" mt="1463558742963" redirect="true"/>
+  <file name="16_zichi_liu.html" crc="4127019218" seo="true" mt="1463558725210" redirect="true"/>
+  <file name="philip_tong.html" crc="4110197463" seo="true" mt="1463558758198" redirect="true"/>
+  <file name="qiong_hua.html" crc="3945555484" seo="true" mt="1463558780581" redirect="true"/>
+  <file name="yuki_meng.html" crc="259709259" seo="true" mt="1463558800994" redirect="true"/>
+  <file name="cn.html" crc="250529253" seo="true" mt="1463557378482" redirect="true"/>
+</manifest>

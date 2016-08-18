@@ -1,0 +1,9 @@
+[26-Nov-2015 03:44:40 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/kajinonline/public_html/include_function.php on line 155
+[26-Nov-2015 03:45:05 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/kajinonline/public_html/include_function.php on line 155
+[26-Nov-2015 03:45:06 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/kajinonline/public_html/include_function.php on line 155
+[26-Nov-2015 03:45:19 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/kajinonline/public_html/include_function.php on line 155
+[26-Nov-2015 03:45:20 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/kajinonline/public_html/include_function.php on line 155
+[26-Nov-2015 03:45:21 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/kajinonline/public_html/include_function.php on line 155
+[26-Nov-2015 03:45:24 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/kajinonline/public_html/include_function.php on line 155
+[13-May-2016 11:07:44 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/kajinonline/public_html/cron_update.php on line 19
+[15-Jul-2016 13:43:40 UTC] PHP Fatal error:  Call to undefined function json_encoder() in /home/kajinonline/public_html/dev/ajax_api_add_reply.php on line 24

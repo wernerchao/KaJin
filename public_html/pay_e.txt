@@ -1,0 +1,686 @@
+220.133.20.71 123457114.32.174.120 12220.133.20.71 123457220.133.20.71 123457220.133.20.71 123457114.32.174.120 123457114.32.174.120 0 Array
+(
+    [counselor_id] => 3
+    [date] => 2016-02-17
+    [time] => 19
+    [token] => tok_17eoLUE0AfOAbNQmppqTxxRf
+    [news] => 0
+    [fee] => 800
+)
+/tok_17eoLUE0AfOAbNQmppqTxxRf/2016-02-17/19/3--1 2 3 4 5 7 Array
+(
+    [counselor_id] => 3
+    [date] => 2016-02-17
+    [time] => 19
+    [token] => tok_17eoLUE0AfOAbNQmppqTxxRf
+    [news] => 0
+    [fee] => 800
+)
+ 114.32.174.120 0 Array
+(
+    [counselor_id] => 3
+    [date] => 2016-02-17
+    [time] => 19
+    [token] => tok_17eoRGE0AfOAbNQmKTRPy8hb
+    [news] => 0
+    [fee] => 800
+)
+/tok_17eoRGE0AfOAbNQmKTRPy8hb/2016-02-17/19/3--1 2 3 4 5 7 Array
+(
+    [counselor_id] => 3
+    [date] => 2016-02-17
+    [time] => 19
+    [token] => tok_17eoRGE0AfOAbNQmKTRPy8hb
+    [news] => 0
+    [fee] => 800
+)
+ Status is:400
+Type is:invalid_request_error
+Code is:
+Param is:source
+Message is:No such token: tok_17eoRGE0AfOAbNQmKTRPy8hb
+114.32.174.120 0 Array
+(
+    [counselor_id] => 3
+    [date] => 2016-02-17
+    [time] => 19
+    [token] => tok_17eoahE0AfOAbNQmbBTUP2aM
+    [news] => 0
+    [fee] => 800
+)
+/tok_17eoahE0AfOAbNQmbBTUP2aM/2016-02-17/19/3--1 2 3 4 5 7 Array
+(
+    [counselor_id] => 3
+    [date] => 2016-02-17
+    [time] => 19
+    [token] => tok_17eoahE0AfOAbNQmbBTUP2aM
+    [news] => 0
+    [fee] => 800
+)
+ Status is:400
+Type is:invalid_request_error
+Code is:
+Param is:source
+Message is:No such token: tok_17eoahE0AfOAbNQmbBTUP2aM
+Array
+(
+    [type] => invalid_request_error
+    [message] => No such token: tok_17eoahE0AfOAbNQmbBTUP2aM
+    [param] => source
+)
+114.32.174.120 0 Array
+(
+    [counselor_id] => 3
+    [date] => 2016-02-17
+    [time] => 19
+    [token] => tok_17eotRE0AfOAbNQmwNOUzIxH
+    [news] => 0
+    [fee] => 800
+)
+/tok_17eotRE0AfOAbNQmwNOUzIxH/2016-02-17/19/3--1 2 3 4 5 836.224.175.188 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-03-12
+    [time] => 14
+    [token] => tok_17mQHoE0AfOAbNQmgkMVn9gm
+    [news] => 0
+    [fee] => 800
+)
+/tok_17mQHoE0AfOAbNQmgkMVn9gm/2016-03-12/14/6--1 2 3 4 5 8180.167.25.70 0 Array
+(
+    [counselor_id] => 5
+    [date] => 2016-03-12
+    [time] => 23
+    [token] => tok_17n3TFE0AfOAbNQm0fzSYjas
+    [news] => 1
+    [fee] => 800
+)
+/tok_17n3TFE0AfOAbNQm0fzSYjas/2016-03-12/23/5--1 2 3 4 5 859.115.195.243 0 Array
+(
+    [counselor_id] => 3
+    [date] => 2016-03-14
+    [time] => 21
+    [token] => tok_17nTciE0AfOAbNQmhCzKH6Gt
+    [news] => 0
+    [fee] => 800
+)
+/tok_17nTciE0AfOAbNQmhCzKH6Gt/2016-03-14/21/3--1 2 3 4 5 8165.225.76.109 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-03-20
+    [time] => 17
+    [token] => tok_17pEtEE0AfOAbNQmTR7SbcEv
+    [news] => 1
+    [fee] => 800
+)
+/tok_17pEtEE0AfOAbNQmTR7SbcEv/2016-03-20/17/6--1 2 3 4 5 899.225.171.226 0 Array
+(
+    [counselor_id] => 8
+    [date] => 2016-03-21
+    [time] => 11
+    [token] => tok_17qZXYE0AfOAbNQmsx4gqvOn
+    [news] => 0
+    [fee] => 800
+)
+/tok_17qZXYE0AfOAbNQmsx4gqvOn/2016-03-21/11/8--1 2 3 4 5 836.227.171.92 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-04-04
+    [time] => 11
+    [token] => tok_17wCJ8E0AfOAbNQmzKOZhylm
+    [news] => 0
+    [fee] => 800
+)
+/tok_17wCJ8E0AfOAbNQmzKOZhylm/2016-04-04/11/6--1 2 3 4 5 6 36.227.171.92 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-04-04
+    [time] => 11
+    [token] => tok_17wCJkE0AfOAbNQmqcKicIUm
+    [news] => 0
+    [fee] => 800
+)
+/tok_17wCJkE0AfOAbNQmqcKicIUm/2016-04-04/11/6--1 2 3 4 5 6 36.227.171.92 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-04-04
+    [time] => 11
+    [token] => tok_17wCLSE0AfOAbNQmPJSr6tdm
+    [news] => 0
+    [fee] => 800
+)
+/tok_17wCLSE0AfOAbNQmPJSr6tdm/2016-04-04/11/6--1 2 3 4 5 6 36.227.171.92 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-04-04
+    [time] => 11
+    [token] => tok_17wCr6E0AfOAbNQmjsBzm01Z
+    [news] => 0
+    [fee] => 800
+)
+/tok_17wCr6E0AfOAbNQmjsBzm01Z/2016-04-04/11/6--1 2 61.231.18.171 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-06-02
+    [time] => 11
+    [token] => tok_18H7R8E0AfOAbNQmhP2XaW0k
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18H7R8E0AfOAbNQmhP2XaW0k/2016-06-02/11/6--1 2 3 4 5 5.5 7.5 8220.133.121.171 0 Array
+(
+    [counselor_id] => 17
+    [date] => 2016-06-03
+    [time] => 21
+    [token] => tok_18H9SJE0AfOAbNQmW88ecICR
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18H9SJE0AfOAbNQmW88ecICR/2016-06-03/21/17--1 2 3 4 5 5.5 7.5 861.231.56.64 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-06-04
+    [time] => 23
+    [token] => tok_18IAeOE0AfOAbNQm5riBraUq
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18IAeOE0AfOAbNQm5riBraUq/2016-06-04/23/6--1 2 3 4 5 5.5 7.5 873.231.182.141 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-06-18
+    [time] => 13
+    [token] => tok_18LlGqE0AfOAbNQmbDHEGVVY
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => -8
+)
+/tok_18LlGqE0AfOAbNQmbDHEGVVY/2016-06-18/13/6--1 2 3 4 5 5.5 7.5 8218.94.124.46 0 Array
+(
+    [counselor_id] => 8
+    [date] => 2016-06-16
+    [time] => 20
+    [token] => atok_18M7XKE0AfOAbNQmZFJLspYk
+    [news] => true
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/atok_18M7XKE0AfOAbNQmZFJLspYk/2016-06-16/20/8--1 2 3 4 5 5.5 172.58.40.162 0 Array
+(
+    [counselor_id] => 8
+    [date] => 2016-06-16
+    [time] => 22
+    [token] => tok_18MQVGE0AfOAbNQmX2QX6kg4
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => -8
+)
+/tok_18MQVGE0AfOAbNQmX2QX6kg4/2016-06-16/22/8--1 2 3 4 5 5.5 7.5 8118.168.32.11 0 Array
+(
+    [counselor_id] => 5
+    [date] => 2016-06-15
+    [time] => 23
+    [token] => tok_18MUFhE0AfOAbNQm2H9lqp8u
+    [news] => true
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18MUFhE0AfOAbNQm2H9lqp8u/2016-06-15/23/5--1 2 3 4 5 5.5 7.5 8104.244.66.59 0 Array
+(
+    [counselor_id] => 5
+    [date] => 2016-06-17
+    [time] => 23
+    [token] => tok_18N6AWE0AfOAbNQmYyjp9dfC
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => -5
+)
+/tok_18N6AWE0AfOAbNQmYyjp9dfC/2016-06-17/23/5--1 2 3 4 5 5.5 7.5 8110.67.254.86 0 Array
+(
+    [counselor_id] => 4
+    [date] => 2016-06-18
+    [time] => 22
+    [token] => tok_18NTGSE0AfOAbNQmrKnhmTSC
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 9
+)
+/tok_18NTGSE0AfOAbNQmrKnhmTSC/2016-06-18/22/4--1 2 3 4 5 5.5 7.5 8154.5.108.135 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-06-25
+    [time] => 13
+    [token] => tok_18NuLBE0AfOAbNQmEjPsrwub
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => -8
+)
+/tok_18NuLBE0AfOAbNQmEjPsrwub/2016-06-25/13/6--1 2 3 4 5 5.5 7.5 824.34.125.158 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-06-21
+    [time] => 23
+    [token] => tok_18OKjdE0AfOAbNQmuxYQQo3g
+    [news] => true
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => -5
+)
+/tok_18OKjdE0AfOAbNQmuxYQQo3g/2016-06-21/23/6--1 2 3 4 5 5.5 7.5 845.127.92.120 0 Array
+(
+    [counselor_id] => 8
+    [date] => 2016-06-22
+    [time] => 22
+    [token] => atok_18OrUUE0AfOAbNQmWAv1Je7Y
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/atok_18OrUUE0AfOAbNQmWAv1Je7Y/2016-06-22/22/8--1 2 3 4 5 5.5 7.5 847.19.142.210 0 Array
+(
+    [counselor_id] => 5
+    [date] => 2016-06-23
+    [time] => 22
+    [token] => tok_18OudFE0AfOAbNQm21Yc20pS
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => -5
+)
+/tok_18OudFE0AfOAbNQm21Yc20pS/2016-06-23/22/5--1 2 3 4 5 5.5 7.5 842.61.200.141 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-06-26
+    [time] => 22
+    [token] => tok_18QSSNE0AfOAbNQm7LLv5kj3
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18QSSNE0AfOAbNQm7LLv5kj3/2016-06-26/22/6--1 2 3 4 5 5.5 7.5 8144.82.160.231 0 Array
+(
+    [counselor_id] => 8
+    [date] => 2016-06-30
+    [time] => 20
+    [token] => tok_18Rl9IE0AfOAbNQm3pdddd4W
+    [news] => true
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 0
+)
+/tok_18Rl9IE0AfOAbNQm3pdddd4W/2016-06-30/20/8--1 2 3 4 5 5.5 7.5 8101.127.185.59 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-07-01
+    [time] => 11
+    [token] => atok_18S1sAE0AfOAbNQm3xQmx3vJ
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/atok_18S1sAE0AfOAbNQm3xQmx3vJ/2016-07-01/11/6--1 2 3 4 5 5.5 7.5 860.251.132.249 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-07-03
+    [time] => 21
+    [token] => tok_18SOCZE0AfOAbNQmMv3K9y4o
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18SOCZE0AfOAbNQmMv3K9y4o/2016-07-03/21/6--1 2 3 4 5 5.5 7.5 814.155.24.87 0 Array
+(
+    [counselor_id] => 12
+    [date] => 2016-07-04
+    [time] => 15
+    [token] => atok_18SjnpE0AfOAbNQm4JHLo16f
+    [news] => true
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/atok_18SjnpE0AfOAbNQm4JHLo16f/2016-07-04/15/12--1 2 3 4 5 5.5 7.5 8223.138.105.109 0 Array
+(
+    [counselor_id] => 5
+    [date] => 2016-07-05
+    [time] => 23
+    [token] => tok_18Ss0yE0AfOAbNQm1jR1bA5D
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18Ss0yE0AfOAbNQm1jR1bA5D/2016-07-05/23/5--1 2 3 4 5 5.5 7.5 8123.195.140.129 0 Array
+(
+    [counselor_id] => 12
+    [date] => 2016-07-07
+    [time] => 15
+    [token] => tok_18UEWdE0AfOAbNQmYtraxKL7
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18UEWdE0AfOAbNQmYtraxKL7/2016-07-07/15/12--1 2 3 4 5 5.5 7.5 869.181.24.92 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-07-11
+    [time] => 11
+    [token] => tok_18VHt8E0AfOAbNQm1yAfC7OB
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => -8
+)
+/tok_18VHt8E0AfOAbNQm1yAfC7OB/2016-07-11/11/6--1 2 3 4 5 5.5 7.5 8211.75.130.199 0 Array
+(
+    [counselor_id] => 12
+    [date] => 2016-07-19
+    [time] => 16
+    [token] => tok_18X5hHE0AfOAbNQmFzw50SHz
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18X5hHE0AfOAbNQmFzw50SHz/2016-07-19/16/12--1 2 3 4 5 5.5 7.5 8220.255.20.164 0 Array
+(
+    [counselor_id] => 12
+    [date] => 2016-07-15
+    [time] => 17
+    [token] => tok_18X6n1E0AfOAbNQmyaz2ZCJD
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18X6n1E0AfOAbNQmyaz2ZCJD/2016-07-15/17/12--1 2 3 4 5 5.5 7.5 8203.100.2.114 0 Array
+(
+    [counselor_id] => 8
+    [date] => 2016-07-20
+    [time] => 20
+    [token] => tok_18YoH1E0AfOAbNQmeZejwOq6
+    [news] => true
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 10
+)
+/tok_18YoH1E0AfOAbNQmeZejwOq6/2016-07-20/20/8--1 2 3 4 5 5.5 7.5 845.32.14.164 0 Array
+(
+    [counselor_id] => 8
+    [date] => 2016-07-26
+    [time] => 22
+    [token] => atok_18atpHE0AfOAbNQmq8Yj68pb
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/atok_18atpHE0AfOAbNQmq8Yj68pb/2016-07-26/22/8--1 2 3 4 5 5.5 7.5 8131.179.14.48 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-07-28
+    [time] => 15
+    [token] => tok_18beK9E0AfOAbNQmk6KfnTqI
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => -8
+)
+/tok_18beK9E0AfOAbNQmk6KfnTqI/2016-07-28/15/6--1 2 3 4 5 5.5 7.5 8223.140.204.218 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-08-01
+    [time] => 23
+    [token] => tok_18dKRmE0AfOAbNQmJVukpvwy
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18dKRmE0AfOAbNQmJVukpvwy/2016-08-01/23/6--1 2 3 4 5 5.5 7.5 8185.24.121.207 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-08-04
+    [time] => 10
+    [token] => atok_18ePoTE0AfOAbNQmtBN4WRMu
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 0
+)
+/atok_18ePoTE0AfOAbNQmtBN4WRMu/2016-08-04/10/6--1 2 3 4 5 5.5 7.5 8129.252.69.147 0 Array
+(
+    [counselor_id] => 61
+    [date] => 2016-08-05
+    [time] => 10
+    [token] => tok_18eVEcE0AfOAbNQmHPxHkaH4
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => -5
+)
+/tok_18eVEcE0AfOAbNQmHPxHkaH4/2016-08-05/10/61--1 2 3 4 5 5.5 7.5 8180.217.21.86 0 Array
+(
+    [counselor_id] => 61
+    [date] => 2016-08-05
+    [time] => 15
+    [token] => tok_18eVU0E0AfOAbNQmGlKp8mfG
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18eVU0E0AfOAbNQmGlKp8mfG/2016-08-05/15/61--1 2 3 4 5 5.5 7.5 860.251.55.78 0 Array
+(
+    [counselor_id] => 5
+    [date] => 2016-08-05
+    [time] => 23
+    [token] => tok_18efydE0AfOAbNQmK0XixeDw
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 2000
+            [usd] => 6000
+        )
+
+    [timezone] => 8
+)
+/tok_18efydE0AfOAbNQmK0XixeDw/2016-08-05/23/5--1 2 3 4 5 5.5 7.5 8124.12.212.81 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-08-05
+    [time] => 14
+    [token] => tok_18eprBE0AfOAbNQm00Yuuzpf
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18eprBE0AfOAbNQm00Yuuzpf/2016-08-05/14/6--1 2 3 4 5 5.5 7.5 839.8.70.19 0 Array
+(
+    [counselor_id] => 61
+    [date] => 2016-08-08
+    [time] => 13
+    [token] => tok_18fIRfE0AfOAbNQmmkksk0oq
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18fIRfE0AfOAbNQmmkksk0oq/2016-08-08/13/61--1 2 3 4 5 5.5 7.5 814.202.116.153 0 Array
+(
+    [counselor_id] => 12
+    [date] => 2016-08-18
+    [time] => 16
+    [token] => tok_18iFgdE0AfOAbNQmlDCDjuSE
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 10
+)
+/tok_18iFgdE0AfOAbNQmlDCDjuSE/2016-08-18/16/12--1 2 3 4 5 5.5 7.5 861.216.161.201 0 Array
+(
+    [counselor_id] => 5
+    [date] => 2016-08-18
+    [time] => 22
+    [token] => atok_18jOSAE0AfOAbNQmbdGe6IE0
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/atok_18jOSAE0AfOAbNQmbdGe6IE0/2016-08-18/22/5--1 2 3 4 5 5.5 6 
