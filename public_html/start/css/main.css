@@ -1426,7 +1426,9 @@ input {
     font-size: 1rem; }
 
 .side-hint {
-  position: absolute;
+  color: #F99891;
+  
+  /*position: absolute;
   color: #F99891;
   font-size: 16px;
   font-size: 1rem;
@@ -1435,9 +1437,9 @@ input {
   width: 150px;
   left: 950px;
   background: url("../images/hint-arrow.png") 0% 2px/20px 20px no-repeat;
-  display: none; }
+  display: none;*/ }
   .side-hint.active {
-    /*display: inline;*/ } /*turn off to make the red reminder words disappear*/
+    display: inline; } /*turn off to make the red reminder words disappear*/
   .side-hint.step2-book-item-side-hint {
     top: 150px; }
   .side-hint.step2-book-time-side-hint {
