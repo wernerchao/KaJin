@@ -1427,6 +1427,7 @@ input {
 
 .side-hint {
   color: #F99891;
+  display: none;
   
   /*position: absolute;
   color: #F99891;
