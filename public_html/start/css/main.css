@@ -1437,7 +1437,7 @@ input {
   background: url("../images/hint-arrow.png") 0% 2px/20px 20px no-repeat;
   display: none; }
   .side-hint.active {
-    display: inline; }
+    /*display: inline;*/ } /*turn off to make the red reminder words disappear*/
   .side-hint.step2-book-item-side-hint {
     top: 150px; }
   .side-hint.step2-book-time-side-hint {
