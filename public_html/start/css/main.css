@@ -1829,6 +1829,35 @@ select {
     opacity: 1;
     animation: fade 5s; }
 
+  .fadingBox {
+      text-align: center;
+      border: 1px solid rgba(255, 0, 0, 0);
+      border-radius: 10px;
+  }
+
+  .fadingBox.active {
+      animation: borderFadeIn 5s;
+      animation: borderFadeOut 5s;
+  }
+
+  @keyframes borderFadeIn {
+      0% {
+          border: 1px solid rgba(255, 0, 0, 0); }
+      50% {
+          border: 1px solid rgba(255, 0, 0, 0.5); }
+      100% {
+          border: 1px solid rgba(255, 0, 0, 1); } 
+  }
+
+  @keyframes borderFadeOut {
+    0% {
+        border: 1px solid rgba(255, 0, 0, 1); }
+    50% {
+        border: 1px solid rgba(255, 0, 0, 0.5); }
+    100% {
+        border: 1px solid rgba(255, 0, 0, 0); }       
+  }
+
 @keyframes fade {
   0% {
     opacity: 0; }
@@ -1838,3 +1867,4 @@ select {
     opacity: 1; }
   100% {
     opacity: 0; } }
+

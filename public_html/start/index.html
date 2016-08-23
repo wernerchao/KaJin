@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="./css/site_global.css">
         <link rel="stylesheet" type="text/css" href="./css/master_main1.css">
         <link rel="stylesheet" type="text/css" href="./css/main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     </head>
 
     <body>
@@ -198,7 +198,7 @@
                         <!--<div class="side-hint step2-book-time-side-hint">選擇自己的時區，並點擊時間方框選擇預約時間，若無可預約時間，可將畫面上滑更換老師</div>-->
                         <div class="book-title">
                             <div class="icon"></div>
-                            <div class="word side-hint step2-book-item-side-hint">預約項目</div>
+                            <div id="fadingBox" class="word fadingBox">預約項目</div>
                         </div>
                         <div class="available-teacher">
                             <div class="prev-teacher-btn"></div>
@@ -245,8 +245,8 @@
                             </div>
                         </div>
                         <div class="book-title">
-                            <div class="icon"></div>
-                            <div class="word">預約時間</div>
+                        <div class="icon"></div>
+                        <div class="word fadingBox">預約時間</div>
                         </div>
                         <div class="grey-container2">
                             <div class="title">
@@ -404,7 +404,7 @@
                         <div class="side-hint step3-other-side-hint">請閱讀諮詢同意書，喜歡我們的服務也歡迎訂閱電子報</div>-->
                         <div class="book-title">
                             <div class="icon"></div>
-                            <div class="word">預約項目</div>
+                            <div class="word fadingBox">預約項目</div>
                         </div>
                         <div class="grey-container1">
                             <div class="title">
@@ -435,7 +435,7 @@
                         </div>
                         <div class="book-title">
                             <div class="icon"></div>
-                            <div class="word">預約項目</div>
+                            <div class="word fadingBox">預約時間</div>
                         </div>
                         <div class="grey-container3">
                             <div class="confirm-time">預約諮詢時間</div>
@@ -444,7 +444,7 @@
                         </div>
                         <div class="book-title">
                             <div class="icon"></div>
-                            <div class="word">付款方式</div>
+                            <div class="word fadingBox">付款方式</div>
                         </div>
                         <div class="grey-container4">
                             <p>Kajin Health 提供兩種付款方式，分別是<span class="green">信用卡付款</span>和<span class="green">支付寶付款</span>。</p>
@@ -459,7 +459,7 @@
                         </div>
                         <div class="book-title">
                             <div class="icon"></div>
-                            <div class="word">諮詢同意書&電子報</div>
+                            <div class="word fadingBox">諮詢同意書&電子報</div>
                         </div>
                         <div class="grey-container4">
                             <div class="check-line agreement-check">
@@ -578,6 +578,7 @@
                     font-size: 15px;
                     font-size: 0.9375rem;
                 }
+
             </style>
         </div>
         <div class="modal"></div>
@@ -589,17 +590,8 @@
         <script src="./js/moment.js"></script>
         <script src="./js/scrollreveal.min.js"></script>
         <script src="./js/main.js"></script>
+        <script src="./js/reminderBox.js"></script>
         <script>
-            var i=0;
-            var ID;
-            ID = setInterval(myFunc, 1000);
-                function reminderBox() {
-                $(".word").fadeIn();
-                $(".word").fadeOut("slow");
-                i++;
-                if (i==3) {clearInterval(ID);}
-            }
-        
         // Hotjar Tracking Code for https://www.kajinhealth.com/start
            (function(h,o,t,j,a,r){
                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -608,7 +600,7 @@
                r=o.createElement('script');r.async=1;
                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
                a.appendChild(r);
-           })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+           })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');   
 
            function validNumber(e, pnumber, digit, target) {
                 var re = new RegExp("^\\d{0," + digit + "}$");
