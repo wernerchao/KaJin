@@ -6,6 +6,7 @@
 
         $('.teacherFadingBox').fadeIn();
         $('.country-discription').fadeIn();
+        $('.countryRadio').fadeIn();
 
         /*function fade() {
             if (counter == 2) {

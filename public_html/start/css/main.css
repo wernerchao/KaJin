@@ -1851,17 +1851,22 @@ select {
   }
 
   .teacherFadingBox.active {
-      animation: borderFadeIn 3s;
+      animation: borderContentFadeIn 3s;
       animation: borderFadeOut 3s;
       border: 2px solid rgba(230, 230, 230, 1);
   }
 
   .country-discription.active {
-    animation: borderFadeIn 3s;
-      animation: borderFadeOut 3s;
+    animation: borderContentFadeIn 3s;
+    animation: borderFadeOut 3s;
   }
 
-  @keyframes borderFadeIn {
+  .countryRadio.active {
+    animation: borderFadeIn 3s;
+    animation: borderFadeOut 3s;
+  }
+
+  @keyframes borderContentFadeIn {
       0% {
           border: 2px solid rgba(255, 0, 0, 0.2);
           background-color: rgba(255, 0, 0, 0.1);
@@ -1878,13 +1883,31 @@ select {
           } 
   }
 
+  @keyframes borderFadeIn {
+      0% {
+          border: 2px solid rgba(255, 0, 0, 0.2);
+          }
+
+      50% {
+          border: 2px solid rgba(255, 0, 0, 0.5);
+          }
+
+      100% {
+          border: 2px solid rgba(255, 0, 0, 0.8);
+          } 
+  }
+
   @keyframes borderFadeOut {
     0% {
         border: 2px solid rgba(255, 0, 0, 0.8); }
-    50% {
+    25% {
         border: 2px solid rgba(255, 0, 0, 0.5); }
+    50% {
+        border: 2px solid rgba(255, 0, 0, 0.3); }
+    75% {
+        border: 2px solid rgba(230, 230, 230, 0.3); }
     100% {
-        border: 2px solid rgba(230, 230, 230, 1); }       
+        border: 2px solid rgba(230, 230, 230, 0.5); }       
   }
 
 @keyframes fade {
