@@ -1385,7 +1385,7 @@ input {
     font-size: 15px;
     font-size: 0.9375rem; }
 
-.teacher-slide-btn, .prev-teacher-btn, .next-teacher-btn {
+.teacher-slide-btn {
   box-sizing: border-box;
   width: 45px;
   height: 246px;
@@ -1394,6 +1394,18 @@ input {
   border: 2px solid #E6E6E6;
   border-radius: 10px;
   cursor: pointer; }
+
+  .prev-teacher-btn, .next-teacher-btn {
+  box-sizing: border-box;
+  width: 45px;
+  height: 246px;
+  margin: 30px 0;
+  float: left;
+
+  border-radius: 10px;
+  cursor: pointer; }
+
+
   .teacher-slide-btn:hover, .prev-teacher-btn:hover, .next-teacher-btn:hover {
     background-color: #E6E6E6; }
 
@@ -1829,33 +1841,50 @@ select {
     opacity: 1;
     animation: fade 5s; }
 
-  .fadingBox {
-      text-align: center;
-      border: 1px solid rgba(255, 0, 0, 0);
-      border-radius: 10px;
+
+  .teacherFadingBox {
+    box-sizing: border-box;
+    width: 41px;
+    height: 242px;
+    border-radius: 10px;
+    
   }
 
-  .fadingBox.active {
-      animation: borderFadeIn 5s;
-      animation: borderFadeOut 5s;
+  .teacherFadingBox.active {
+      animation: borderFadeIn 3s;
+      animation: borderFadeOut 3s;
+      border: 2px solid rgba(230, 230, 230, 1);
+  }
+
+  .country-discription.active {
+    animation: borderFadeIn 3s;
+      animation: borderFadeOut 3s;
   }
 
   @keyframes borderFadeIn {
       0% {
-          border: 1px solid rgba(255, 0, 0, 0); }
+          border: 2px solid rgba(255, 0, 0, 0.2);
+          background-color: rgba(255, 0, 0, 0.1);
+          }
+
       50% {
-          border: 1px solid rgba(255, 0, 0, 0.5); }
+          border: 2px solid rgba(255, 0, 0, 0.5);
+          background-color: rgba(255, 0, 0, 0.2);
+          }
+
       100% {
-          border: 1px solid rgba(255, 0, 0, 1); } 
+          border: 2px solid rgba(255, 0, 0, 0.8);
+          background-color: rgba(255, 0, 0, 0);
+          } 
   }
 
   @keyframes borderFadeOut {
     0% {
-        border: 1px solid rgba(255, 0, 0, 1); }
+        border: 2px solid rgba(255, 0, 0, 0.8); }
     50% {
-        border: 1px solid rgba(255, 0, 0, 0.5); }
+        border: 2px solid rgba(255, 0, 0, 0.5); }
     100% {
-        border: 1px solid rgba(255, 0, 0, 0); }       
+        border: 2px solid rgba(230, 230, 230, 1); }       
   }
 
 @keyframes fade {
