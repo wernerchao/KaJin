@@ -195,10 +195,15 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="info-block2">
-                            <div class="title">諮詢師評價</div>
-                            <div class='rating r1'>老師能理解我的問題</div><span></span><br>
-                            <div class='rating r2'>老師對我的情況有幫助</div><span></span><br>
-                            <div class='rating r3'>值不值得推薦</div><span></span><br>
+                            <div class="title">諮詢師評價
+                                <span>(5/5)</span> <!--請在這裡加入php來設置老師的評價分數-->
+                            </div>
+                            <div class='rating r1'>老師能理解我的問題</div>
+                            <span></span><br> <!--設定在rating.js，星星請裝在span裡面-->
+                            <div class='rating r2'>老師對我的情況有幫助</div>
+                            <span></span><br>
+                            <div class='rating r3'>值不值得推薦</div>
+                            <span></span><br>
                         </div>
                         <div class="info-block2">
                             <div class="title">專業執照</div>
