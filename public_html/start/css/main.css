@@ -1851,19 +1851,19 @@ select {
   }
 
   .teacherFadingBox.active {
-      animation: borderContentFadeIn 3s;
-      animation: borderFadeOut 3s;
+      animation: borderContentFadeIn 5s;
+      animation: borderFadeOut 5s;
       border: 2px solid rgba(230, 230, 230, 1);
   }
 
   .country-discription.active {
-    animation: borderContentFadeIn 3s;
-    animation: borderFadeOut 3s;
+    animation: borderContentFadeIn 5s;
+    animation: borderFadeOut 5s;
   }
 
   .countryRadio.active {
-    animation: borderFadeIn 3s;
-    animation: borderFadeOut 3s;
+    animation: borderFadeIn 5s;
+    animation: borderFadeOut 5s;
   }
 
   @keyframes borderContentFadeIn {

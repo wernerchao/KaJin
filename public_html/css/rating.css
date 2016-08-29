@@ -1,0 +1,10 @@
+.fa, .fa-star { /*filled star*/
+                font-size: 24px;
+                color: #67C4CB;
+                cursor: pointer;
+            }
+
+.fa-star-o { /*empty star*/
+                display: inline-block;
+                cursor: pointer;
+            }

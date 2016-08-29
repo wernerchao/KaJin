@@ -32,6 +32,9 @@
     <link rel="shortcut icon" href="images/favicon.ico?crc=426821467">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/profile.css">
+    <link rel="stylesheet" type="text/css" href="./css/rating.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.6.3/css/font-awesome.min.css">
     <title>Kajin Health 開心心理｜心理諮詢師</title>
 </head>
 
@@ -192,6 +195,12 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="info-block2">
+                            <div class="title">諮詢師評價</div>
+                            <div class='rating r1'>老師能理解我的問題</div><span></span><br>
+                            <div class='rating r2'>老師對我的情況有幫助</div><span></span><br>
+                            <div class='rating r3'>值不值得推薦</div><span></span><br>
+                        </div>
+                        <div class="info-block2">
                             <div class="title">專業執照</div>
                             <?php
                                 while ($cert = mysqli_fetch_assoc($certificate)) {
@@ -295,5 +304,6 @@
 <script src="./js/jquery-2.1.4.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/profile.js"></script>
+<script src="./js/rating.js"></script>
 
 </html>
