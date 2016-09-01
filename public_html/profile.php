@@ -127,6 +127,16 @@
                                     </form>
                                 </div>
                             </div>
+                            <div class="qa">
+                                <div class="block-ask">
+                                    <div class="photo"></div>
+                                    <form class="reply-form" method="POST" action='./ajax_api_add_reply.php'>
+                                        <input type="text" placeholder="我想問老師……" name="ask">
+                                        <input type="hidden" id="q_Id" name="q_Id" value="0">
+                                        <input type="hidden" id="c_Id" name="c_Id" value=<?php echo $_GET['counselor']?> >
+                                    </form>
+                                </div>
+                            </div>
                             <?php
                                 $qid = 0;
                                     $rep = mysqli_fetch_assoc($reply);
