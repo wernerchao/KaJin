@@ -194,7 +194,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="info-block2">
+                        <div class="info-block2 ratingBox">
                             <div class="title">諮詢師評價
                                 <span>(5/5)</span> <!--請在這裡加入php來設置老師的評價分數-->
                             </div>

@@ -1,10 +1,18 @@
-.fa, .fa-star { /*filled star*/
-                font-size: 24px;
+span i.fa, span i.fa-star, span i.fa-star-o { /*filled star*/
+                font-size: 22px;
                 color: #67C4CB;
                 cursor: pointer;
+                letter-spacing: 4px;
             }
 
-.fa-star-o { /*empty star*/
-                display: inline-block;
-                cursor: pointer;
-            }
+.ratingBox {
+    height: 326px;
+}
+
+.r1 {
+    margin-top: 30px;
+}
+
+.r2, .r3 {
+    margin-top: 20px;
+}
