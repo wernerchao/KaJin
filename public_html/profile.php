@@ -36,6 +36,83 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/font-awesome-4.6.3/css/font-awesome.min.css">
     <title>Kajin Health 開心心理｜心理諮詢師</title>
+    <style>
+        .userPhoto {
+            width: 15%;
+            order: 0;
+            float: left;
+            margin: 15px 1% 0 15px;
+        }
+        .commentContent {
+            width: 70%;
+            order: 1;
+            float: right;
+            margin: 15px 5% 0 0;
+            line-height: 2.25em;
+        }
+        .commentTitle {
+            text-align: left;
+            font-size: 20px;
+        }
+        .commentTime {
+            width: 100%;
+            border-bottom: 1px solid;
+            text-align: left;
+            font-size: 12px;
+            line-height: 1em;
+            padding: 0 0 10px 0;
+        }
+
+        .ratingSection {
+            padding: 10px 0;
+        }
+
+        .commentContent .wrapper .r1, .commentContent .wrapper .r2, .commentContent .wrapper .r3 {
+            float: left;
+            width: 60%;
+            text-align: left;
+            margin-top: 0;
+        }
+
+        .commentContent .wrapper span.stars {
+            float: right;
+            width: 40%;
+            text-align: right;
+        }
+
+        .commentContent .wrapper span i.fa, .commentContent .wrapper span i.fa-star {
+            font-size: 18px;
+        }
+
+        .commentFeedback {
+            width: 100%;
+            border-top: 1px solid;
+            text-align: justify;
+            display: inline-block;
+            padding: 10px 0 0 0;
+        }
+
+        @media screen and (max-width: 500px) {
+            .commentContent .wrapper span.stars {
+                float: left;
+                width: 100%;
+                text-align: left;
+            }
+            .commentContent .wrapper .r1, .commentContent .wrapper .r2, .commentContent .wrapper .r3 {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 501px) {
+            .userPhoto img {
+                width: 75%;
+            }
+            .commentContent {
+                width: 75%;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
@@ -116,8 +193,8 @@
                         }
                                     ?>
                         <div class="info-block2" id="qa-big-block" style="overflow-y:scroll;max-height:1000px;background:#FAFAFA;">
-                            <div class="title" style="background:white;">相關問答</div>
-                            <div class="qa">
+                            <div class="title" style="background:white;">相關評論</div>
+                            <!--<div class="qa">
                                 <div class="block-ask">
                                     <div class="photo"></div>
                                     <form class="reply-form" method="POST" action='./ajax_api_add_reply.php'>
@@ -126,23 +203,40 @@
                                         <input type="hidden" id="c_Id" name="c_Id" value=<?php echo $_GET['counselor']?> >
                                     </form>
                                 </div>
-                            </div>
-                            <div class="qa">
-                                <div class="block-ask">
-                                    <div class="photo"></div>
-                                    <form class="reply-form" method="POST" action='./ajax_api_add_reply.php'>
-                                        <input type="text" placeholder="我想問老師……" name="ask">
-                                        <input type="hidden" id="q_Id" name="q_Id" value="0">
-                                        <input type="hidden" id="c_Id" name="c_Id" value=<?php echo $_GET['counselor']?> >
-                                    </form>
+                            </div>-->
+
+                                <div class="userPhoto"><img src="images/fake_pic.jpg" alt="評論者H的頭像"></div>
+                                <div class="commentContent">
+                                    <div class="commentTitle">hky660234</div>
+                                    <div class="commentTime">於 2016.8.20 15:30 評論諮詢師</div>
+                                    <div class="ratingSection">
+                                        <div class="wrapper">
+                                            <div class="r1">老師能理我的問題解</div>
+                                            <span class="stars">
+                                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                            </span><br/>
+                                            <div class="r2">老師對我的情況有幫助</div>
+                                            <span class="stars">
+                                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                            </span><br/>
+                                            <div class="r3">值不值得推薦</div>
+                                            <span class="stars">
+                                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                            </span><br/>
+                                        </div>
+                                    </div>
+
+                                <div class="commentFeedback">
+                                    很感謝老師的幫助。雖然才使用了兩次，已經可以感到自己在進步。一些問題以前總是用逃避的方式去面對，現在敢正面解決問題，覺得對自己是很大的幫助。
                                 </div>
                             </div>
                             <?php
-                                $qid = 0;
+                                $qid = 0;   
                                     $rep = mysqli_fetch_assoc($reply);
                                     while ($rep) {
                                         $qid = $rep['q_Id'];
                                         ?>
+                                        
                             <div class="qa">
                                 <div class="small-qa">
                                     <div class="photo"></div>
