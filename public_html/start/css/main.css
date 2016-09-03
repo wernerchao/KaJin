@@ -1385,7 +1385,7 @@ input {
     font-size: 15px;
     font-size: 0.9375rem; }
 
-.teacher-slide-btn, .prev-teacher-btn, .next-teacher-btn {
+.teacher-slide-btn {
   box-sizing: border-box;
   width: 45px;
   height: 246px;
@@ -1394,6 +1394,18 @@ input {
   border: 2px solid #E6E6E6;
   border-radius: 10px;
   cursor: pointer; }
+
+  .prev-teacher-btn, .next-teacher-btn {
+  box-sizing: border-box;
+  width: 45px;
+  height: 246px;
+  margin: 30px 0;
+  float: left;
+
+  border-radius: 10px;
+  cursor: pointer; }
+
+
   .teacher-slide-btn:hover, .prev-teacher-btn:hover, .next-teacher-btn:hover {
     background-color: #E6E6E6; }
 
@@ -1426,7 +1438,10 @@ input {
     font-size: 1rem; }
 
 .side-hint {
-  position: absolute;
+  color: #F99891;
+  display: none;
+  
+  /*position: absolute;
   color: #F99891;
   font-size: 16px;
   font-size: 1rem;
@@ -1435,9 +1450,9 @@ input {
   width: 150px;
   left: 950px;
   background: url("../images/hint-arrow.png") 0% 2px/20px 20px no-repeat;
-  display: none; }
+  display: none;*/ }
   .side-hint.active {
-    display: inline; }
+    display: inline; } /*turn off to make the red reminder words disappear*/
   .side-hint.step2-book-item-side-hint {
     top: 150px; }
   .side-hint.step2-book-time-side-hint {
@@ -1826,6 +1841,75 @@ select {
     opacity: 1;
     animation: fade 5s; }
 
+
+  .teacherFadingBox {
+    box-sizing: border-box;
+    width: 41px;
+    height: 242px;
+    border-radius: 10px;
+    
+  }
+
+  .teacherFadingBox.active {
+      animation: borderContentFadeIn 5s;
+      animation: borderFadeOut 5s;
+      border: 2px solid rgba(230, 230, 230, 1);
+  }
+
+  .country-discription.active {
+    animation: borderContentFadeIn 5s;
+    animation: borderFadeOut 5s;
+  }
+
+  .countryRadio.active {
+    animation: borderFadeIn 5s;
+    animation: borderFadeOut 5s;
+  }
+
+  @keyframes borderContentFadeIn {
+      0% {
+          border: 2px solid rgba(255, 0, 0, 0.2);
+          background-color: rgba(255, 0, 0, 0.1);
+          }
+
+      50% {
+          border: 2px solid rgba(255, 0, 0, 0.5);
+          background-color: rgba(255, 0, 0, 0.2);
+          }
+
+      100% {
+          border: 2px solid rgba(255, 0, 0, 0.8);
+          background-color: rgba(255, 0, 0, 0);
+          } 
+  }
+
+  @keyframes borderFadeIn {
+      0% {
+          border: 2px solid rgba(255, 0, 0, 0.2);
+          }
+
+      50% {
+          border: 2px solid rgba(255, 0, 0, 0.5);
+          }
+
+      100% {
+          border: 2px solid rgba(255, 0, 0, 0.8);
+          } 
+  }
+
+  @keyframes borderFadeOut {
+    0% {
+        border: 2px solid rgba(255, 0, 0, 0.8); }
+    25% {
+        border: 2px solid rgba(255, 0, 0, 0.5); }
+    50% {
+        border: 2px solid rgba(255, 0, 0, 0.3); }
+    75% {
+        border: 2px solid rgba(230, 230, 230, 0.3); }
+    100% {
+        border: 2px solid rgba(230, 230, 230, 0.5); }       
+  }
+
 @keyframes fade {
   0% {
     opacity: 0; }
@@ -1835,3 +1919,4 @@ select {
     opacity: 1; }
   100% {
     opacity: 0; } }
+

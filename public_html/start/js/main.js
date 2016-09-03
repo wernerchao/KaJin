@@ -326,7 +326,7 @@
 					'<div class="col1 col">' +
 					'<div class="photo"></div>' +
 					'<div class="name-block">' +
-					'<div class="name">' + teacherinfo[value]['name_ch'] + '</div>' +
+					'<div class="name">' + teacherinfo[value]['name_ch'] + '</div><br/>' +
 					'<div class="profession">心理諮詢師</div>' +
 					'</div>' +
 					'</div>' +

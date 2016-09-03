@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="./css/site_global.css">
         <link rel="stylesheet" type="text/css" href="./css/master_main1.css">
         <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     </head>
 
     <body>
@@ -193,14 +194,14 @@
                 </div>
                 <div id="colelem2" class="colelem">
                     <div class="container">
-                        <div class="side-hint step2-book-item-side-hint">點擊左右箭頭鈕可以查看不同老師的時間表</div>
-                        <div class="side-hint step2-book-time-side-hint">選擇自己的時區，並點擊時間方框選擇預約時間，若無可預約時間，可將畫面上滑更換老師</div>
+                        <!--<div class="side-hint step2-book-item-side-hint">點擊左右箭頭鈕可以查看不同老師的時間表</div>-->
+                        <!--<div class="side-hint step2-book-time-side-hint">選擇自己的時區，並點擊時間方框選擇預約時間，若無可預約時間，可將畫面上滑更換老師</div>-->
                         <div class="book-title">
                             <div class="icon"></div>
                             <div class="word">預約項目</div>
                         </div>
                         <div class="available-teacher">
-                            <div class="prev-teacher-btn"></div>
+                            <div class="prev-teacher-btn"><div class='teacherFadingBox'></div></div>
                             <div class="choose-teacher-slide">
                                 <div class="grey-container1">
                                     <div class="title">
@@ -215,6 +216,7 @@
                                             <div class="photo"></div>
                                             <div class="name-block">
                                                 <div class="name"></div>
+                                                <br/>
                                                 <div class="profession"></div>
                                             </div>
                                         </div>
@@ -230,22 +232,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="next-teacher-btn"></div>
+                            <div class="next-teacher-btn"><div class="teacherFadingBox"></div></div>
                         </div>
                         <div class="where-am-i">
                             <div class="country-option">
-                                <input id="taiwan-radio" type="radio" name="country-radio" checked><span></span>
+                                <input id="taiwan-radio" type="radio" name="country-radio" checked><span class="countryRadio"></span>
                                 <label for="taiwan-radio" class="country-discription">我在台灣</label>
                             </div>
                             <div class="country-option">
-                                <input id="abroad-radio" type="radio" name="country-radio" checked><span></span>
+                                <input id="abroad-radio" type="radio" name="country-radio" checked><span class="countryRadio"></span>
                                 <label for="abroad-radio" class="country-discription">我在</label>
                                 <select disabled class="choose-abroad"></select>
                             </div>
                         </div>
                         <div class="book-title">
-                            <div class="icon"></div>
-                            <div class="word">預約時間</div>
+                        <div class="icon"></div>
+                        <div class="word">預約時間</div>
                         </div>
                         <div class="grey-container2">
                             <div class="title">
@@ -397,10 +399,10 @@
                 </div>
                 <div id="colelem2" class="colelem">
                     <div class="container">
-                        <div class="side-hint step3-book-item-side-hint">確認您的預約項目</div>
+                        <!--<div class="side-hint step3-book-item-side-hint">確認您的預約項目</div>
                         <div class="side-hint step3-book-time-side-hint">確認您的預約時間</div>
                         <div class="side-hint step3-payment-side-hint">Kajin Health提供兩種付款方式</div>
-                        <div class="side-hint step3-other-side-hint">請閱讀諮詢同意書，喜歡我們的服務也歡迎訂閱電子報</div>
+                        <div class="side-hint step3-other-side-hint">請閱讀諮詢同意書，喜歡我們的服務也歡迎訂閱電子報</div>-->
                         <div class="book-title">
                             <div class="icon"></div>
                             <div class="word">預約項目</div>
@@ -434,7 +436,7 @@
                         </div>
                         <div class="book-title">
                             <div class="icon"></div>
-                            <div class="word">預約項目</div>
+                            <div class="word fadingBox">預約時間</div>
                         </div>
                         <div class="grey-container3">
                             <div class="confirm-time">預約諮詢時間</div>
@@ -443,7 +445,7 @@
                         </div>
                         <div class="book-title">
                             <div class="icon"></div>
-                            <div class="word">付款方式</div>
+                            <div class="word fadingBox">付款方式</div>
                         </div>
                         <div class="grey-container4">
                             <p>Kajin Health 提供兩種付款方式，分別是<span class="green">信用卡付款</span>和<span class="green">支付寶付款</span>。</p>
@@ -458,7 +460,7 @@
                         </div>
                         <div class="book-title">
                             <div class="icon"></div>
-                            <div class="word">諮詢同意書&電子報</div>
+                            <div class="word fadingBox">諮詢同意書&電子報</div>
                         </div>
                         <div class="grey-container4">
                             <div class="check-line agreement-check">
@@ -577,6 +579,7 @@
                     font-size: 15px;
                     font-size: 0.9375rem;
                 }
+
             </style>
         </div>
         <div class="modal"></div>
@@ -588,6 +591,7 @@
         <script src="./js/moment.js"></script>
         <script src="./js/scrollreveal.min.js"></script>
         <script src="./js/main.js"></script>
+        <script src="./js/reminderBox.js"></script>
         <script>
         // Hotjar Tracking Code for https://www.kajinhealth.com/start
            (function(h,o,t,j,a,r){
@@ -597,7 +601,7 @@
                r=o.createElement('script');r.async=1;
                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
                a.appendChild(r);
-           })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+           })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');   
 
            function validNumber(e, pnumber, digit, target) {
                 var re = new RegExp("^\\d{0," + digit + "}$");
@@ -611,7 +615,7 @@
                 // event.returnValue = "所有已填寫的資料都會被清除";
             // }
         </script>
-</script>
+
         <!-- Google Tag Manager -->
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WFLZTQ"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
