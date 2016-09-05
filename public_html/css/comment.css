@@ -1,0 +1,74 @@
+.userPhoto {
+            width: 15%;
+            order: 0;
+            float: left;
+            margin: 15px 1% 0 15px;
+        }
+        .commentContent {
+            width: 70%;
+            order: 1;
+            float: right;
+            margin: 15px 5% 0 0;
+            line-height: 2.25em;
+        }
+        .commentTitle {
+            text-align: left;
+            font-size: 20px;
+        }
+        .commentTime {
+            width: 100%;
+            border-bottom: 1px solid;
+            text-align: left;
+            font-size: 12px;
+            line-height: 1em;
+            padding: 0 0 10px 0;
+        }
+
+        .ratingSection {
+            padding: 10px 0;
+        }
+
+        .commentContent .wrapper .r1, .commentContent .wrapper .r2, .commentContent .wrapper .r3 {
+            float: left;
+            width: 60%;
+            text-align: left;
+            margin-top: 0;
+        }
+
+        .commentContent .wrapper span.stars {
+            float: right;
+            width: 40%;
+            text-align: right;
+        }
+
+        .commentContent .wrapper span i.fa, .commentContent .wrapper span i.fa-star {
+            font-size: 18px;
+        }
+
+        .commentFeedback {
+            width: 100%;
+            border-top: 1px solid;
+            text-align: justify;
+            display: inline-block;
+            padding: 10px 0 0 0;
+        }
+
+        @media screen and (max-width: 500px) {
+            .commentContent .wrapper span.stars {
+                float: left;
+                width: 100%;
+                text-align: left;
+            }
+            .commentContent .wrapper .r1, .commentContent .wrapper .r2, .commentContent .wrapper .r3 {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 501px) {
+            .userPhoto img {
+                width: 75%;
+            }
+            .commentContent {
+                width: 75%;
+            }
+        }
