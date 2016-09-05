@@ -1,38 +1,39 @@
-<manifest alg="2" build="2015.2.1.352" opt="true" iceEnabled="false" exportTarget="other" domain="kajinonline.com" resolutions="1x" timestamp="1472123617780">
+<manifest alg="2" build="2015.2.1.352" opt="true" iceEnabled="false" exportTarget="other" domain="kajinonline.com" resolutions="1x" timestamp="1473073442398">
   <folder name="css">
-    <file name="site_global.css" crc="419338808"/>
-    <file name="master_master.css" crc="4186669107" ref="price:index:about_us:compare:cn:corporation:faq"/>
-    <file name="price.css" crc="520466249" ref="price"/>
-    <file name="done.css" crc="4292799846" ref="done"/>
-    <file name="sign_up.css" crc="4052656136" ref="sign_up"/>
-    <file name="index.css" crc="400852425" ref="index"/>
-    <file name="about_us.css" crc="170713864" ref="about_us"/>
-    <file name="self_signup.css" crc="277308149" ref="self_signup"/>
-    <file name="compare.css" crc="501190226" ref="compare"/>
-    <file name="cn.css" crc="294028362" ref="cn"/>
+    <file name="site_global.css" crc="233980534"/>
+    <file name="master_master.css" crc="345420128" ref="cn:index:faq:corporation:price:compare:help_others:about_us"/>
+    <file name="cn.css" crc="382178362" ref="cn"/>
+    <file name="index.css" crc="331085376" ref="index"/>
+    <file name="faq.css" crc="175616226" ref="faq"/>
+    <file name="corporation.css" crc="3852900318" ref="corporation"/>
     <file name="manual_signup.css" crc="3936884734" ref="manual_signup"/>
-    <file name="corporation.css" crc="3852708146" ref="corporation"/>
-    <file name="faq.css" crc="3807679732" ref="faq"/>
+    <file name="price.css" crc="4253872943" ref="price"/>
+    <file name="compare.css" crc="223591756" ref="compare"/>
+    <file name="help_others.css" crc="155073626" ref="help_others"/>
+    <file name="about_us.css" crc="4092862831" ref="about_us"/>
+    <file name="self_signup.css" crc="277308149" ref="self_signup"/>
+    <file name="done.css" crc="4025463236" ref="done"/>
   </folder>
   <folder name="scripts">
-    <file name="jquery-1.8.3.min.js" crc="169078940" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>sign_up:phone>manual_signup:phone>self_signup:phone>done:phone>cn:index:corporation:about_us:compare:price:faq:sign_up:manual_signup:self_signup:done:cn"/>
-    <file name="museutils.js" crc="3851988764" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>sign_up:phone>manual_signup:phone>self_signup:phone>done:phone>cn:index:corporation:about_us:compare:price:faq:sign_up:manual_signup:self_signup:done:cn"/>
-    <file name="whatinput.js" crc="86476730" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>sign_up:phone>manual_signup:phone>self_signup:phone>done:phone>cn:index:corporation:about_us:compare:price:faq:sign_up:manual_signup:self_signup:done:cn"/>
-    <file name="museconfig.js" crc="169177150" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>sign_up:phone>manual_signup:phone>self_signup:phone>done:phone>cn:index:corporation:about_us:compare:price:faq:sign_up:manual_signup:self_signup:done:cn"/>
-    <file name="jquery.watch.js" crc="3842844514" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>sign_up:phone>manual_signup:phone>self_signup:phone>done:phone>cn:index:corporation:about_us:compare:price:faq:sign_up:manual_signup:self_signup:done:cn"/>
-    <file name="webpro.js" crc="4067903014" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>manual_signup:phone>self_signup:phone>cn:index:corporation:faq:manual_signup:self_signup:cn"/>
-    <file name="musewpdisclosure.js" crc="338211507" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>cn:faq"/>
-    <file name="pie.js" crc="3831537696" ref="phone>index:phone>corporation:phone>compare:phone>price:phone>faq:phone>cn:index:corporation:about_us:compare:price:faq:sign_up:cn"/>
-    <file name="jquery.musepolyfill.bgsize.js" crc="271560940" ref="phone>index:phone>corporation:phone>price:phone>faq:phone>manual_signup:phone>self_signup:phone>cn:index:corporation:compare:price:faq:manual_signup:self_signup:cn"/>
-    <file name="jquery.musemenu.js" crc="4150485998" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>cn:index:corporation:about_us:compare:price:faq:cn"/>
-    <file name="html5shiv.js" crc="4241844378" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>sign_up:phone>manual_signup:phone>self_signup:phone>done:phone>cn:index:corporation:about_us:compare:price:faq:sign_up:manual_signup:self_signup:done:cn"/>
-    <file name="require.js" crc="4108833657" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>sign_up:phone>manual_signup:phone>self_signup:phone>done:phone>cn:index:corporation:about_us:compare:price:faq:sign_up:manual_signup:self_signup:done:cn"/>
+    <file name="jquery-1.8.3.min.js" crc="169078940" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>manual_signup:phone>self_signup:phone>done:phone>cn:phone>help_others:index:corporation:about_us:compare:price:faq:manual_signup:self_signup:done:cn:help_others"/>
+    <file name="museutils.js" crc="3851988764" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>manual_signup:phone>self_signup:phone>done:phone>cn:phone>help_others:index:corporation:about_us:compare:price:faq:manual_signup:self_signup:done:cn:help_others"/>
+    <file name="whatinput.js" crc="86476730" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>manual_signup:phone>self_signup:phone>done:phone>cn:phone>help_others:index:corporation:about_us:compare:price:faq:manual_signup:self_signup:done:cn:help_others"/>
+    <file name="museconfig.js" crc="169177150" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>manual_signup:phone>self_signup:phone>done:phone>cn:phone>help_others:index:corporation:about_us:compare:price:faq:manual_signup:self_signup:done:cn:help_others"/>
+    <file name="jquery.watch.js" crc="3842844514" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>manual_signup:phone>self_signup:phone>done:phone>cn:phone>help_others:index:corporation:about_us:compare:price:faq:manual_signup:self_signup:done:cn:help_others"/>
+    <file name="webpro.js" crc="4067903014" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>manual_signup:phone>self_signup:phone>cn:phone>help_others:index:corporation:faq:manual_signup:self_signup:cn:help_others"/>
+    <file name="musewpdisclosure.js" crc="338211507" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>cn:phone>help_others:faq"/>
+    <file name="pie.js" crc="3831537696" ref="phone>index:phone>corporation:phone>compare:phone>cn:phone>help_others:index:corporation:about_us:compare:price:faq:cn:help_others"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="271560940" ref="phone>index:phone>corporation:phone>price:phone>faq:phone>manual_signup:phone>self_signup:phone>cn:phone>help_others:index:corporation:compare:price:faq:manual_signup:self_signup:cn:help_others"/>
+    <file name="jquery.musemenu.js" crc="4150485998" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>cn:phone>help_others:index:corporation:about_us:compare:price:faq:cn:help_others"/>
+    <file name="html5shiv.js" crc="4241844378" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>manual_signup:phone>self_signup:phone>done:phone>cn:phone>help_others:index:corporation:about_us:compare:price:faq:manual_signup:self_signup:done:cn:help_others"/>
+    <file name="require.js" crc="4108833657" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>manual_signup:phone>self_signup:phone>done:phone>cn:phone>help_others:index:corporation:about_us:compare:price:faq:manual_signup:self_signup:done:cn:help_others"/>
     <file name="form_check.php" crc="121412709" ref="phone>corporation"/>
     <file name="form_throttle.php" crc="4268640971" ref="phone>corporation"/>
     <file name="form_process.php" crc="444429785" ref="phone>corporation"/>
     <file name="form-u176482.php" crc="4027505204" ref="phone>corporation"/>
     <file name="form-u190533.php" crc="235053292" ref="phone>manual_signup"/>
     <file name="form-u189022.php" crc="3760397513" ref="phone>self_signup"/>
+    <file name="form-u193158.php" crc="4215152589" ref="phone>help_others"/>
     <file name="musewpslideshow.js" crc="4265225696" ref="index:cn"/>
     <file name="jquery.museoverlay.js" crc="4075157096" ref="index:cn"/>
     <file name="touchswipe.js" crc="474750357" ref="index:cn"/>
@@ -40,62 +41,77 @@
     <file name="form-u86411.php" crc="3902078583" ref="corporation"/>
     <file name="form-u187837.php" crc="3792972507" ref="manual_signup"/>
     <file name="form-u187976.php" crc="474375724" ref="self_signup"/>
+    <file name="form-u191986.php" crc="3780593027" ref="help_others"/>
   </folder>
   <folder name="images">
-    <file name="favicon.ico" crc="4183062411" ref="phone>index:phone>corporation"/>
-    <file name="logo_phone-09.png" crc="386278327" seo="true" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>cn"/>
-    <file name="banner.gif" crc="4068444166" ref="phone>index:phone>price:phone>faq:phone>cn"/>
+    <file name="favicon.ico" crc="4183062411" ref="phone>index"/>
+    <file name="logo_phone-09.png" crc="386278327" seo="true" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>cn:phone>help_others"/>
+    <file name="home_banner3.jpg" crc="290645593" ref="phone>index:phone>cn:index:cn"/>
     <file name="chenjoyce-u181641-fr.jpg" crc="96139343" ref="phone>index:phone>cn"/>
     <file name="yiting_hung-u181633-fr.jpg" crc="4120943015" ref="phone>index:phone>cn"/>
     <file name="juli-u181653-fr.jpg" crc="3862244421" ref="phone>index:phone>cn"/>
     <file name="pinhao_chen-u181663-fr.jpg" crc="316058052" ref="phone>index:phone>cn"/>
-    <file name="section_message.png" crc="391500172" seo="true" ref="phone>index:phone>price:phone>faq:phone>cn:index:price:faq:manual_signup:self_signup:cn"/>
-    <file name="logo_tw-08.png" crc="282024829" ref="phone>index:index:phone>corporation"/>
-    <file name="social_media_icon-01 copy.png" crc="4191846272" ref="phone>index:phone>corporation"/>
-    <file name="social_media_icon-01.png" crc="294820166" ref="phone>index:phone>corporation"/>
-    <file name="social_media_icon-03 copy.png" crc="4255508732" ref="phone>index:phone>corporation"/>
-    <file name="social_media_icon-03.png" crc="3837892263" ref="phone>index:phone>corporation"/>
-    <file name="youtube-10.png" crc="360276217" ref="phone>index:phone>corporation"/>
-    <file name="youtube-09.png" crc="498467228" ref="phone>index:phone>corporation"/>
-    <file name="twitter-12.png" crc="162838660" ref="phone>index:phone>corporation"/>
-    <file name="twitter-11.png" crc="150276172" ref="phone>index:phone>corporation"/>
-    <file name="all.jpg" crc="3888344126" ref="phone>index:phone>corporation"/>
-    <file name="pasted image 200x90.png" crc="391419934" seo="true" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>cn"/>
-    <file name="thewaycliniclogo-02.png" crc="3965607018" ref="phone>index:phone>corporation"/>
+    <file name="section_message.png" crc="391500172" seo="true" ref="phone>index:phone>price:phone>faq:phone>cn:phone>help_others:index:price:faq:manual_signup:self_signup:cn:help_others"/>
+    <file name="pasted-svg-195417x234.svg" crc="4119742174" seo="true" ref="phone>index:phone>price:phone>faq:phone>cn:index:price:faq:cn"/>
+    <file name="pasted svg 195417x234_poster_.png" crc="4272379906" ref="phone>index"/>
+    <file name="pasted-svg-158381x135.svg" crc="89017394" seo="true" ref="phone>index:phone>price:phone>faq:phone>cn:index:price:faq:cn"/>
+    <file name="pasted svg 158381x135_poster_.png" crc="3789237943" ref="phone>index"/>
+    <file name="pasted-svg-204169x219.svg" crc="371041716" seo="true" ref="phone>index:phone>price:phone>faq:phone>cn:index:price:faq:cn"/>
+    <file name="pasted svg 204169x219_poster_.png" crc="4056568821" ref="phone>index"/>
+    <file name="pasted-svg-158381x1352.svg" crc="3766701920" seo="true" ref="phone>index:phone>price:phone>faq:phone>cn:index:price:faq:cn"/>
+    <file name="pasted svg 158381x135_poster_2.png" crc="4121888101" ref="phone>index"/>
+    <file name="logo_tw-08.png" crc="282024829" ref="phone>index:index"/>
+    <file name="social_media_icon-01 copy.png" crc="4191846272" ref="phone>index"/>
+    <file name="social_media_icon-01.png" crc="294820166" ref="phone>index"/>
+    <file name="social_media_icon-03 copy.png" crc="4255508732" ref="phone>index"/>
+    <file name="social_media_icon-03.png" crc="3837892263" ref="phone>index"/>
+    <file name="youtube-10.png" crc="360276217" ref="phone>index"/>
+    <file name="youtube-09.png" crc="498467228" ref="phone>index"/>
+    <file name="twitter-12.png" crc="162838660" ref="phone>index"/>
+    <file name="twitter-11.png" crc="150276172" ref="phone>index"/>
+    <file name="all.jpg" crc="3888344126" ref="phone>index"/>
+    <file name="pasted image 200x90.png" crc="391419934" seo="true" ref="phone>index:phone>corporation:phone>about_us:phone>compare:phone>price:phone>faq:phone>cn:phone>help_others"/>
+    <file name="thewaycliniclogo-02.png" crc="3965607018" ref="phone>index"/>
     <file name="kajin process-08.png" crc="470386440" ref="phone>corporation:corporation"/>
     <file name="u176487-17.png" crc="3958883234" ref="phone>corporation"/>
     <file name="u176487-17-r.png" crc="4067673165" ref="phone>corporation"/>
     <file name="u176487-17-m.png" crc="56783733" ref="phone>corporation"/>
     <file name="u176487-17-fs.png" crc="347847722" ref="phone>corporation"/>
+    <file name="home_banner2.jpg" crc="384726943" ref="phone>price:price"/>
+    <file name="home_banner1.jpg" crc="4095535011" ref="phone>faq:faq"/>
     <file name="section_faq.png" crc="329607113" seo="true" ref="phone>faq:faq"/>
-    <file name="pasted-svg-195417x234.svg" crc="4119742174" seo="true" ref="phone>sign_up:sign_up"/>
-    <file name="pasted svg 195417x234_poster_.png" crc="4272379906" ref="phone>sign_up"/>
-    <file name="pasted-svg-158381x135.svg" crc="89017394" seo="true" ref="phone>sign_up:sign_up"/>
-    <file name="pasted svg 158381x135_poster_.png" crc="3789237943" ref="phone>sign_up"/>
-    <file name="pasted-svg-204169x219.svg" crc="371041716" seo="true" ref="phone>sign_up:sign_up"/>
-    <file name="pasted svg 204169x219_poster_.png" crc="4056568821" ref="phone>sign_up"/>
-    <file name="pasted-svg-158381x1352.svg" crc="3766701920" seo="true" ref="phone>sign_up:sign_up"/>
-    <file name="pasted svg 158381x135_poster_2.png" crc="4121888101" ref="phone>sign_up"/>
     <file name="u190549-17.png" crc="308828448" ref="phone>manual_signup"/>
     <file name="u190549-17-r.png" crc="4285695412" ref="phone>manual_signup"/>
     <file name="u190549-17-m.png" crc="4285695412" ref="phone>manual_signup"/>
     <file name="u190549-17-fs.png" crc="308828448" ref="phone>manual_signup"/>
-    <file name="radiobuttonunchecked.png" crc="232010369" ref="phone>manual_signup:phone>self_signup:manual_signup:self_signup"/>
-    <file name="radiobuttonuncheckedrollover.png" crc="173297973" ref="phone>manual_signup:phone>self_signup:manual_signup:self_signup"/>
-    <file name="radiobuttonuncheckedmousedown.png" crc="210422217" ref="phone>manual_signup:phone>self_signup:manual_signup:self_signup"/>
-    <file name="radiobuttonchecked.png" crc="424951658" ref="phone>manual_signup:phone>self_signup:manual_signup:self_signup"/>
-    <file name="radiobuttoncheckedrollover.png" crc="135556972" ref="phone>manual_signup:phone>self_signup:manual_signup:self_signup"/>
-    <file name="radiobuttoncheckedmousedown.png" crc="475385202" ref="phone>manual_signup:phone>self_signup:manual_signup:self_signup"/>
+    <file name="radiobuttonunchecked.png" crc="232010369" ref="phone>manual_signup:phone>self_signup:phone>help_others:manual_signup:self_signup:help_others"/>
+    <file name="radiobuttonuncheckedrollover.png" crc="173297973" ref="phone>manual_signup:phone>self_signup:phone>help_others:manual_signup:self_signup:help_others"/>
+    <file name="radiobuttonuncheckedmousedown.png" crc="210422217" ref="phone>manual_signup:phone>self_signup:phone>help_others:manual_signup:self_signup:help_others"/>
+    <file name="radiobuttonchecked.png" crc="424951658" ref="phone>manual_signup:phone>self_signup:phone>help_others:manual_signup:self_signup:help_others"/>
+    <file name="radiobuttoncheckedrollover.png" crc="135556972" ref="phone>manual_signup:phone>self_signup:phone>help_others:manual_signup:self_signup:help_others"/>
+    <file name="radiobuttoncheckedmousedown.png" crc="475385202" ref="phone>manual_signup:phone>self_signup:phone>help_others:manual_signup:self_signup:help_others"/>
     <file name="u189036-17.png" crc="308828448" ref="phone>self_signup"/>
     <file name="u189036-17-r.png" crc="4285695412" ref="phone>self_signup"/>
     <file name="u189036-17-m.png" crc="4285695412" ref="phone>self_signup"/>
     <file name="u189036-17-fs.png" crc="308828448" ref="phone>self_signup"/>
     <file name="pasted-svg-74801x69.svg" crc="3996906483" seo="true" ref="phone>done:done"/>
     <file name="pasted svg 74801x69_poster_.png" crc="37974781" ref="phone>done"/>
-    <file name="pasted-svg-522864x145.svg" crc="288549005" seo="true" ref="index:corporation:about_us:compare:price:faq:cn"/>
+    <file name="home_banner6.jpg" crc="4127826853" ref="phone>help_others:help_others"/>
+    <file name="section_service.png" crc="297208188" seo="true" ref="phone>help_others:index:cn:help_others"/>
+    <file name="pasted-svg-50741x57.svg" crc="4086881989" seo="true" ref="phone>help_others:help_others"/>
+    <file name="pasted svg 50741x57_poster_.png" crc="4278598256" ref="phone>help_others"/>
+    <file name="pasted-svg-6959x63.svg" crc="3940943663" seo="true" ref="phone>help_others:help_others"/>
+    <file name="pasted svg 6959x63_poster_.png" crc="534687977" ref="phone>help_others"/>
+    <file name="pasted-svg-53483x60.svg" crc="4270338602" seo="true" ref="phone>help_others:help_others"/>
+    <file name="pasted svg 53483x60_poster_.png" crc="3798943736" ref="phone>help_others"/>
+    <file name="pasted-svg-4896x58.svg" crc="3852552233" seo="true" ref="phone>help_others:help_others"/>
+    <file name="pasted svg 4896x58_poster_.png" crc="532882124" ref="phone>help_others"/>
+    <file name="u193197-17.png" crc="308828448" ref="phone>help_others"/>
+    <file name="u193197-17-r.png" crc="4285695412" ref="phone>help_others"/>
+    <file name="u193197-17-m.png" crc="4285695412" ref="phone>help_others"/>
+    <file name="u193197-17-fs.png" crc="308828448" ref="phone>help_others"/>
+    <file name="pasted-svg-522864x145.svg" crc="288549005" seo="true" ref="index:corporation:about_us:compare:price:faq:cn:help_others"/>
     <file name="pasted svg 522864x145_poster_.png" crc="419637158" ref="index"/>
-    <file name="banner2.gif" crc="4068444166" ref="index:price:faq:cn"/>
-    <file name="section_service.png" crc="297208188" seo="true" ref="index:cn"/>
     <file name="feature icon-09.png" crc="35472761" seo="true" ref="index:cn"/>
     <file name="blank.gif" crc="4208392903" ref="index:cn"/>
     <file name="loading.gif" crc="3815509949" ref="index:cn"/>
@@ -108,24 +124,22 @@
     <file name="ella_chang.png" crc="77642354" ref="index:cn"/>
     <file name="juli.jpg" crc="3975417258" ref="index:cn"/>
     <file name="chenjoyce.jpg" crc="63583238" ref="index:cn"/>
-    <file name="section_team.png" crc="164472986" seo="true" ref="index:cn"/>
-    <file name="feature icon3.png" crc="4174605717" ref="index:price:phone>index:phone>cn:cn" seo="true"/>
-    <file name="supportinggroup.jpg" crc="254990527" seo="true" ref="index:phone>index:phone>cn:cn"/>
-    <file name="pasted-svg-11574x81.svg" crc="224941082" seo="true" ref="index:corporation:about_us:compare:price:faq:cn"/>
+    <file name="section_team.png" crc="125141840" seo="true" ref="index:cn"/>
+    <file name="pasted-svg-11574x81.svg" crc="224941082" seo="true" ref="index:corporation:about_us:compare:price:faq:cn:help_others"/>
     <file name="pasted svg 11574x81_poster_.png" crc="4185298738" ref="index"/>
-    <file name="pasted-svg-23231x39.svg" crc="297390794" seo="true" ref="index:corporation:about_us:compare:price:faq:cn"/>
+    <file name="pasted-svg-23231x39.svg" crc="297390794" seo="true" ref="index:corporation:about_us:compare:price:faq:cn:help_others"/>
     <file name="pasted svg 23231x39_poster_.png" crc="4287905069" ref="index"/>
-    <file name="pasted-svg-121972x93.svg" crc="4161710763" seo="true" ref="index:corporation:about_us:compare:price:faq:cn"/>
+    <file name="pasted-svg-121972x93.svg" crc="4161710763" seo="true" ref="index:corporation:about_us:compare:price:faq:cn:help_others"/>
     <file name="pasted svg 121972x93_poster_.png" crc="324025413" ref="index"/>
-    <file name="pasted-svg-24519x68.svg" crc="441680814" seo="true" ref="index:corporation:about_us:compare:price:faq:cn"/>
+    <file name="pasted-svg-24519x68.svg" crc="441680814" seo="true" ref="index:corporation:about_us:compare:price:faq:cn:help_others"/>
     <file name="pasted svg 24519x68_poster_.png" crc="4211543905" ref="index"/>
-    <file name="pasted-svg-10094x21.svg" crc="277164776" seo="true" ref="index:corporation:about_us:compare:price:faq:cn"/>
+    <file name="pasted-svg-10094x21.svg" crc="277164776" seo="true" ref="index:corporation:about_us:compare:price:faq:cn:help_others"/>
     <file name="pasted svg 10094x21_poster_.png" crc="49641211" ref="index"/>
-    <file name="pasted-svg-27783x26.svg" crc="325793595" seo="true" ref="index:corporation:about_us:compare:price:faq:cn"/>
+    <file name="pasted-svg-27783x26.svg" crc="325793595" seo="true" ref="index:corporation:about_us:compare:price:faq:cn:help_others"/>
     <file name="pasted svg 27783x26_poster_.png" crc="3892171498" ref="index"/>
-    <file name="pasted-svg-27565x19.svg" crc="216476224" seo="true" ref="index:corporation:about_us:compare:price:faq:cn"/>
+    <file name="pasted-svg-27565x19.svg" crc="216476224" seo="true" ref="index:corporation:about_us:compare:price:faq:cn:help_others"/>
     <file name="pasted svg 27565x19_poster_.png" crc="4065446372" ref="index"/>
-    <file name="pasted-svg-24954x20.svg" crc="3987584024" seo="true" ref="index:corporation:about_us:compare:price:faq:cn"/>
+    <file name="pasted-svg-24954x20.svg" crc="3987584024" seo="true" ref="index:corporation:about_us:compare:price:faq:cn:help_others"/>
     <file name="pasted svg 24954x20_poster_.png" crc="4108675679" ref="index"/>
     <file name="kajin process-11.png" crc="440686159" ref="corporation"/>
     <file name="u86446-17.png" crc="3956782166" ref="corporation"/>
@@ -140,6 +154,7 @@
     <file name="puzzle-02.png" crc="3911806522" ref="compare"/>
     <file name="section_payment.png" crc="58294386" seo="true" ref="price"/>
     <file name="section_feature.png" crc="437480884" seo="true" ref="price"/>
+    <file name="feature icon3.png" crc="4174605717" ref="price"/>
     <file name="feature icon2.png" crc="4088526311" ref="price"/>
     <file name="feature icon1.png" crc="265588210" ref="price"/>
     <file name="feature icon5.png" crc="3810815341" ref="price"/>
@@ -152,43 +167,47 @@
     <file name="u188004-17-r.png" crc="4285695412" ref="self_signup"/>
     <file name="u188004-17-m.png" crc="4285695412" ref="self_signup"/>
     <file name="u188004-17-fs.png" crc="308828448" ref="self_signup"/>
+    <file name="u192008-17.png" crc="308828448" ref="help_others"/>
+    <file name="u192008-17-r.png" crc="4285695412" ref="help_others"/>
+    <file name="u192008-17-m.png" crc="4285695412" ref="help_others"/>
+    <file name="u192008-17-fs.png" crc="308828448" ref="help_others"/>
   </folder>
   <folder name="phone">
     <folder name="css">
-      <file name="master_master.css" crc="290220505" ref="phone>index:phone>faq:phone>cn:phone>price:phone>compare:phone>about_us:phone>corporation"/>
-      <file name="index.css" crc="4293058719" ref="phone>index"/>
-      <file name="faq.css" crc="529556797" ref="phone>faq"/>
-      <file name="done.css" crc="325155574" ref="phone>done"/>
-      <file name="cn.css" crc="4206800023" ref="phone>cn"/>
-      <file name="price.css" crc="4042871705" ref="phone>price"/>
-      <file name="self_signup.css" crc="3919572281" ref="phone>self_signup"/>
+      <file name="master_master.css" crc="290220505" ref="phone>index:phone>compare:phone>help_others:phone>faq:phone>about_us:phone>cn:phone>price:phone>corporation"/>
+      <file name="index.css" crc="4202781118" ref="phone>index"/>
       <file name="compare.css" crc="128346789" ref="phone>compare"/>
-      <file name="manual_signup.css" crc="3797192236" ref="phone>manual_signup"/>
+      <file name="done.css" crc="325155574" ref="phone>done"/>
+      <file name="help_others.css" crc="4283593194" ref="phone>help_others"/>
+      <file name="faq.css" crc="3766715541" ref="phone>faq"/>
       <file name="about_us.css" crc="3880247174" ref="phone>about_us"/>
-      <file name="sign_up.css" crc="4043090924" ref="phone>sign_up"/>
-      <file name="corporation.css" crc="4282586130" ref="phone>corporation"/>
+      <file name="self_signup.css" crc="3919572281" ref="phone>self_signup"/>
+      <file name="manual_signup.css" crc="3797192236" ref="phone>manual_signup"/>
+      <file name="cn.css" crc="446610600" ref="phone>cn"/>
+      <file name="price.css" crc="148361064" ref="phone>price"/>
+      <file name="corporation.css" crc="445094560" ref="phone>corporation"/>
     </folder>
-    <file name="index.html" crc="4105924645" seo="true" mt="1472123601973" redirect="true"/>
-    <file name="corporation.html" crc="4062001199" seo="true" mt="1472123379045" redirect="true"/>
-    <file name="about_us.html" crc="4182741224" seo="true" mt="1472123382820" redirect="true"/>
-    <file name="compare.html" crc="4200312609" seo="true" mt="1472123386400" redirect="true"/>
-    <file name="price.html" crc="508319842" seo="true" mt="1472123375328" redirect="true"/>
-    <file name="faq.html" crc="254624847" seo="true" mt="1472123366885" redirect="true"/>
-    <file name="sign_up.html" crc="3759902753" seo="true" mt="1471422032665" redirect="true"/>
-    <file name="manual_signup.html" crc="200857990" seo="true" mt="1472123394904" redirect="true"/>
-    <file name="self_signup.html" crc="4144925549" seo="true" mt="1472123400885" redirect="true"/>
-    <file name="done.html" crc="4180781181" seo="true" mt="1472123404976" redirect="true"/>
-    <file name="cn.html" crc="505493698" seo="true" mt="1472123596471" redirect="true"/>
+    <file name="index.html" crc="4013008777" seo="true" mt="1473073286452" redirect="true"/>
+    <file name="corporation.html" crc="210543003" seo="true" mt="1473073178455" redirect="true"/>
+    <file name="about_us.html" crc="3901264175" seo="true" mt="1473073183238" redirect="true"/>
+    <file name="compare.html" crc="3785949971" seo="true" mt="1473073213983" redirect="true"/>
+    <file name="price.html" crc="411741800" seo="true" mt="1473073286448" redirect="true"/>
+    <file name="faq.html" crc="355035085" seo="true" mt="1473073286449" redirect="true"/>
+    <file name="manual_signup.html" crc="3912899809" seo="true" mt="1473073200910" redirect="true"/>
+    <file name="self_signup.html" crc="287631107" seo="true" mt="1473073205520" redirect="true"/>
+    <file name="done.html" crc="389704021" seo="true" mt="1473073209591" redirect="true"/>
+    <file name="cn.html" crc="4043762277" seo="true" mt="1473073286451" redirect="true"/>
+    <file name="help_others.html" crc="4293716333" seo="true" mt="1473073302651" redirect="true"/>
   </folder>
-  <file name="index.html" crc="178351601" seo="true" mt="1472123293126" redirect="true"/>
-  <file name="corporation.html" crc="3856390803" seo="true" mt="1472123317936" redirect="true"/>
-  <file name="about_us.html" crc="432398972" seo="true" mt="1472123321806" redirect="true"/>
-  <file name="compare.html" crc="264733545" seo="true" mt="1472123325492" redirect="true"/>
-  <file name="price.html" crc="84463325" seo="true" mt="1472123312331" redirect="true"/>
-  <file name="faq.html" crc="4207099944" seo="true" mt="1472123306181" redirect="true"/>
-  <file name="sign_up.html" crc="3910118833" seo="true" mt="1471422020801" redirect="true"/>
-  <file name="manual_signup.html" crc="180989644" seo="true" mt="1472123333476" redirect="true"/>
-  <file name="self_signup.html" crc="3982598159" seo="true" mt="1472123337189" redirect="true"/>
-  <file name="done.html" crc="270076488" seo="true" mt="1472123340813" redirect="true"/>
-  <file name="cn.html" crc="210407989" seo="true" mt="1472123262341" redirect="true"/>
+  <file name="index.html" crc="3946443894" seo="true" mt="1473073155481" redirect="true"/>
+  <file name="corporation.html" crc="124461247" seo="true" mt="1472813324872" redirect="true"/>
+  <file name="about_us.html" crc="3989225756" seo="true" mt="1472813330696" redirect="true"/>
+  <file name="compare.html" crc="283818863" seo="true" mt="1472813365041" redirect="true"/>
+  <file name="price.html" crc="194439532" seo="true" mt="1472814342570" redirect="true"/>
+  <file name="faq.html" crc="4117245003" seo="true" mt="1472814389271" redirect="true"/>
+  <file name="manual_signup.html" crc="58619568" seo="true" mt="1472813351873" redirect="true"/>
+  <file name="self_signup.html" crc="3865043191" seo="true" mt="1472813358604" redirect="true"/>
+  <file name="done.html" crc="4079416600" seo="true" mt="1472813370469" redirect="true"/>
+  <file name="cn.html" crc="3834797983" seo="true" mt="1472813337115" redirect="true"/>
+  <file name="help_others.html" crc="3780416525" seo="true" mt="1473073286454" redirect="true"/>
 </manifest>
