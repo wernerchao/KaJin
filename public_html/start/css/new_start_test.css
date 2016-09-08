@@ -1,0 +1,102 @@
+            /*New CSS for Start*/
+
+            .step-container #colelem1 {
+                border: none;
+                margin: 80px auto 50px;
+            }
+
+            .step-container #colelem1 .words {
+                margin: 10px auto 0;
+            }
+
+            .step-container > .colelem .container {
+                width: 100%;
+                border-bottom: 1px solid #e5e5e5;
+            }
+
+            #colelem1 .container {
+                width: 100%;
+                margin: 10px auto;
+            }
+
+            #step1 .slide {
+                width: 100%;
+            }
+
+            #step1 .slide-prev, #step1 .slide-next {
+                top: 300px;
+                color: #66c5cc;
+            }
+
+            #step1 .slide-next {
+                right: 2px;
+            }
+
+            #step1 .slide-prev {
+                left: 2px;
+            }
+
+            #step1 .centerinnerword {
+                width: 90%;
+            }
+
+            #step1 .askforhelp-dot-main, #step1 .askforhelp-dot {
+                width: 150px;
+            }
+
+            #step1 .askforhelp2 {
+                width: 90%;
+                padding: 0 0 0 0px;
+                text-align: center;
+            }
+
+            #step1 .askforhelp3 {
+                width: 90%;
+            }
+
+            #step1 .centerword, 
+            #step1 .askforhelp-title, 
+            #step1 .askforhelp-main-description1,   
+            #step1 .askforhelp-main-description2, 
+            #step1 .askforhelp-main-question, 
+            #step1 .askforhelp-description, 
+            #step1 .askforhelp-option, 
+            #step1 .askforhelp-oralreadyknow, 
+            #step1 .askforhelp-input-div 
+            {
+                width: 100%;
+            }
+
+            #step1 .askforhelp-analyze {
+                width: 50%;
+            }
+
+            #colelem2.colelem {
+                width: 100%;
+            }
+
+            .step-container #colelem-finish-choose h3 ~ p {
+                width: 90%;
+            }
+
+            .step-container #colelem-finish-choose .container > div {
+                width: 100%;
+            }
+
+            .step-container #colelem-finish-choose .container > div:nth-child(3) h3 ~ p {
+                width: 300px;
+            }
+
+            .step-container #colelem-finish-choose .choose-card-next-btn {
+                right: 10%;
+            }
+
+            .step-container #colelem-finish-choose .choose-card-prev-btn {
+                left: 10%;
+            }
+
+            @media only screen and (max-width: 650px) {
+                .step-container #colelem-finish-choose .choose-card-next-btn, .step-container #colelem-finish-choose .choose-card-prev-btn {
+                    top: 120px;
+                }
+            }
