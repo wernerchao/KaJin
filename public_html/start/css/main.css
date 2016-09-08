@@ -274,7 +274,7 @@ input {
         font-size: 15px;
         font-size: 0.9375rem; }
     .step-container #colelem-finish-choose .suggest:nth-child(2) {
-      width: 450px;
+      /*width: 450px; for new start*/
       padding: 20px 40px; }
       .step-container #colelem-finish-choose .suggest:nth-child(2) h3 {
         text-align: left; }
@@ -561,7 +561,7 @@ input {
   background: transparent url("../images/slide-prev.png") 0% 0%/35px 35px no-repeat; }
 
 #step1 .slide-next {
-  left: calc(50% + 380px - 60px); /*Makes the slide arrow not RWD. Will remove after branch closes*/
+  /*left: calc(50% + 380px - 60px); Makes the slide arrow not RWD. Will remove after branch closes*/
   background: transparent url("../images/slide-next.png") 60px 0%/35px 35px no-repeat; }
 
 #step1 .askforhelp-title {
