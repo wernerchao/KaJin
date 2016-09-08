@@ -18,7 +18,7 @@
             }
 
             #step1 .slide-prev, #step1 .slide-next {
-                top: 200px;
+                top: 300px;
             }
 
             #step1 .slide-next {
@@ -35,6 +35,8 @@
 
             .step-container #colelem1 {
                 border: none;
+                margin: 80px auto 50px;
+
             }
 
             .step-container #colelem1 .words {
@@ -43,6 +45,7 @@
 
             .step-container > .colelem .container {
                     border-bottom: 1px solid #e5e5e5;
+                    width: 100%;
             }
 
             #step1 .askforhelp-dot-main, #step1 .askforhelp-dot {
