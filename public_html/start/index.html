@@ -12,7 +12,8 @@
         <link rel="stylesheet" type="text/css" href="./css/site_global.css">
         <link rel="stylesheet" type="text/css" href="./css/master_main1.css">
         <link rel="stylesheet" type="text/css" href="./css/main.css">
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <!--<link rel="stylesheet" type="text/css" href="./css/new_start_test.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">-->
     </head>
 
     <body>
@@ -67,47 +68,6 @@
             #navbar .word.right {
                 float: right;
             }
-
-            /*New CSS for Start*/
-            #step1 .centerword, 
-            #step1 .askforhelp-title, 
-            #step1 .askforhelp-main-description1, 
-            #step1 .askforhelp-dot, 
-            #step1 .askforhelp-dot-main, 
-            #step1 .askforhelp-main-description2, 
-            #step1 .askforhelp-main-question, 
-            #step1 .askforhelp-description, 
-            #step1 .askforhelp-option, 
-            #step1 .askforhelp-oralreadyknow, 
-            #step1 .askforhelp-input-div 
-            {
-                width: 100%;
-            }
-
-            .slide {
-                width: 100%;
-            }
-
-            #step1 .slide-prev, #step1 .slide-next {
-                top: 200px;
-            }
-
-            #step1 .centerinnerword {
-                width: 90%;
-            }
-
-            .step-container #colelem1 {
-                border: none;
-            }
-
-            .step-container #colelem1 .words {
-                margin: 10px auto 0;
-            }
-
-            .step-container > .colelem .container {
-                    border-bottom: 1px solid #e5e5e5;
-            }
-
         </style>
         <div id="page">
             <div id="step1" class="step-container">
@@ -116,9 +76,9 @@
                 </div>
                 <div id="colelem2" class="colelem">
                     <div id="colelem-slide" class="show active">
-                        <button class="slide-prev hide"></button>
+                        <button class="slide-prev hide">上一題</button>
                         <div class="slide-hover left-hover"></div>
-                        <button class="slide-next hide"></button>
+                        <button class="slide-next hide">下一題</button>
                         <div class="slide-hover right-hover"></div>
                         <div class="slide">
                             <div class="container">
@@ -141,7 +101,8 @@
                                 <p class="askforhelp-description">我最近在困擾的是...(複選)</p>
                                 <div class="askforhelp-option" id="question2-option">
                                     <!--<button class="askforhelp2"><span class="green-word">自我困擾</span> (內在探索，例如：憂鬱、緊張、自我實現等)</button>-->
-                                </div><span class="prev-next-question"><p class="prevquestion">上一題</p><p class="nextquestion">下一題</p></span>
+                                </div>
+                                <!--<span class="prev-next-question"><p class="prevquestion">上一題</p><p class="nextquestion">下一題</p></span>-->
                                 <div class="red-hint not-answer-question question1">請至少回答一個選項</div>
                             </div>
                             <div class="container">
@@ -150,7 +111,8 @@
                                 <p class="askforhelp-description">我希望用____的方式來談我的困擾(複選)</p>
                                 <div class="askforhelp-option" id="question3-option">
                                     <!--<button class="askforhelp3">發覺我的潛意識，解釋並分析</button>-->
-                                </div><span class="prev-next-question"><p class="prevquestion">上一題</p><p class="nextquestion">下一題</p></span>
+                                </div>
+                                <!--<span class="prev-next-question"><p class="prevquestion">上一題</p><p class="nextquestion">下一題</p></span>-->
                                 <div class="red-hint not-answer-question question2">請至少回答一個選項</div>
                             </div>
                             <div class="container">
@@ -162,7 +124,9 @@
                                 </div>
                                 <div class="askforhelp-option">
                                     <button class="askforhelp-analyze">開始分析</button>
-                                </div><span class="prev-next-question"><p class="prevquestion">上一題</p></span></div>
+                                </div>
+                                <!--<span class="prev-next-question"><p class="prevquestion">上一題</p></span>-->
+                            </div>
                         </div>
                     </div>
                     <div id="colelem-choose">

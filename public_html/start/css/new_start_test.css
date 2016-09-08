@@ -1,0 +1,60 @@
+            /*New CSS for Start*/
+            
+            #step1 .centerword, 
+            #step1 .askforhelp-title, 
+            #step1 .askforhelp-main-description1,   
+            #step1 .askforhelp-main-description2, 
+            #step1 .askforhelp-main-question, 
+            #step1 .askforhelp-description, 
+            #step1 .askforhelp-option, 
+            #step1 .askforhelp-oralreadyknow, 
+            #step1 .askforhelp-input-div 
+            {
+                width: 100%;
+            }
+
+            #step1 .slide {
+                width: 100%;
+            }
+
+            #step1 .slide-prev, #step1 .slide-next {
+                top: 200px;
+            }
+
+            #step1 .slide-next {
+                right: 2px;
+            }
+
+            #step1 .slide-prev {
+                left: 2px;
+            }
+
+            #step1 .centerinnerword {
+                width: 90%;
+            }
+
+            .step-container #colelem1 {
+                border: none;
+            }
+
+            .step-container #colelem1 .words {
+                margin: 10px auto 0;
+            }
+
+            .step-container > .colelem .container {
+                    border-bottom: 1px solid #e5e5e5;
+            }
+
+            #step1 .askforhelp-dot-main, #step1 .askforhelp-dot {
+                width: 150px;
+            }
+
+            #step1 .askforhelp2 {
+                width: 90%;
+                padding: 0 0 0 0px;
+                text-align: center;
+            }
+
+            #step1 .askforhelp3 {
+                width: 90%;
+            }
