@@ -95,6 +95,10 @@
                 left: 10%;
             }
 
+            .step-container #colelem-finish-choose .suggest:nth-child(2) {
+                width: 300px;
+            }
+
             @media only screen and (max-width: 650px) {
                 .step-container #colelem-finish-choose .choose-card-next-btn, .step-container #colelem-finish-choose .choose-card-prev-btn {
                     top: 120px;
