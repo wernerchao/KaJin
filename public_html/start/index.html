@@ -14,34 +14,6 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/new_start_test.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        .title {
-            border-bottom: 1px solid green;
-        }
-        
-        .col {
-            border: 1px solid black;
-            border-collapse: collapse;
-            width: 20%;
-            display: inline-block;
-            box-sizing: border-box;
-        }
-        
-        .content {
-            width: 100%;
-            border: 1px solid red;
-            display: flex;
-            flex-wrap: wrap;
-            box-sizing: border-box;
-            text-align: center;
-        }
-        
-        @media only screen and (max-width: 950px) {
-            .col {
-                width: 100%;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -97,6 +69,37 @@
         
         #navbar .word.right {
             float: right;
+        }
+
+        /*RWD CSS Fixes*/
+        .grey-container1 .col .title {
+            border-bottom: 1px solid green;
+        }
+        
+        .grey-container1 .column1, .grey-container1 .column2, .grey-container1 .column3, .grey-container1 .column4, .grey-container1 .column5 {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 20%;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        
+        .grey-container1 .content1 {
+            width: 100%;
+            border: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+        @media only screen and (max-width: 950px) {
+            #step2 .grey-container1 .content1 .col {
+                width: 70vw;
+            }
+            /*#step2 .grey-container1 .title .col {
+                width: 20vw;
+            }*/
         }
     </style>
     <div id="page">
@@ -245,7 +248,7 @@
                         </div>
                         <div class="choose-teacher-slide">
                             <div class="grey-container1">
-                                <div class="content">
+                                <!--<div class="content">
                                     <div class="col col1">
                                         <div class="title">預約諮詢</div>
                                         <div class="content1">
@@ -278,8 +281,8 @@
                                             <div class="choose-again">重選 Content 5</div>
                                         </div>
                                     </div>
-                                </div>
-                                <!--<div class="title">
+                                </div>-->
+                                <div class="title">
                                         <div class="col col1">預約諮詢 </div>
                                         <div class="col col2">協助傾向</div>
                                         <div class="col col3">困擾狀況</div>
@@ -304,7 +307,7 @@
                                         <div class="col col5">
                                             <div class="choose-again">重選</div>
                                         </div>
-                                    </div>-->
+                                    </div>
                             </div>
                         </div>
                         <div class="next-teacher-btn">
