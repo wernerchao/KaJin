@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="images/favicon.ico?426821467">
+        <title>諮詢師登錄</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/fileinput.min.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <style>
+            .kv-avatar .file-preview-frame,
+            .kv-avatar .file-preview-frame:hover {
+                margin: 0;
+                padding: 0;
+                border: none;
+                box-shadow: none;
+                text-align: center;
+            }
+
+            .kv-avatar .file-input {
+                display: table-cell;
+                max-width: 220px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <hr>
+            <p class="alert alert-info">
+                老師您好，歡迎加入 Kajin Health 開心心理，請填寫以下資訊，我們將為您建立專屬帳號。
+            </p>
+            <hr>
+            <form id="counselor_reg_form" data-toggle="validator" class="well form-horizontal" action="./counselor_reg.php" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <!-- Text input-->
+                    <legend>帳號資訊</legend>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">E-mail<span class="text-danger">&nbsp*</span></label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input name="email" placeholder="E-mail Address" class="form-control" type="email" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">密碼<span class="text-danger">&nbsp*</span></label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="password" name="password" placeholder="密碼" class="form-control" type="password" data-minlength="8" required />
+                            </div>
+                            <div class="help-block">（密碼最小長度為八位英數字）</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">再次輸入密碼<span class="text-danger">&nbsp*</span></label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input name="password_chk" placeholder="再次輸入密碼" class="form-control" type="password" data-match="#password" data-match-error="密碼不符合" required />
+                            </div>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <!-- Form Name -->
+                    <legend>個人資訊</legend>
+
+                    <div class="text-center">
+                        <label class="text-center" style="margin-bottom:5px">上傳您的個人檔案照片<small class="text-success">（JPG/PNG/GIF 圖檔）</small></label>
+                        <div class="kv-avatar center-block" style="width:200px; margin-bottom:20px;">
+                            <input id="avatar" name="avatar" type="file" class="file-loading">
+                        </div>
+                    </div>
+
+                    <!-- CH Name Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">中文姓名</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="name_ch" placeholder="中文姓名" class="form-control" type="text" required />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EN Name Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">英文姓名<span class="text-danger">&nbsp*</span></label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="name_en" placeholder="英文姓名" class="form-control" type="text" required />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gender Radios  -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">性別<span class="text-danger">&nbsp*</span></label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="gender" value="0" required /> 女性
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="gender" value="1" required /> 男性
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Language Checkboxes -->
+                    <div id="lang-checkbox-group" class="form-group checkbox-group">
+                        <label class="col-md-4 control-label">諮詢語言（可複選）<span class="text-danger">&nbsp*</span></label>
+                        <div class="col-md-8">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="languages[]" value="CH"> 中文
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="languages[]" value="EN"> 英文
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Price Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">單次諮詢費用（USD）</label>
+                        <div class="col-md-6 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                                <input name="price" placeholder="" class="form-control" type="number">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="col-md-6 col-md-offset-3 alert alert-warning">
+                        <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> 目前 Kajin Health 的諮詢費用統一為首次 USD$24、往後每次 USD$60。
+                        <br>
+                        <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> 我們正在規劃開放讓諮詢師自行訂定諮詢費用，您可以在本欄位預先填寫自訂收費，亦可稍後登入至後台修改。
+                    </p>
+
+                    <!-- Website Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">個人網站或部落格</label>
+                        <div class="col-md-6 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                                <input name="website" placeholder="http://" class="form-control" type="url">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video URL Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">個人介紹或相關影片</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
+                                <input name="video_url" placeholder="http://" class="form-control" type="url">
+                            </div>
+                            <p class="help-block">（請填入 YouTube/Vimeo 影片連結）</p>
+                        </div>
+                    </div>
+
+                    <!-- Licence Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">專業執照</label>
+                        <div class="col-md-6 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-bookmark"></i></span>
+                                <textarea class="form-control" name="certificate" placeholder="您所擁有的專業執照"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Career Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">經歷<span class="text-danger">&nbsp*</span></label>
+                        <div class="col-md-6 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+                                <textarea class="form-control" name="career" placeholder="您的經歷" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Speciality Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">諮詢專長<span class="text-danger">&nbsp*</span></label>
+                        <div class="col-md-6 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-star"></i></span>
+                                <textarea class="form-control" name="speciality" placeholder="您的諮詢專長" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic Checkboxes -->
+                    <div id="topic-checkbox-group" class="form-group checkbox-group">
+                        <label class="col-md-4 control-label">擅長主題（可複選）<span class="text-danger">&nbsp*</span></label>
+                        <div class="col-md-8">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="topics[]" value="0"> 自我困擾（內在探索，例如：憂鬱、緊張、自我實現等）
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="topics[]" value="1"> 家庭問題（非伴侶間，例如：婆媳關係等）
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="topics[]" value="2"> 感情議題（伴侶婚姻，例如：信任、背叛、溝通等）
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="topics[]" value="3"> 親子議題（教養相關，例如：兒童情緒、行為困擾等）
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="topics[]" value="4"> 工作職場（職場壓力，例如：競爭、人際困擾等）
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="topics[]" value="5"> 朋友社交（人際相處，例如：社交恐懼、同儕關係等）
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="topics[]" value="6"> 同志議題（深層探索，例如：自我調適、壓力因應等）
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="topics[]" value="7"> 兩性關係（青少年的，例如：兒童情緒、行為困擾等）
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- School Checkboxes -->
+                    <div id="school-checkbox-group" class="form-group checkbox-group">
+                        <label class="col-md-4 control-label">擅長學派（可複選）<span class="text-danger">&nbsp*</span></label>
+                        <div class="col-md-8">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="schools[]" value="0"> 探索過去經驗對現在的影響、分析行為/想法背後動機（心理動力）
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="schools[]" value="1"> 談家庭對你影響，手足對你的影響（家族）
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="schools[]" value="2"> 談早期生活風格，手足競爭，自卑等（Alder）
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="schools[]" value="3"> 重視過去與個人特質(應用認知行為)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="schools[]" value="4"> 工談談個人存在以及生命的意義（存在主義）
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="schools[]" value="5"> 注重情緒焦點，調節各種受創經驗和脆弱的心情，強調改變就在當下（情緒焦點）
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="schools[]" value="6"> 冥想抒壓
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="schools[]" value="7"> 自我觀察，改變負向認知對情緒行為的影響（認知行為）
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="schools[]" value="8"> 強調個人的選擇及責任，討論個案的計畫及行動（現實治療）
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="schools[]" value="9"> 幫助個人澄清他們的個人價值觀，注重行動（Acceptance and commitment therapy, ACT）
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Words Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">給個案的話<span class="text-danger">&nbsp*</span></label>
+                        <div class="col-md-6 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                <textarea class="form-control" name="words" placeholder="此段文字會顯示在您的前台檔案頁面" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label"></label>
+                        <div class="col-md-4 text-center">
+                            <button type="submit" class="btn btn-warning">註冊 <span class="glyphicon glyphicon-send"></span></button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+        </div>
+        <!-- /.container -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="./scripts/fileinput.min.js"></script>
+        <script src="./scripts/validator.min.js"></script>
+        <script>
+            $(document).on('ready', function() {
+                $("#avatar_input").fileinput({
+                    showCaption: true,
+                    showUpload: false
+                });
+                $("#video_input").fileinput({
+                    showCaption: false,
+                    showUpload: false
+                });
+                $("#avatar").fileinput({
+                    overwriteInitial: true,
+                    maxFileSize: 1500,
+                    showClose: false,
+                    showCaption: false,
+                    showUpload: false,
+                    browseLabel: '',
+                    removeLabel: '',
+                    removeIcon: '<i class="glyphicon glyphicon-remove"></i>',
+                    removeTitle: '刪除照片',
+                    elErrorContainer: '#kv-avatar-errors',
+                    msgErrorClass: 'alert alert-block alert-danger',
+                    defaultPreviewContent: '<img src="./images/nonamem.jpg" alt="Default Avatar" style="width:160px">',
+                    // layoutTemplates: {main2: '{preview} ' +  btnCust + ' {remove} {browse}'},
+                    allowedFileExtensions: ["jpg", "png", "gif"]
+                });
+                $('#counselor_reg_form').validator().on('submit', function(e) {
+                    if (!e.isDefaultPrevented()) {
+                        var valid = true;
+                        $(".checkbox-group").each(function(index, element) {
+                            if ($(this).find("input[type=checkbox]:checked").length === 0) {
+                                e.preventDefault();
+                                $(this).addClass('has-error');
+                                valid = false;
+                            }
+                        });
+                        if (!valid) {
+                            $('html, body').animate({
+                                scrollTop: $(".has-error").first().offset().top
+                            }, 500);
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+
+</html>
+>

@@ -1,0 +1,81 @@
+# Copyright (C) 2014 the WordPress team
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Heinrich 1.0\n"
+"POT-Creation-Date: 2015-03-28 17:38:59+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+#: functions.php:129
+msgid "on"
+msgstr ""
+
+#: header.php:29
+msgid "Home"
+msgstr ""
+
+#: header.php:30
+msgid "Menu"
+msgstr ""
+
+#: header.php:31
+msgid "Search"
+msgstr ""
+
+#: header.php:45
+msgid "Close Menu"
+msgstr ""
+
+#: single.php:27
+msgid "Next Post"
+msgstr ""
+
+#: single.php:28
+msgid "Previous Post"
+msgstr ""
+
+#: pagetitle.php:40
+msgid "Search Results for %s"
+msgstr ""
+
+#: footer.php:44
+msgid "Powered by %1$s &amp; %2$s"
+msgstr ""
+
+#: entry-meta.php:17
+msgid "Edit Post"
+msgstr ""
+
+#: content.php:22
+msgid "Read more"
+msgstr ""
+
+#: content-none.php:12
+msgid "Oops, nothing found"
+msgstr ""
+
+#: content-none.php:18
+msgid "Sorry, but nothing matched your search terms. Please try again with a different keyword."
+msgstr ""
+
+#: content-none.php:22
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: comments.php:25
+msgctxt "comments title"
+msgid "One comment on %2$s"
+msgid_plural "%1$s comments on %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:48
+msgid "Comments are closed."
+msgstr ""
+
+#: searchform.php:12
+msgid "Search for &hellip;"
+msgstr ""

@@ -1,0 +1,172 @@
+#u20780
+{
+	border-style: solid;
+	border-color: #E5E5E5;
+	background-color: #FFFFFF;
+	position: fixed;
+	border-width: 0px 0px 1px;
+}
+
+#u25093
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: fixed;
+}
+
+#u20785
+{
+	opacity: 0.85;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+	filter: alpha(opacity=85);
+	position: fixed;
+	background: transparent url("../images/kajin%20telemedical-09.png") no-repeat center center;
+}
+
+#u20786-4
+{
+	background-color: transparent;
+	opacity: 0.9;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	color: #66C5CC;
+	line-height: 36px;
+	text-align: left;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-weight: bold;
+	position: fixed;
+}
+
+#u20688
+{
+	background-color: #333333;
+}
+
+#u20688_align_to_page
+{
+	position: relative;
+}
+
+#u20771-9
+{
+	background-color: transparent;
+	line-height: 24px;
+	font-size: 16px;
+	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	position: relative;
+}
+
+#u20771-2
+{
+	letter-spacing: 4px;
+	color: #0CA7B3;
+}
+
+#u20771-5,#u20771-7
+{
+	text-align: left;
+	letter-spacing: 2px;
+	color: #B3AAA1;
+}
+
+#u20691
+{
+	position: relative;
+	background: transparent url("../images/social_media_icon-01%20copy.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u20691:hover
+{
+	background: transparent url("../images/social_media_icon-01.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u20729
+{
+	-webkit-transform: matrix(0,-1,1,0,-23,412);
+	-ms-transform: matrix(0,-1,1,0,-23,412);
+	transform: matrix(0,-1,1,0,-23,412);
+	position: relative;
+	background: transparent url("../images/footer_ipad.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u20770-7
+{
+	background-color: transparent;
+	color: #7F7F7F;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	position: relative;
+}
+
+#u20733
+{
+	position: relative;
+	background: transparent url("../images/social_media_icon-03%20copy.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u20733:hover
+{
+	background: transparent url("../images/social_media_icon-03.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u20730
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+}
+
+#u20772,#u20731
+{
+	position: relative;
+	background: transparent url("../images/kajin%20telemedical-08.png") no-repeat center center;
+}
+
+#u20732-4
+{
+	background-color: transparent;
+	opacity: 0.9;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	color: #FFFFFF;
+	line-height: 36px;
+	text-align: left;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-weight: bold;
+	position: relative;
+}
+
+#u20690
+{
+	border-radius: 4px;
+	position: relative;
+	background: transparent url("../images/wechat%20qrcode_bnw-ieu16798-fr.png") no-repeat left top;
+	background: rgba(0,0,0,0) url("../images/wechat%20qrcode_bnw.jpg") no-repeat left top;
+	background-color: transparent;
+	background-size: contain;
+}
+
+#u20690:hover
+{
+	border-radius: 4px;
+	background: transparent url("../images/wechat_qrcode_color-ieu20690-r-fr.png") no-repeat left top;
+	background: rgba(0,0,0,0) url("../images/wechat_qrcode_color.jpg") no-repeat left top;
+	background-color: transparent;
+	background-size: contain;
+}
+
