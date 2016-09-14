@@ -1,9 +1,0 @@
-[26-Nov-2015 03:30:29 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/kajinonline/public_html/admin/200.php on line 27
-[26-Nov-2015 03:30:30 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/kajinonline/public_html/include_function.php on line 155
-[26-Nov-2015 03:30:32 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/kajinonline/public_html/admin/200.php on line 27
-[28-Nov-2015 14:29:35 UTC] PHP Fatal error:  Call to undefined function get_date() in /home/kajinonline/public_html/admin/main.php on line 3
-[28-Nov-2015 14:29:59 UTC] PHP Fatal error:  Call to undefined function get_date() in /home/kajinonline/public_html/admin/main.php on line 4
-[02-Jan-2016 17:25:39 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/kajinonline/public_html/include_function.php on line 262
-[02-Jan-2016 17:25:57 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/kajinonline/public_html/include_function.php on line 262
-[02-Jan-2016 17:25:58 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/kajinonline/public_html/include_function.php on line 262
-[02-Jan-2016 17:25:58 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/kajinonline/public_html/include_function.php on line 262
