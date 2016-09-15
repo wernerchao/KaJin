@@ -72,12 +72,28 @@
         }
 
         /*RWD CSS Fixes*/
+        .available-teacher {
+            display: flex;
+        }
+
+        .prev-teacher-btn, .next-teacher-btn {
+            width: 10vw;
+            margin: 0 auto;
+        }
+
+        .teacherFadingBox {
+            width: 10vw;
+        }
+
+        .choose-teacher-slide {
+            width: 70vw;
+        }
+
         .grey-container1 .col .title {
             border-bottom: 1px solid green;
         }
         
         .grey-container1 .column1, .grey-container1 .column2, .grey-container1 .column3, .grey-container1 .column4, .grey-container1 .column5 {
-            border: 1px solid black;
             border-collapse: collapse;
             width: 20%;
             display: inline-block;
@@ -86,20 +102,34 @@
         
         .grey-container1 .content1 {
             width: 100%;
-            border: 1px solid red;
             display: flex;
             flex-wrap: wrap;
             box-sizing: border-box;
             text-align: center;
         }
         
-        @media only screen and (max-width: 950px) {
+        @media only screen and (max-width: 650px) {
+            .available-teacher {
+                height: 600px; /*for now, maybe need to be bigger*/
+            }
+
+            .slick-list, .slick-slide {
+                height: 600px;
+            }
+
             #step2 .grey-container1 .content1 .col {
                 width: 70vw;
+                min-height: 15vh;
+                padding: 0;
             }
-            /*#step2 .grey-container1 .title .col {
-                width: 20vw;
-            }*/
+
+            #step2 .grey-container1 .content1 .column1 {
+                height: 100%;
+            } 
+
+            .grey-container1 .title {
+                height: 25%;
+            }
         }
     </style>
     <div id="page">

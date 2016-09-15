@@ -314,66 +314,68 @@
 			availableTeacherProperty = [];
 			availableTeacher.forEach(function(value, index) {
 				$('.choose-teacher-slide').append(
-					// '<div class="grey-container1">' +
-					// 		'<div class="content content1">' +
-
-					// 		'<div class="column1 col">' +
-					// 			'<div class="title">預約諮詢師</div>' +
-					// 			'<div class="photo"></div>' +
-					// 			'<div class="name-block">' +
-					// 				'<div class="name">' + teacherinfo[value]['name_ch'] + '</div><br/>' +
-					// 				'<div class="profession">心理諮詢師</div>' +
-					// 			'</div>' +
-					// 		'</div>' +
-					// 		'<div class="column2 col" id="need-help">' + 
-					// 			'<div class="title">協助傾向</div>' + 
-					// 		'</div>' +
-					// 		'<div class="column3 col" id="sad-situation">' + 
-					// 			'<div class="title">困擾狀況</div>' +
-					// 		'</div>' +
-					// 		'<div class="column4 col">' +
-					// 			'<div class="title">諮詢堂數</div>' +
-					// 			'<div>1堂課</div>' +
-					// 			'<div>(50分鐘/堂)</div>' +
-					// 		'</div>' +
-					// 		'<div class="column5 col">' +
-					// 			'<div class="title">選項</div>' +
-					// 			'<div class="choose-again">' +
-					// 			'重選' +
-					// 			'</div>' +
-					// 		'</div>' +
-							
-					// 	'</div>' +
-					// '</div>'
 					'<div class="grey-container1">' +
-					'<div class="title">' +
-					'<div class="col1 col">預約諮詢師</div>' +
-					'<div class="col2 col">協助傾向</div>' +
-					'<div class="col3 col">困擾狀況</div>' +
-					'<div class="col4 col">諮詢堂數</div>' +
-					'<div class="col5 col">選項</div>' +
-					'</div>' +
-					'<div class="content">' +
-					'<div class="col1 col">' +
-					'<div class="photo"></div>' +
-					'<div class="name-block">' +
-					'<div class="name">' + teacherinfo[value]['name_ch'] + '</div><br/>' +
-					'<div class="profession">心理諮詢師</div>' +
-					'</div>' +
-					'</div>' +
-					'<div class="col2 col" id="need-help"></div>' +
-					'<div class="col3 col" id="sad-situation"></div>' +
-					'<div class="col4 col">' +
-					'<div>1堂課</div>' +
-					'<div>(50分鐘/堂)</div>' +
-					'</div>' +
-					'<div class="col5 col">' +
-					'<div class="choose-again">' +
-					'重選' +
-					'</div>' +
-					'</div>' +
-					'</div>' +
+							'<div class="content content1">' +
+
+							'<div class="column1 col">' +
+								'<div class="title">預約諮詢師</div>' +
+								'<div class="photo"></div>' +
+								'<div class="name-block">' +
+									'<div class="name">' + teacherinfo[value]['name_ch'] + '</div><br/>' +
+									'<div class="profession">心理諮詢師</div>' +
+								'</div>' +
+							'</div>' +
+							'<div class="column2 col">' + 
+								'<div class="title">協助傾向</div>' + 
+								'<div id="need-help"></div>' +
+							'</div>' +
+							'<div class="column3 col">' + 
+								'<div class="title">困擾狀況</div>' +
+								'<div id="sad-situation"></div>' +
+							'</div>' +
+							'<div class="column4 col">' +
+								'<div class="title">諮詢堂數</div>' +
+								'<div>1堂課</div>' +
+								'<div>(50分鐘/堂)</div>' +
+							'</div>' +
+							'<div class="column5 col">' +
+								'<div class="title">選項</div>' +
+								'<div class="choose-again">' +
+								'重選' +
+								'</div>' +
+							'</div>' +
+							
+						'</div>' +
 					'</div>'
+					// '<div class="grey-container1">' +
+					// '<div class="title">' +
+					// '<div class="col1 col">預約諮詢師</div>' +
+					// '<div class="col2 col">協助傾向</div>' +
+					// '<div class="col3 col">困擾狀況</div>' +
+					// '<div class="col4 col">諮詢堂數</div>' +
+					// '<div class="col5 col">選項</div>' +
+					// '</div>' +
+					// '<div class="content">' +
+					// '<div class="col1 col">' +
+					// '<div class="photo"></div>' +
+					// '<div class="name-block">' +
+					// '<div class="name">' + teacherinfo[value]['name_ch'] + '</div><br/>' +
+					// '<div class="profession">心理諮詢師</div>' +
+					// '</div>' +
+					// '</div>' +
+					// '<div class="col2 col" id="need-help"></div>' +
+					// '<div class="col3 col" id="sad-situation"></div>' +
+					// '<div class="col4 col">' +
+					// '<div>1堂課</div>' +
+					// '<div>(50分鐘/堂)</div>' +
+					// '</div>' +
+					// '<div class="col5 col">' +
+					// '<div class="choose-again">' +
+					// '重選' +
+					// '</div>' +
+					// '</div>' +
+					// '</div>' +
+					// '</div>'
 				);
 				if (teacherinfo[value].photo !== '')
 					$('#step2 .grey-container1 .content .photo ').eq(index).css('background-image', 'url(../images/' + teacherinfo[value].photo + ')');
