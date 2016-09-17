@@ -36,8 +36,7 @@
         }
         
         #navbar .container {
-            width: 960px;
-            /*100%;*/
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -113,7 +112,7 @@
                 height: 600px; /*for now, maybe need to be bigger*/
             }
 
-            .slick-list, .slick-slide {
+            .available-teacher .slick-list, .available-teacher .slick-slide {
                 height: 600px;
             }
 
@@ -130,7 +129,100 @@
             .grey-container1 .title {
                 height: 25%;
             }
+
+            .where-am-i {
+                padding: 0;
+                overflow: hidden;
+            }
+
+            .where-am-i .country-option:nth-child(2) input {
+                margin: 8px 0px 0 50px;
+            }
         }
+
+        @media only screen and (max-width: 950px) {
+            .grey-container2 .slick-slider, .grey-container2 .slick-list {
+                width: 100%;
+            }
+
+            .grey-container2 .can-book-time .col, .grey-container2 .week-name .col {
+                width: 13%;
+                box-sizing: border-box;
+                font-size: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 650px) {
+	        .grey-container2 .can-book-time .col .book-time-small-block {
+		        margin: 0 auto;
+		        width: 100%;
+		        padding: 0;
+		        font-size: 8px;
+	        }
+
+            .grey-container2 .title {
+                display: flex;
+                flex-wrap: wrap;
+                height: 150px;
+                padding: 15px 0;
+            }
+
+            .grey-container2 .title .time-icon.prev {
+                order: 0;
+                margin: 0 auto;
+            }
+
+            .grey-container2 .title .time-icon.next {
+                order: 2;
+                margin: 0 auto;
+            }
+
+            .grey-container2 .title .week {
+                order: 1;
+                margin: 0 10px;
+            }
+
+            .grey-container2 .title .date {
+                order: 3;
+            }
+
+            .grey-container2 .title .date.next {
+                margin: 0 auto;
+            }
+
+            .grey-container2 .title .date.prev {
+                margin: 0 auto;
+            }
+
+            .grey-container2 .title .time-bar {
+                order: 4;
+                margin: 0 auto;
+            }
+
+            .grey-container3 {
+                height: 100px;
+                padding: 0 5px;
+            }
+
+            .step-div > a {
+                display: block;
+            }
+
+            .grey-container3 .select-date {
+                margin: 0 auto;
+            }
+
+            .step-container h2.title {
+                width: 100%;
+            }
+
+            #step2 #colelem3 .container {
+                width: 100%;
+                padding: 20px 5px;
+                box-sizing: border-box;
+            }
+        }
+
     </style>
     <div id="page">
         <div id="step1" class="step-container">
@@ -344,6 +436,10 @@
                             <div class="teacherFadingBox"></div>
                         </div>
                     </div>
+                    <div class="book-title">
+                        <div class="icon"></div>
+                        <div class="word">預約時間</div>
+                    </div>
                     <div class="where-am-i">
                         <div class="country-option">
                             <input id="taiwan-radio" type="radio" name="country-radio" checked><span class="countryRadio"></span>
@@ -354,10 +450,6 @@
                             <label for="abroad-radio" class="country-discription">我在</label>
                             <select disabled class="choose-abroad"></select>
                         </div>
-                    </div>
-                    <div class="book-title">
-                        <div class="icon"></div>
-                        <div class="word">預約時間</div>
                     </div>
                     <div class="grey-container2">
                         <div class="title">
