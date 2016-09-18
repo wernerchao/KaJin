@@ -417,6 +417,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     $('.formContainer').lightbox_me({
                         centered: true,
                         closeClick: false,
+                        closeEsc: false,
                         preventScroll: true,
                         overlayCSS: {
                             position:"fixed",
@@ -445,7 +446,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     var time = $(this).attr('data-time')+':00';
                     $('.formContainer').lightbox_me({
                         centered: true,
-                        closeClick: false,
+                        // closeClick: false,
+                        // closeEsc: false,
                         preventScroll: true,
                         overlayCSS: {
                             position:"fixed",
