@@ -27,7 +27,6 @@ foreach ($counselor as $c) {
     mail($c['email'], '=?utf-8?B?'.base64_encode($title).'?=', $message, $headers);
 }
 
-mail('din1030@gmail.com', '=?utf-8?B?'.base64_encode($title).'?=', $message, $headers);
 mail('jin@kajinhealth.com', '=?utf-8?B?'.base64_encode($title).'?=', $message, $headers);
 mail('Werner@kajinhealth.com', '=?utf-8?B?'.base64_encode($title).'?=', $message, $headers);
 mail('Rachel@kajinhealth.com', '=?utf-8?B?'.base64_encode($title).'?=', $message, $headers);

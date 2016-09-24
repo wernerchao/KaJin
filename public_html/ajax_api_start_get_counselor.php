@@ -5,10 +5,6 @@ include 'include_function.php';
 include 'include_setting.php';
 include 'include_func_din.php';
 
-// 直接給登入資料
-// $_SESSION['user_email'] = 'din1030@gmail.com';
-// $_SESSION['user_password'] = '0937921030';
-
 // 檢查個案登入狀態
 $data_user = load_user();
 if ($data_user == 'ERROR') {
