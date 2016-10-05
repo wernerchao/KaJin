@@ -89,5 +89,5 @@ This folder contains a wordpress blog. You will mostly use wordpress to maintain
 
 ## Copyright and License
 
-Code and documentation copyright 2016 the Project Movie Trailer
+Code and documentation copyright 2016 KaJin
 Authors and released under the MIT license.
