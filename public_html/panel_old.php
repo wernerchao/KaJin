@@ -14,6 +14,7 @@ if ($data_user == 'ERROR') {
 
 // 讀取資商師清單
 $list_counselor = list_counselor();
+
 /* 讀取 panel.php 要顯示的資料 */
 
 // 讀取最後一筆我的煩惱
@@ -34,7 +35,6 @@ $last_homework = get_last_homework($data_user['id']);
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
 		<meta name="description" content="遠端線上心理諮詢平台 | 隱私專業保密的線上心理諮詢服務"/>
 		<title>KAJIN HEALTH 遠端線上諮詢平台</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 		<link href="panelstyle.css" rel="stylesheet" type="text/css" media="all">
 		<link rel="shortcut icon" href="img/favicon.ico">
 		<script type="text/javascript" src="jquery-1.9.1.js"></script>
@@ -173,17 +173,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     ?>
 					<div id="notice_empty">您沒有即將進行的諮詢<br><a href="./start/">點選這裡進行新的預約</a></div>
 					<?php
-
 } elseif ($next_appointment == false) {
     ?>
 					<div id="notice_empty">您沒有即將進行的諮詢<br><a href="reserve.php">點選這裡進行新的預約</a></div>
 					<?php
-
 } else {
     ?>
 					<div id="notice_next">您已經確認的下一次諮詢為<br><font color="red"><?=$next_appointment['date']?> <?=sprintf('%02d', $next_appointment['time'])?>:00</font><br><br>請您在開始之前 10 分鐘<br><a href="work_meet.php?appointment_id=<?=$next_appointment['id']?>" target="_blank">由此進入線上諮商室</a></div>
 					<?php
-
 } ?>
 				</div>
 			</div>
@@ -220,7 +217,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</div>
 			</div>
 			<?php
-
 } ?>
 			<div id="appointment">
 				<div class="box_title">
@@ -260,14 +256,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<td class="evaluate">
 							<?php if (($v['state_counsel'] == 2 || $v['state_counsel'] == 3 || $v['state_counsel'] == 4 || $v['state_counsel'] == 9) || ($v['state_payment'] == 3 && is_datetime_passed($v['date'], $v['time']) == 1)) {
     ?>
-							<button class="rate_btn" type="button" name="button" data-appointment="<?=$v['id'];
-    ?>" data-date="<?=$v['date'];
-    ?>" data-time="<?=$v['time'];
-    ?>" data-counselor="<?=$v['counselor_id'];
-    ?>" data-counselor-name="<?= $list_counselor[$v['counselor_id']]['name_ch'] ?>">滿意度調查</button>
-
+							<a href="http://www.kajinonline.com/satisfaction_form.html" target="_blank">滿意度調查</a>
 							<?php
-
 }
                             ?>
 						</td>
@@ -276,7 +266,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     ?>
 							<a href="payment.php?appointment_id=<?=$v['id']?>">我要付款</a>
 							<?php
-
 }
                             ?>
 						</td>
@@ -286,8 +275,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         }
                         echo '</table>';
                     } else {
-                        echo '<div id="appointment_message">您還沒有任何諮詢預約記錄，<a href="./start/">點選這裡進行預約</a>。</div>';
-                    }
+                            echo '<div id="appointment_message">您還沒有任何諮詢預約記錄，<a href="./start/">點選這裡進行預約</a>。</div>';
+                        }
                     ?>
 			</div>
 		</div>
@@ -379,134 +368,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</form>
 			</div>
 		</div>
-        <div class="formContainer">
-            <form id="ratingForm" class="ratingForm">
-                <div class="caption">給予前次諮詢老師評價！</div>
-                <div class="counselor_info">
-                    諮詢老師：<span id="counselor_name"></span><br>
-                    日期：<span id="date"></span>&nbsp;
-                    時間：<span id="time"></span>
-                </div>
-                <div class='rating r1'>老師能理解我的問題</div><span id="q1-rate"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span>
-                <br>
-                <div class='rating r2'>老師對我的情況有幫助</div><span id="q2-rate"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span>
-                <br>
-                <div class='rating r3'>值不值得推薦</div><span id="q3-rate"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span>
-                <br>
-                <input type="hidden" id="appointment" name="appointment" value="">
-                <input type="hidden" id="counselor" name="counselor" value="">
-                <textarea rows='4' cols='50' id='textRating' placeholder='說說你的感受...'></textarea>
-                <button type='submit' id='submitRating' class='btn'>完成</button>
-            </form>
-        </div>
-		<script src="./js/jquery.lightbox_me.js"></script>
-        <!--popup window plugin js-->
-        <script>
-            $(document).ready(function() {
-                $.ajax({
-                    url: 'https://kajinonline.com/ajax_api_check_rating_record.php?user_id=<?= $data_user['id']; ?> ' ,
-                    type: 'GET',
-                    dataType: 'json',
-                    // data: {param1: 'value1'}
-                }).done(function(data) {
-                    var appointment_id = data.result.a_id;
-                    var appointment_date = data.result.date;
-                    var appointment_time = data.result.time;
-                    var counselor_id = data.result.counselor_id;
-                    var counselor_name = data.result.c_name;
-                    $('.formContainer').lightbox_me({
-                        centered: true,
-                        closeClick: false,
-                        closeEsc: false,
-                        preventScroll: true,
-                        overlayCSS: {
-                            position:"fixed",
-                            background: 'black',
-                            opacity: .6
-                        },
-                        onLoad: function() {
-                            $('#ratingForm #appointment').val(appointment_id);
-                            $('#ratingForm #date').html(appointment_date);
-                            $('#ratingForm #time').html(appointment_time+':00');
-                            $('#ratingForm #counselor').val(counselor_id);
-                            $('#ratingForm #counselor_name').html(counselor_name);
-                            $('#ratingForm').find('textarea:first').focus();
-                        }
-                    });
-                });
-
-                var index;
-                var ratingObj = {};
-
-                $('.rate_btn').click(function(event) {
-                    var appointment_id = $(this).attr('data-appointment');
-                    var counselor_id = $(this).attr('data-counselor');
-                    var counselor_name = $(this).attr('data-counselor-name');
-                    var date = $(this).attr('data-date');
-                    var time = $(this).attr('data-time')+':00';
-                    $('.formContainer').lightbox_me({
-                        centered: true,
-                        // closeClick: false,
-                        // closeEsc: false,
-                        preventScroll: true,
-                        overlayCSS: {
-                            position:"fixed",
-                            background: 'black',
-                            opacity: .6
-                        },
-                        onLoad: function() {
-                            $('#ratingForm #appointment').val(appointment_id)
-                            $('#ratingForm #counselor').val(counselor_id)
-                            $('#ratingForm #counselor_name').html(counselor_name);
-                            $('#ratingForm #date').html(date);
-                            $('#ratingForm #time').html(time);
-                            $('#ratingForm').find('textarea:first').focus()
-                        }
-                    });
-                    event.preventDefault();
-                });
-                //when the form is submitted, pass the data through ajax call
-                $('#ratingForm').submit(function(event) {
-                    //something happens when the submit button is clicked
-                    ratingObj['appointment'] = $('#ratingForm #appointment').val();
-                    ratingObj['counselor'] = $('#ratingForm #counselor').val();
-                    ratingObj['comment'] = $(this).children("textarea").val();
-                    if (ratingObj[0] != null
-                     && ratingObj[1] != null
-                     && ratingObj[2] != null) {
-                         $.ajax({
-                             type: 'POST',
-                             url: 'ajax_api_rating.php',
-                             dataType: 'json',
-                             data: ratingObj,
-                             success: function(data) {
-                                 if (data.status) {
-                                     $('.formContainer').trigger('close');
-                                 } else {
-                                     alert(data.message);
-                                     $('.formContainer').trigger('close');
-                                 }
-                             }
-                         });
-                    } else {
-                        alert('請對所有項目評分');
-                    }
-
-                    event.preventDefault();
-                    return false;
-                });
-                //when the stars are clicked, pass the score and the relevant text to the ratingObj
-                $('.rating').next().on('click', 'i', function() {
-                    score = $(this).index() + 1; //get the rating score, out of 5
-                    console.log('score:' + score);
-                    rate_item = $(this).parent('span').prev().index('.rating');
-                    console.log('rate_item:' + rate_item);
-                    ratingObj[rate_item] = score;
-                    $(this).nextAll().removeClass('fa-star').addClass('fa-star-o');
-                    $(this).prevAll().removeClass('fa-star-o').addClass('fa-star'); //the star(s) before the mouse click location
-                    $(this).removeClass('fa-star-o').addClass('fa-star'); //the star on the mouse click location
-                });
-            });
-        </script>
 	</body>
 </html>

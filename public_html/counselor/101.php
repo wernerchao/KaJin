@@ -125,6 +125,9 @@ if ($_POST['change_information']) {
     $name_en = $mysql->real_escape_string($_POST['name_en']);
     $tel = $mysql->real_escape_string($_POST['tel']);
     $location = $mysql->real_escape_string($_POST['location']);
+    $practice_place = $mysql->real_escape_string($_POST['practice_place']);
+    $practice_place_contact = $mysql->real_escape_string($_POST['practice_place_contact']);
+    $available_online = $_POST['available_online'];
     $gender = $mysql->real_escape_string($_POST['gender']);
     $languages = $mysql->real_escape_string(implode(',', $_POST['languages']));
     $price = $mysql->real_escape_string($_POST['price']);
@@ -151,7 +154,7 @@ if ($_POST['change_information']) {
         echo "<p class='text-error'>個人資訊不完整！</p>";
         // echo 'personal_info_error';
     } else {
-        $sql_string = "UPDATE `counselor` SET `name_ch`='$name_ch', `name_en`='$name_en', `tel`='$tel', `location`='$location', `languages`='$languages', `profile_speciality`='$speciality', `price`=$price, `payout_method`='$payout', ".
+        $sql_string = "UPDATE `counselor` SET `name_ch`='$name_ch', `name_en`='$name_en', `tel`='$tel', `location`='$location', `practice_place`='$practice_place', `practice_place_contact`='$practice_place_contact', `available_online`=$available_online, `languages`='$languages', `profile_speciality`='$speciality', `price`=$price, `payout_method`='$payout', ".
         "`topics`='$topics', `schools`='$schools', `website`='$website', `video_url`='$video_url', `tag`='$tag', `words`='$words' WHERE `id`=".$data_counselor['id'];
         // echo $sql_string;
         if (!$mysql->query($sql_string)) {
@@ -358,6 +361,48 @@ if ($_POST['change_information']) {
                         </div>
                     </div>
 
+                    <!-- Practice Place Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">執業地點</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                                <input name="practice_place" placeholder="您執業的場所" class="form-control" type="text" value="<?=$data_counselor['practice_place']?>"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Practice Place Contact Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">執業地點聯絡方式</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                <input name="practice_place_contact" placeholder="可填電話或其他聯絡方式" class="form-control" type="text"  value="<?=$data_counselor['practice_place_contact']?>"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gender Radios  -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">開放線上會談<span class="text-danger">&nbsp*</span></label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="available_online" value="1" <?php if ($data_counselor[ 'available_online'] == 1) {
+    echo ' checked="checked"';
+} ?> required /> 是
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="available_online" value="0" <?php if ($data_counselor[ 'available_online'] == 0) {
+    echo ' checked="checked"';
+} ?> required /> 否
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Language Checkboxes -->
                     <div id="lang-checkbox-group" class="form-group checkbox-group">
                         <label class="col-md-4 control-label">諮詢語言（可複選）<span class="text-danger">&nbsp*</span></label>

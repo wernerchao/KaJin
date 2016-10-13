@@ -3,11 +3,11 @@
 
     include 'include_function.php';
     include 'include_setting.php';
-    
-    $sql_string = 'SELECT id, name_ch, whole_name, gender, photo, speciality, career, words, short_words, profile FROM `counselor` WHERE `active`=1 ORDER BY `id`';
+
+    $sql_string = 'SELECT id, name_ch, whole_name, gender, location, practice_place, practice_place_contact, available_online, photo, speciality, career, words, short_words, profile FROM `counselor` WHERE `active`=1 ORDER BY `id`';
 
     if (isset($_GET['offset']) && isset($_GET['limit'])) {
-    	$sql_string .= ' LIMIT '.$_GET['offset'].', '.$_GET['limit'];
+        $sql_string .= ' LIMIT '.$_GET['offset'].', '.$_GET['limit'];
     }
 
     $sql = $mysql->query($sql_string);

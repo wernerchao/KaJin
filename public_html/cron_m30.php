@@ -43,7 +43,7 @@ while ($row = $sql->fetch_assoc()) {
         // 寄信通知老師
         notification('remind_counselor', $list_counselor[$row['counselor_id']]['email'], array('date' => $mail_date, 'time' => sprintf('%02d', $mail_hour), 'email' => $row2['email'], 'counselor' => $list_counselor[$row['counselor_id']]['name_ch']));
         // 寄信通知 admin
-        notification('remind_admin', 'support@kajinhealth.com, jin@kajinhealth.com, wilson@kajinhealth.com, otwo.kajin@gmail.com, din1030@gmail.com', array('date' => $mail_date, 'time' => sprintf('%02d', $mail_hour), 'email' => $row2['email'], 'counselor' => $list_counselor[$row['counselor_id']]['name_ch']));
+        notification('remind_admin', 'support@kajinhealth.com, jin@kajinhealth.com, wilson@kajinhealth.com, otwo.kajin@gmail.com', array('date' => $mail_date, 'time' => sprintf('%02d', $mail_hour), 'email' => $row2['email'], 'counselor' => $list_counselor[$row['counselor_id']]['name_ch']));
         // 標記 user 已經記過通知信
         $message_new = $row['message'].' m30 ';
         $mysql->query("Update `appointment` Set `message` = '$message_new' Where `id` = '$row[id]'");
