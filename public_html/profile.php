@@ -10,6 +10,9 @@
         $certificate = $mysql->query('select c.* from certificate c, counselor c2 where c2.active=1 and c2.Id=c.c_id and c.c_Id='.$_GET['counselor']);
         $publication = $mysql->query('select p.* from publication p, counselor c2 where c2.active=1 and c2.Id=p.c_id and p.c_Id='.$_GET['counselor']);
         $reply = $mysql->query('select c.* ,u.name as user_name, c1.name_ch as coun_name from comment c left join user u on c.u_id=u.Id, counselor c1 where c.c_Id='.$_GET['counselor'].' and c1.Id=c.c_Id order by c.q_id desc');
+        // rating related sql
+        $avg_result = $mysql->query('SELECT CAST((AVG(`r1`)+AVG(`r2`)+AVG(`r3`))/3 as DECIMAL(2,1))  total_avg, CAST(AVG(`r1`) as DECIMAL(2,1)) r1_avg ,CAST(AVG(`r2`) as DECIMAL(2,1)) r2_avg,CAST(AVG(`r3`) as DECIMAL(2,1)) r3_avg FROM `rating` WHERE `counselor`='.$_GET['counselor']);
+        $rate_row = $mysql->query('SELECT r.*, u.`email` FROM `rating` r,`appointment` a,`user` u WHERE r.`appointment`=a.`id` AND a.`user_id`=u.`id` AND `counselor`='.$_GET['counselor'].' ORDER BY `id` DESC');
     } else {
         header('Location: ./our_team.php');
         exit;
@@ -118,121 +121,127 @@
                                     ?>
                         <div class="info-block2" id="qa-big-block" style="overflow-y:scroll;max-height:1000px;background:#FAFAFA;">
                             <div class="title" style="background:white;">相關評論</div>
-                            <!--<div class="qa">
-                                <div class="block-ask">
-                                    <div class="photo"></div>
-                                    <form class="reply-form" method="POST" action='./ajax_api_add_reply.php'>
-                                        <input type="text" placeholder="我想問老師……" name="ask">
-                                        <input type="hidden" id="q_Id" name="q_Id" value="0">
-                                        <input type="hidden" id="c_Id" name="c_Id" value=<?php echo $_GET['counselor']?> >
-                                    </form>
-                                </div>
-                            </div>-->
+                            <?php
+                            if ($rate_row->num_rows > 0) {
+                                while ($rate = $rate_row->fetch_assoc()) {
+                                    $em = explode('@', $rate['email']);
+                                    $name = implode(array_slice($em, 0, count($em) - 1), '@');
+                                    // $len = floor(strlen($name) / 2);
 
-                                <div class="userPhoto"><img src="images/fake_pic.jpg" alt="評論者H的頭像"></div>
+                                    $rate['email'] = substr($name, 0, 4).str_repeat('*', 4).'@'.end($em);
+                                    ?>
+                            <div class="rating_block">
+                                <!-- <div class="userPhoto"><img src="images/fake_pic.jpg" alt="評論者H的頭像"></div> -->
+                                <div class="userPhoto"><?php echo strtoupper($rate['email'][0]) ?></div>
                                 <div class="commentContent">
-                                    <div class="commentTitle">hky660234</div>
-                                    <div class="commentTime">於 2016.8.20 15:30 評論諮詢師</div>
+                                    <div class="commentTitle"><?php echo $rate['email'] ?></div>
+                                    <div class="commentTime">於 <?php echo date('Y/m/d H:i', strtotime($rate['created']));
+                                    ?> 評論諮詢師</div>
                                     <div class="ratingSection">
                                         <div class="wrapper">
                                             <div class="r1">老師能理我的問題解</div>
                                             <span class="stars">
-                                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                                <?php
+                                                    for ($i = 0; $i < 5; ++$i) {
+                                                        if ($i < round($rate['r1'])) {
+                                                            echo "<i class='fa fa-star'></i>";
+                                                        } else {
+                                                            echo "<i class='fa fa-star-o'></i>";
+                                                        }
+                                                    }
+                                    ?>
                                             </span><br/>
                                             <div class="r2">老師對我的情況有幫助</div>
                                             <span class="stars">
-                                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                                <?php
+                                                    for ($i = 0; $i < 5; ++$i) {
+                                                        if ($i < round($rate['r2'])) {
+                                                            echo "<i class='fa fa-star'></i>";
+                                                        } else {
+                                                            echo "<i class='fa fa-star-o'></i>";
+                                                        }
+                                                    }
+                                    ?>
                                             </span><br/>
                                             <div class="r3">值不值得推薦</div>
                                             <span class="stars">
-                                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                                <?php
+                                                    for ($i = 0; $i < 5; ++$i) {
+                                                        if ($i < round($rate['r3'])) {
+                                                            echo "<i class='fa fa-star'></i>";
+                                                        } else {
+                                                            echo "<i class='fa fa-star-o'></i>";
+                                                        }
+                                                    }
+                                    ?>
                                             </span><br/>
                                         </div>
                                     </div>
-
-                                <div class="commentFeedback">
-                                    很感謝老師的幫助。雖然才使用了兩次，已經可以感到自己在進步。一些問題以前總是用逃避的方式去面對，現在敢正面解決問題，覺得對自己是很大的幫助。
-                                </div>
-                            </div>
-                            <?php
-                                $qid = 0;   
-                                    $rep = mysqli_fetch_assoc($reply);
-                                    while ($rep) {
-                                        $qid = $rep['q_Id'];
-                                        ?>
-                                        
-                            <div class="qa">
-                                <div class="small-qa">
-                                    <div class="photo"></div>
-                                    <div class="info">
-                                    <h5 class="name"><?php echo $rep['user_name']?></h5>
-                                        <p class="content"><?php echo $rep['text']?></p>
-                                        <!-- <div class="time">(1小時前)</div> -->
-                                        <button class="reply-btn" style="background:transparent;color:#67C4CB;border:none;font-size:14px;display:block;padding:0;">回覆</button>
+                                    <div class="commentFeedback">
+                                        <?php echo $rate['comment'] ?>
                                     </div>
-                                </div>
-                                    <?php
-                                    while ($rep = mysqli_fetch_assoc($reply)) {
-                                        if ($rep['q_Id'] != $qid) {
-                                            break;
-                                        }
-                                        ?>
-                                <div class="small-qa reply">
-                                    <?php
-                                        if ($rep['u_Id'] != 0) {
-                                            ?>
-                                        <div class="photo"></div>
-                                        <div class="info">
-                                            <h5 class="name"><?php echo $rep['user_name'];
-                                            ?></h5>
-                                            <p class="content"><?php echo $rep['text']?></p>
-                                        </div>
-                                    <?php
-
-                                        } else {
-                                            ?>
-                                        <div class="photo" style="background: transparent url(<?php echo 'https://kajinonline.com/images/'.$cou['photo']?>) no-repeat center center; background-size:contain"></div>
-                                        <div class="info">
-                                            <h5 class="name"><?php echo $rep['coun_name'];
-                                            ?></h5>
-                                            <p class="content"><?php echo $rep['text']?></p>
-                                        </div>
-                                    <?php
-
-                                        }
-                                        ?>
-                                </div>
-                                <?php
-
-                                    }
-                                        ?>
-                                <div class="block-ask reply">
-                                    <div class="photo"></div>
-                                    <form class="reply-form" method="POST" action='./ajax_api_add_reply.php'>
-                                        <input type="text" placeholder="留言……" name="ask">
-                                        <input type="hidden" id="q_Id" name="q_Id" value=<?php echo $qid?> >
-                                        <input type="hidden" id="c_Id" name="c_Id" value=<?php echo $_GET['counselor'] ?> >
-                                    </form>
+                                    <hr/>
                                 </div>
                             </div>
+                            <div class="clearfix"></div>
                             <?php
 
-                                    }
+                                }
+                            } else {
+                                echo '<div style="margin: 10px auto;">很抱歉，我們尚未收到此老師足夠的評分數量，目前無法顯示。</div>';
+                            }
                                     ?>
                         </div>
                     </div>
                     <div class="col-sm-4">
+                        <?php
+                            $coun_avg = $avg_result->fetch_assoc();
+                                    if (!empty($coun_avg['total_avg'])) {
+                                        ?>
                         <div class="info-block2 ratingBox">
                             <div class="title">諮詢師評價
-                                <span>(5/5)</span> <!--請在這裡加入php來設置老師的評價分數-->
+
+                                <span>(<?php echo $coun_avg['total_avg'] ?>/5)</span> <!--請在這裡加入php來設置老師的評價分數-->
                             </div>
                             <div class='rating r1'>老師能理解我的問題</div>
-                            <span></span><br> <!--設定在rating.js，星星請裝在span裡面-->
+                            <span>
+                            <?php
+                                for ($i = 0; $i < 5; ++$i) {
+                                    if ($i < round($coun_avg['r1_avg'])) {
+                                        echo "<i class='fa fa-star'></i>";
+                                    } else {
+                                        echo "<i class='fa fa-star-o'></i>";
+                                    }
+                                }
+                                        ?>
+                            </span><br> <!--設定在rating.js，星星請裝在span裡面-->
                             <div class='rating r2'>老師對我的情況有幫助</div>
-                            <span></span><br>
+                            <span>
+                            <?php
+                                for ($i = 0; $i < 5; ++$i) {
+                                    if ($i < round($coun_avg['r2_avg'])) {
+                                        echo "<i class='fa fa-star'></i>";
+                                    } else {
+                                        echo "<i class='fa fa-star-o'></i>";
+                                    }
+                                }
+                                        ?></span><br>
                             <div class='rating r3'>值不值得推薦</div>
-                            <span></span><br>
+                            <span>
+                            <?php
+                                for ($i = 0; $i < 5; ++$i) {
+                                    if ($i < round($coun_avg['r3_avg'])) {
+                                        echo "<i class='fa fa-star'></i>";
+                                    } else {
+                                        echo "<i class='fa fa-star-o'></i>";
+                                    }
+                                }
+                                        ?></span><br>
                         </div>
+                        <?php
+
+                                    }
+                                    ?>
                         <div class="info-block2">
                             <div class="title">專業執照</div>
                             <?php
@@ -337,6 +346,6 @@
 <script src="./js/jquery-2.1.4.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/profile.js"></script>
-<script src="./js/rating.js"></script>
+<!-- <script src="./js/rating.js"></script> -->
 
 </html>

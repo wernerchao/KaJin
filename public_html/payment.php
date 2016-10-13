@@ -113,7 +113,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             echo "費用為 $fee_twd 元 (約美金 ".($fee_usd / 100).' 元)。';
                         }
                     ?>
-					<br>
+                    <br>
+                    <br>
+                    優惠代碼：<input type="text" id="coupon">&nbsp;&nbsp;<button class="rate_btn" type="button" name="button">確認</button>
+                    <br>
+                    <br>
+                    （若您有優惠代碼，請輸入後按下確認鍵）
+                    <br>
 					<br>
 					<form action="work_payment.php" method="POST">
 						<script
