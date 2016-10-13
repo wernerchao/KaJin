@@ -319,10 +319,14 @@
 
 					'<div class="column1 col">' +
 					'<div class="title">預約諮詢師</div>' +
+					'<div class="content">' +
+					'<div class="col1 col">' +
 					'<div class="photo"></div>' +
 					'<div class="name-block">' +
 					'<div class="name">' + teacherinfo[value]['name_ch'] + '</div><br/>' +
 					'<div class="profession">心理諮詢師</div>' +
+					'</div>' +
+					'</div>' +
 					'</div>' +
 					'</div>' +
 					// '<div class="column2 col">' +
