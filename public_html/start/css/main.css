@@ -735,7 +735,7 @@ input {
 
 #step1 .oralreadyknow {
   display: inline-block;
-  margin: 0 0 0 220px;
+  margin: 0 0 0 0; /* 0 0 0 220px; */
   font-size: 15px;
   font-size: 0.9375rem;
   color: #a6a6a6;

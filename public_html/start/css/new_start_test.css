@@ -11,12 +11,13 @@
 
             .step-container > .colelem .container {
                 width: 100%;
-                border-bottom: 1px solid #e5e5e5;
+                /* border-bottom: 1px solid #e5e5e5; this is a line below 開始分析 */
             }
 
             #colelem1 .container {
                 width: 100%;
                 margin: 10px auto;
+                padding: 10px;
             }
 
             #step1 .slide {
@@ -24,7 +25,7 @@
             }
 
             #step1 .slide-prev, #step1 .slide-next {
-                top: 300px;
+                top: 290px; /* align with 1234 image */
                 color: #66c5cc;
             }
 

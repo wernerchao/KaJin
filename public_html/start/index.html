@@ -67,7 +67,7 @@
         }
         
         #navbar .word.right {
-            float: right;
+            float: left;
         }
 
         /*RWD CSS Fixes*/
@@ -77,11 +77,7 @@
 
         .prev-teacher-btn, .next-teacher-btn {
             width: 10vw;
-            margin: 0 auto;
-        }
-
-        .teacherFadingBox {
-            width: 10vw;
+            margin: 0 6vw;
         }
 
         .choose-teacher-slide {
@@ -107,6 +103,13 @@
             text-align: center;
         }
 
+        /* Top box on scheduling page */
+        #step2 .grey-container1 .content1 .col {
+            width: 70vw;
+            min-height: 15vh;
+            padding: 0;
+        }
+
         #step3 .visa-hint#agreement-hint {
             width: 100%;
         }
@@ -114,6 +117,11 @@
         @media only screen and (max-width: 650px) {
             .available-teacher { /* Top box on scheduling page */
                 height: auto; /*for now, maybe need to be bigger*/
+            }
+
+            /* scheduling page prev-next buttons */
+            .prev-teacher-btn, .next-teacher-btn {
+                margin: 0 3vw;
             }
 
             /* Top box on scheduling page */
@@ -147,6 +155,10 @@
             .grey-container1 {
                 margin: 20px 50px 50px;
             }
+
+            .teacherFadingBox { /* width of the next prev buttons */
+                width: 10vw;
+            }
         }
 
         @media only screen and (max-width: 950px) {
@@ -156,7 +168,7 @@
 
             /* for the columns on the scheduling page that contains small blocks*/
             .grey-container2 .can-book-time .col, .grey-container2 .week-name .col {
-                width: 13%;
+                width: 14.25%;
                 box-sizing: border-box;
                 font-size: 10px;
             }
@@ -170,14 +182,14 @@
             }
         }
 
-        /* for the small block on scheduling page */
+        /* the small blocks on scheduling page */
         @media only screen and (max-width: 650px) {
 	        .grey-container2 .can-book-time .col .book-time-small-block {
 		        margin: 0 auto;
 		        width: 100%;
                 height: 30px;
 		        padding: 0 0 0 2px;
-		        font-size: 6px;
+		        font-size: 7px;
 	        }
 
             .grey-container2 .title {
@@ -247,13 +259,19 @@
                 padding: 5px;
                 
             }
+            .step-container #colelem-finish-choose .suggest:nth-child(2) h3 { /* the text for 推薦機制 */
+                text-align: center;
+            }
+            .step-container #colelem-finish-choose .suggest:nth-child(1) { /* the box above 推薦機制 */
+                margin: 0 20px 0 85px;
+            }
         }
 
     </style>
     <div id="page">
         <div id="step1" class="step-container">
             <div id="colelem1" class="colelem">
-                <div class="container"><span><div class="words active">Step1.挑選諮詢師</div><div class="words dot"></div><div class="words">Step2.挑選時間</div><div class="words dot"></div><div class="words">Step3.付款資訊</div></span></div>
+                <div class="container"><span><div class="words active">Step1.挑選諮詢師</div> &nbsp <div class="words">Step2.挑選時間</div> &nbsp <div class="words">Step3.付款資訊</div></span></div>
             </div>
             <div id="colelem2" class="colelem">
                 <div id="colelem-slide" class="show active">
@@ -270,11 +288,13 @@
                             <div class="askforhelp-dot-main"></div>
                             <p class="askforhelp-main-description2">我是第一次尋求心裡諮詢的幫助</p>
                             <div class="askforhelp-main-question">
-                                <button id="askforhelpchoose" class="askforhelp1">直接選</button>
+                                <div class="oralreadyknow">已有想選的諮詢師
+                                    <br />
+                                    <button id="askforhelpchoose" class="askforhelp1">直接選</button>
+                                </div>
                                 <button id="askforhelpyes" class="askforhelp1">是</button>
                                 <button id="askforhelpno" class="askforhelp1">否</button>
                             </div>
-                            <div class="oralreadyknow">已有想選的諮詢師</div>
                         </div>
                         <div class="container">
                             <p class="askforhelp-title">讓我們瞭解你的情況</p>
@@ -380,7 +400,7 @@
         </div>
         <div id="step2" class="step-container">
             <div id="colelem1" class="colelem">
-                <div class="container"><span><div class="words">Step1.挑選諮詢師</div><div class="words dot"></div><div class="words active">Step2.挑選時間</div><div class="words dot"></div><div class="words">Step3.付款資訊</div></span></div>
+                <div class="container"><span><div class="words">Step1.挑選諮詢師</div> &nbsp <div class="words active">Step2.挑選時間</div> &nbsp <div class="words">Step3.付款資訊</div></span></div>
             </div>
             <div id="colelem2" class="colelem">
                 <div class="container">
