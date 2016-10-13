@@ -106,14 +106,19 @@
             box-sizing: border-box;
             text-align: center;
         }
+
+        #step3 .visa-hint#agreement-hint {
+            width: 100%;
+        }
         
         @media only screen and (max-width: 650px) {
-            .available-teacher {
-                height: 600px; /*for now, maybe need to be bigger*/
+            .available-teacher { /* Top box on scheduling page */
+                height: auto; /*for now, maybe need to be bigger*/
             }
 
+            /* Top box on scheduling page */
             .available-teacher .slick-list, .available-teacher .slick-slide {
-                height: 600px;
+                height: auto;
             }
 
             #step2 .grey-container1 .content1 .col {
@@ -138,6 +143,10 @@
             .where-am-i .country-option:nth-child(2) input {
                 margin: 8px 0px 0 50px;
             }
+
+            .grey-container1 {
+                margin: 20px 50px 50px;
+            }
         }
 
         @media only screen and (max-width: 950px) {
@@ -145,19 +154,30 @@
                 width: 100%;
             }
 
+            /* for the columns on the scheduling page that contains small blocks*/
             .grey-container2 .can-book-time .col, .grey-container2 .week-name .col {
                 width: 13%;
                 box-sizing: border-box;
                 font-size: 10px;
             }
+
+            /* for top box on payment page */
+            #payment_topbox_title {
+                width: 30%;
+            }
+            #payment_topbox_content {
+                width: 70%;
+            }
         }
 
+        /* for the small block on scheduling page */
         @media only screen and (max-width: 650px) {
 	        .grey-container2 .can-book-time .col .book-time-small-block {
 		        margin: 0 auto;
 		        width: 100%;
-		        padding: 0;
-		        font-size: 8px;
+                height: 30px;
+		        padding: 0 0 0 2px;
+		        font-size: 6px;
 	        }
 
             .grey-container2 .title {
@@ -220,6 +240,12 @@
                 width: 100%;
                 padding: 20px 5px;
                 box-sizing: border-box;
+            }
+
+            #vip_help.book-title.need-help { /* bottom box of the payment page */
+                height: 200px;
+                padding: 5px;
+                
             }
         }
 
@@ -405,31 +431,31 @@
                                     </div>
                                 </div>-->
                                 <div class="title">
-                                        <div class="col col1">預約諮詢 </div>
-                                        <div class="col col2">協助傾向</div>
-                                        <div class="col col3">困擾狀況</div>
-                                        <div class="col col4">諮詢堂數</div>
-                                        <div class="col col5">選項</div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="col col1">
-                                            <div class="photo"></div>
-                                            <div class="name-block">
-                                                <div class="name"></div>
-                                                <br/>
-                                                <div class="profession"></div>
-                                            </div>
-                                        </div>
-                                        <div id="need-help" class="col col2"></div>
-                                        <div id="sad-situation" class="col col3"></div>
-                                        <div class="col col4">
-                                            <div>1堂課</div>
-                                            <div>(50分鐘/堂)</div>
-                                        </div>
-                                        <div class="col col5">
-                                            <div class="choose-again">重選</div>
+                                    <div class="col col1">預約諮詢 </div>
+                                    <div class="col col2">協助傾向</div>
+                                    <div class="col col3">困擾狀況</div>
+                                    <div class="col col4">諮詢堂數</div>
+                                    <div class="col col5">選項</div>
+                                </div>
+                                <div class="content">
+                                    <div class="col col1">
+                                        <div class="photo"></div>
+                                        <div class="name-block">
+                                            <div class="name"></div>
+                                            <br/>
+                                            <div class="profession"></div>
                                         </div>
                                     </div>
+                                    <div id="need-help" class="col col2"></div>
+                                    <div id="sad-situation" class="col col3"></div>
+                                    <div class="col col4">
+                                        <div>1堂課</div>
+                                        <div>(50分鐘/堂)</div>
+                                    </div>
+                                    <div class="col col5">
+                                        <div class="choose-again">重選</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="next-teacher-btn">
@@ -609,8 +635,19 @@
                         <div class="icon"></div>
                         <div class="word">預約項目</div>
                     </div>
-                    <div class="grey-container1">
-                        <div class="title">
+                    <div class="grey-container1"> <!-- PAYMENT PAGE top box -->
+                        <div class="content">
+                            <div id="payment_topbox_title" class="col col1">預約諮詢 </div>
+                            <div id="payment_topbox_content" class="col col1">
+                                <div class="photo"></div>
+                                <div class="name-block">
+                                    <div class="name"></div>
+                                    <br/>
+                                    <div class="profession">心理諮詢師</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="title">
                             <div class="col col1">預約諮詢 </div>
                             <div class="col col2">協助傾向</div>
                             <div class="col col3">困擾狀況</div>
@@ -634,7 +671,7 @@
                             <div class="col col5">
                                 <div class="choose-again">重選</div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="book-title">
                         <div class="icon"></div>
@@ -679,10 +716,10 @@
                         <button class="prev-step">上一步</button>
                         <button class="next-step">預約確認</button>
                     </div>
-                    <div class="book-title need-help">
+                    <div id="vip_help" class="book-title need-help">
                         <div class="icon"></div>
-                        <div class="word">遇到問題，需要專人協助</div>
-                        <div class="word help">透過Kajin專人協助預約諮詢</div>
+                        <div class="word">遇到問題，需要專人協助。透過Kajin專人協助預約諮詢</div>
+                        <!--<div class="word help">透過Kajin專人協助預約諮詢</div>-->
                         <button>由專人協助預約</button>
                     </div>
                 </div>
