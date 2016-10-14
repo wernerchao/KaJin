@@ -273,8 +273,9 @@ input {
       .step-container #colelem-finish-choose .suggest:nth-child(1) h5 {
         font-size: 15px;
         font-size: 0.9375rem; }
+        
     .step-container #colelem-finish-choose .suggest:nth-child(2) {
-      width: 450px;
+      width: 300px; /*Original 450px for RWD fixes*/
       padding: 20px 40px; }
       .step-container #colelem-finish-choose .suggest:nth-child(2) h3 {
         text-align: left; }
@@ -734,7 +735,7 @@ input {
 
 #step1 .oralreadyknow {
   display: inline-block;
-  margin: 0 0 0 220px;
+  margin: 0 0 0 0; /* 0 0 0 220px; */
   font-size: 15px;
   font-size: 0.9375rem;
   color: #a6a6a6;

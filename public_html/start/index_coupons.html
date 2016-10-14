@@ -66,7 +66,7 @@
             }
 
             #navbar .word.right {
-                float: right;
+                float: left;
             }
             /*RWD CSS Fixes*/
 
@@ -77,11 +77,7 @@
             .prev-teacher-btn,
             .next-teacher-btn {
                 width: 10vw;
-                margin: 0 auto;
-            }
-
-            .teacherFadingBox {
-                width: 10vw;
+                margin: 0 6vw;
             }
 
             .choose-teacher-slide {
@@ -110,15 +106,33 @@
                 box-sizing: border-box;
                 text-align: center;
             }
+            /* Top box on scheduling page */
+
+            #step2 .grey-container1 .content1 .col {
+                width: 70vw;
+                min-height: 15vh;
+                padding: 0;
+            }
+
+            #step3 .visa-hint#agreement-hint {
+                width: 100%;
+            }
 
             @media only screen and (max-width: 650px) {
                 .available-teacher {
-                    height: 600px;
+                    /* Top box on scheduling page */
+                    height: auto;
                     /*for now, maybe need to be bigger*/
                 }
+                /* scheduling page prev-next buttons */
+                .prev-teacher-btn,
+                .next-teacher-btn {
+                    margin: 0 3vw;
+                }
+                /* Top box on scheduling page */
                 .available-teacher .slick-list,
                 .available-teacher .slick-slide {
-                    height: 600px;
+                    height: auto;
                 }
                 #step2 .grey-container1 .content1 .col {
                     width: 70vw;
@@ -138,6 +152,13 @@
                 .where-am-i .country-option:nth-child(2) input {
                     margin: 8px 0px 0 50px;
                 }
+                .grey-container1 {
+                    margin: 20px 50px 50px;
+                }
+                .teacherFadingBox {
+                    /* width of the next prev buttons */
+                    width: 10vw;
+                }
             }
 
             @media only screen and (max-width: 950px) {
@@ -145,20 +166,30 @@
                 .grey-container2 .slick-list {
                     width: 100%;
                 }
+                /* for the columns on the scheduling page that contains small blocks*/
                 .grey-container2 .can-book-time .col,
                 .grey-container2 .week-name .col {
-                    width: 13%;
+                    width: 14.25%;
                     box-sizing: border-box;
                     font-size: 10px;
                 }
+                /* for top box on payment page */
+                #payment_topbox_title {
+                    width: 30%;
+                }
+                #payment_topbox_content {
+                    width: 70%;
+                }
             }
+            /* the small blocks on scheduling page */
 
             @media only screen and (max-width: 650px) {
                 .grey-container2 .can-book-time .col .book-time-small-block {
                     margin: 0 auto;
                     width: 100%;
-                    padding: 0;
-                    font-size: 8px;
+                    height: 30px;
+                    padding: 0 0 0 2px;
+                    font-size: 7px;
                 }
                 .grey-container2 .title {
                     display: flex;
@@ -166,9 +197,10 @@
                     height: 150px;
                     padding: 15px 0;
                 }
-                .grey-container2 .title .time-icon.prev {
-                    order: 0;
-                    margin: 0 auto;
+                #navbar .container {
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
                 .grey-container2 .title .time-icon.next {
                     order: 2;
@@ -209,12 +241,25 @@
                     padding: 20px 5px;
                     box-sizing: border-box;
                 }
+                #vip_help.book-title.need-help {
+                    /* bottom box of the payment page */
+                    height: 200px;
+                    padding: 5px;
+                }
+                .step-container #colelem-finish-choose .suggest:nth-child(2) h3 {
+                    /* the text for 推薦機制 */
+                    text-align: center;
+                }
+                .step-container #colelem-finish-choose .suggest:nth-child(1) {
+                    /* the box above 推薦機制 */
+                    margin: 0 20px 0 85px;
+                }
             }
         </style>
         <div id="page">
             <div id="step1" class="step-container">
                 <div id="colelem1" class="colelem">
-                    <div class="container"><span><div class="words active">Step1.挑選諮詢師</div><div class="words dot"></div><div class="words">Step2.挑選時間</div><div class="words dot"></div><div class="words">Step3.付款資訊</div></span></div>
+                    <div class="container"><span><div class="words active">Step1.挑選諮詢師</div> &nbsp <div class="words">Step2.挑選時間</div> &nbsp <div class="words">Step3.付款資訊</div></span></div>
                 </div>
                 <div id="colelem2" class="colelem">
                     <div id="colelem-slide" class="show active">
@@ -231,11 +276,13 @@
                                 <div class="askforhelp-dot-main"></div>
                                 <p class="askforhelp-main-description2">我是第一次尋求心裡諮詢的幫助</p>
                                 <div class="askforhelp-main-question">
-                                    <button id="askforhelpchoose" class="askforhelp1">直接選</button>
+                                    <div class="oralreadyknow">已有想選的諮詢師
+                                        <br />
+                                        <button id="askforhelpchoose" class="askforhelp1">直接選</button>
+                                    </div>
                                     <button id="askforhelpyes" class="askforhelp1">是</button>
                                     <button id="askforhelpno" class="askforhelp1">否</button>
                                 </div>
-                                <div class="oralreadyknow">已有想選的諮詢師</div>
                             </div>
                             <div class="container">
                                 <p class="askforhelp-title">讓我們瞭解你的情況</p>
@@ -340,7 +387,7 @@
             </div>
             <div id="step2" class="step-container">
                 <div id="colelem1" class="colelem">
-                    <div class="container"><span><div class="words">Step1.挑選諮詢師</div><div class="words dot"></div><div class="words active">Step2.挑選時間</div><div class="words dot"></div><div class="words">Step3.付款資訊</div></span></div>
+                    <div class="container"><span><div class="words">Step1.挑選諮詢師</div> &nbsp <div class="words active">Step2.挑選時間</div> &nbsp <div class="words">Step3.付款資訊</div></span></div>
                 </div>
                 <div id="colelem2" class="colelem">
                     <div class="container">
@@ -596,41 +643,26 @@
                             <div class="word">預約項目</div>
                         </div>
                         <div class="grey-container1">
-                            <div class="title">
-                                <div class="col col1">預約諮詢 </div>
-                                <div class="col col2">協助傾向</div>
-                                <div class="col col3">困擾狀況</div>
-                                <div class="col col4">諮詢堂數</div>
-                                <div class="col col5">選項</div>
-                            </div>
+                            <!-- PAYMENT PAGE top box -->
                             <div class="content">
-                                <div class="col col1">
+                                <div id="payment_topbox_title" class="col col1">預約諮詢 </div>
+                                <div id="payment_topbox_content" class="col col1">
                                     <div class="photo"></div>
                                     <div class="name-block">
                                         <div class="name"></div>
+                                        <br/>
                                         <div class="profession">心理諮詢師</div>
                                     </div>
                                 </div>
-                                <div id="need-help" class="col col2"></div>
-                                <div id="sad-situation" class="col col3"></div>
-                                <div class="col col4">
-                                    <div>1堂課</div>
-                                    <div>(50分鐘/堂)</div>
-                                </div>
-                                <div class="col col5">
-                                    <div class="choose-again">重選</div>
-                                </div>
                             </div>
+                            <!--<div class="title">
+                            <div class="col col1">預約諮詢 </div>
+                            <div class="col col2">協助傾向</div>
+                            <div class="col col3">困擾狀況</div>
+                            <div class="col col4">諮詢堂數</div>
+                            <div class="col col5">選項</div>
                         </div>
-                        <div class="book-title">
-                            <div class="icon"></div>
-                            <div class="word fadingBox">預約時間</div>
-                        </div>
-                        <div class="grey-container3">
-                            <div class="confirm-time">預約諮詢時間</div>
-                            <div class="select-date"></div>
-                            <div class="time-zone">( 時區: UTC +8 )</div>
-                        </div>
+<<<<<<< HEAD:public_html/start/index_coupon.html
                         <div class="book-title">
                             <div class="icon"></div>
                             <div class="word fadingBox">付款方式</div>
@@ -666,6 +698,60 @@
                                 <input type="checkbox" id="agreement-checkbox"><span></span>
                                 <label for="agreement-checkbox">我已閱讀<span class="red-word"><a href="http://www.kajinonline.com/agreement.pdf" target="_blank">諮詢同意書</a></span>，並接受同意書內容。</label>
                                 <div id="agreement-hint" class="red-hint visa-hint">請同意諮詢同意書</div>
+=======
+                        <div class="content">
+                            <div class="col col1">
+                                <div class="photo"></div>
+                                <div class="name-block">
+                                    <div class="name"></div>
+                                    <div class="profession">心理諮詢師</div>
+                                </div>
+                            </div>
+                            <div id="need-help" class="col col2"></div>
+                            <div id="sad-situation" class="col col3"></div>
+                            <div class="col col4">
+                                <div>1堂課</div>
+                                <div>(50分鐘/堂)</div>
+>>>>>>> origin/master:public_html/start/index.html
+                            </div>
+                            <div class="col col5">
+                                <div class="choose-again">重選</div>
+                            </div>
+                        </div>-->
+                        </div>
+                        <div class="book-title">
+                            <div class="icon"></div>
+                            <div class="word fadingBox">預約時間</div>
+                        </div>
+                        <div class="grey-container3">
+                            <div class="confirm-time">預約諮詢時間</div>
+                            <div class="select-date"></div>
+                            <div class="time-zone">( 時區: UTC +8 )</div>
+                        </div>
+                        <div class="book-title">
+                            <div class="icon"></div>
+                            <div class="word fadingBox">付款方式</div>
+                        </div>
+                        <div class="grey-container4">
+                            <p>Kajin Health 提供兩種付款方式，分別是<span class="green">信用卡付款</span>和<span class="green">支付寶付款</span>。</p>
+                            <div class="pay">
+                                <div class="payway">信用卡：</div>
+                                <div class="pay-currency">美金24元(初次)/60元(往後)，使用美金(USD)付款，</div>
+                            </div>
+                            <div class="pay">
+                                <div class="payway">支付寶：</div>
+                                <div class="pay-currency">美金24元(初次)/60元(往後)，使用人民幣(RMB)付款，根據匯差轉換為等值的人民幣，約合人民幣156元(初次)/390元(往後)</div>
+                            </div>
+                        </div>
+                        <div class="book-title">
+                            <div class="icon"></div>
+                            <div class="word fadingBox">諮詢同意書&電子報</div>
+                        </div>
+                        <div class="grey-container4">
+                            <div class="check-line agreement-check">
+                                <input type="checkbox" id="agreement-checkbox"><span></span>
+                                <label for="agreement-checkbox">我已閱讀<span class="red-word"><a href="http://www.kajinonline.com/agreement.pdf" target="_blank">諮詢同意書</a></span>，並接受同意書內容。</label>
+                                <div id="agreement-hint" class="red-hint visa-hint">請同意諮詢同意書</div>
                             </div>
                             <div class="check-line enews-check">
                                 <input type="checkbox" id="enews-checkbox"><span></span>
@@ -676,10 +762,10 @@
                             <button class="prev-step">上一步</button>
                             <button class="next-step">預約確認</button>
                         </div>
-                        <div class="book-title need-help">
+                        <div id="vip_help" class="book-title need-help">
                             <div class="icon"></div>
-                            <div class="word">遇到問題，需要專人協助</div>
-                            <div class="word help">透過Kajin專人協助預約諮詢</div>
+                            <div class="word">遇到問題，需要專人協助。透過Kajin專人協助預約諮詢</div>
+                            <!--<div class="word help">透過Kajin專人協助預約諮詢</div>-->
                             <button>由專人協助預約</button>
                         </div>
                     </div>
@@ -755,32 +841,8 @@
                     <p>Copyright © 2015 KAJIN, Inc. All rights reserved.</p>
                 </div>
             </div>
-            <style>
-                #footer-colelem {
-                    position: absolute;
-                    height: 100px;
-                    bottom: -150px;
-                    width: 100%;
-                    min-height: initial;
-                }
-
-                #footer-background {
-                    background: #404040;
-                    height: 100px;
-                }
-
-                #footer-background p {
-                    position: relative;
-                    top: 40px;
-                    width: 100%;
-                    text-align: center;
-                    color: #999999;
-                    font-size: 15px;
-                    font-size: 0.9375rem;
-                }
-            </style>
+            <<<<<<< HEAD:public_html/start/index_coupon.html <div class="modal">
         </div>
-        <div class="modal"></div>
         <script src="https://checkout.stripe.com/checkout.js"></script>
         <script src="./js/jquery-1.11.0.min.js"></script>
         <script src="./js/jquery-migrate-1.2.1.min.js"></script>
@@ -805,7 +867,60 @@
                 r.async = 1;
                 r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
                 a.appendChild(r);
-            })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+            })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv='); ===
+            === = <
+            style > #footer - colelem {
+                position: absolute;
+                height: 100 px;
+                bottom: -150 px;
+                width: 100 % ;
+                min - height: initial;
+            }
+            #
+            footer - background {
+                    background: #404040;
+                height: 100px;
+            }
+
+            # footer - background p {
+                            position: relative;
+                            top: 40 px;
+                            width: 100 % ;
+                            text - align: center;
+                            color: #999999;
+                font-size: 15px;
+                font-size: 0.9375rem;
+            }
+        </style>
+    </div>
+    <div class= "modal" > < /div> <
+                                script src = "https://checkout.stripe.com/checkout.js" >
+        </script>
+        <script src="./js/jquery-1.11.0.min.js"></script>
+        <script src="./js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+        <script src="./js/slick.min.js"></script>
+        <script src="./js/moment.js"></script>
+        <script src="./js/scrollreveal.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/reminderBox.js"></script>
+        <script>
+            // Hotjar Tracking Code for https://www.kajinhealth.com/start
+            (function(h, o, t, j, a, r) {
+                h.hj = h.hj || function() {
+                    (h.hj.q = h.hj.q || []).push(arguments)
+                };
+                h._hjSettings = {
+                    hjid: 219545,
+                    hjsv: 5
+                };
+                a = o.getElementsByTagName('head')[0];
+                r = o.createElement('script');
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv='); >>>
+            >>> > origin / master: public_html / start / index.html
 
             function validNumber(e, pnumber, digit, target) {
                 var re = new RegExp("^\\d{0," + digit + "}$");
