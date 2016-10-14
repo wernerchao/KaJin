@@ -48,3 +48,13 @@
 [25-Jul-2016 12:28:45 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/kajinonline/public_html/profile_Staging.php on line 15
 [25-Jul-2016 12:30:27 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/kajinonline/public_html/profile_Staging.php on line 15
 [07-Aug-2016 16:59:19 UTC] PHP Fatal error:  Call to undefined function start_session() in /home/kajinonline/public_html/include_setting.php on line 35
+[09-Sep-2016 12:34:18 UTC] PHP Fatal error:  Call to undefined method mysqli_result::mysqli_fetch_assoc() in /home/kajinonline/public_html/profile_stage.php on line 15
+[14-Oct-2016 13:57:07 UTC] PHP Fatal error:  Call to undefined method mysqli_result::num_rows() in /home/kajinonline/public_html/ajax_api_conpon_confirm.php on line 16
+[14-Oct-2016 13:57:20 UTC] PHP Fatal error:  Call to undefined method mysqli_result::num_rows() in /home/kajinonline/public_html/ajax_api_conpon_confirm.php on line 16
+[14-Oct-2016 17:25:19 UTC] PHP Fatal error:  Call to undefined function create_meeting() in /home/kajinonline/public_html/zoom_test.php on line 9
+[14-Oct-2016 17:25:59 UTC] PHP Fatal error:  Using $this when not in object context in /home/kajinonline/public_html/include_zoom_test.php on line 62
+[14-Oct-2016 17:27:14 UTC] PHP Fatal error:  Using $this when not in object context in /home/kajinonline/public_html/include_zoom_test.php on line 62
+[14-Oct-2016 17:27:18 UTC] PHP Fatal error:  Using $this when not in object context in /home/kajinonline/public_html/include_zoom_test.php on line 62
+[14-Oct-2016 17:27:31 UTC] PHP Fatal error:  Using $this when not in object context in /home/kajinonline/public_html/include_zoom_test.php on line 62
+[14-Oct-2016 17:29:19 UTC] PHP Fatal error:  Using $this when not in object context in /home/kajinonline/public_html/include_zoom_test.php on line 62
+[14-Oct-2016 17:29:45 UTC] PHP Fatal error:  Using $this when not in object context in /home/kajinonline/public_html/include_zoom_test.php on line 62

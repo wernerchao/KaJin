@@ -81,7 +81,7 @@
                             <div class="icon"></div>
                             <div class="word">感謝你的預約</div>
                         </div>
-                        <div class="grey-container green">親愛的用戶您好，感謝您的預約。如果要查看預約的資訊，請登入「<span class="green-word"><a href="http://kajinonline.com/login.php">會員登入</a></span>」或您的個人信箱。</div>
+                        <div class="grey-container green">親愛的用戶您好，感謝您的預約。如果確認預約資訊，請登入「<span class="green-word"><a href="http://kajinonline.com/login.php">會員中心</a></span>」或查看您的個人信箱。</div>
                         <div class="book-title green">
                             <div class="icon"></div>
                             <div class="word">預約項目</div>
@@ -169,7 +169,7 @@
         <script src="./js/jquery-1.11.0.min.js"></script>
         <script src="./js/jquery-migrate-1.2.1.min.js"></script>
         <script src="./js/jquery-ui.min.js"></script>
-                
+
         <!-- Google Tag Manager -->
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WFLZTQ"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

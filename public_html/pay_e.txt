@@ -683,4 +683,262 @@ Array
 
     [timezone] => 8
 )
-/atok_18jOSAE0AfOAbNQmbdGe6IE0/2016-08-18/22/5--1 2 3 4 5 5.5 6 
+/atok_18jOSAE0AfOAbNQmbdGe6IE0/2016-08-18/22/5--1 2 3 4 5 5.5 6 223.140.10.7 0 Array
+(
+    [counselor_id] => 61
+    [date] => 2016-08-23
+    [time] => 14
+    [token] => tok_18lHCvE0AfOAbNQmbZewYUkl
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18lHCvE0AfOAbNQmbZewYUkl/2016-08-23/14/61--1 2 3 4 5 5.5 7.5 8219.127.93.14 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-08-24
+    [time] => 19
+    [token] => tok_18lZ50E0AfOAbNQmhSENrnFw
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 9
+)
+/tok_18lZ50E0AfOAbNQmhSENrnFw/2016-08-24/19/6--1 2 3 4 5 5.5 7.5 8103.10.197.14 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-09-02
+    [time] => 14
+    [token] => tok_18moTrE0AfOAbNQmuSNgnXhq
+    [news] => true
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 7
+)
+/tok_18moTrE0AfOAbNQmuSNgnXhq/2016-09-02/14/6--1 2 3 4 5 5.5 7.5 879.45.97.173 0 Array
+(
+    [counselor_id] => 12
+    [date] => 2016-09-08
+    [time] => 21
+    [token] => tok_18r6eME0AfOAbNQmSfUXXbvD
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 1
+)
+/tok_18r6eME0AfOAbNQmSfUXXbvD/2016-09-08/21/12--1 2 3 4 5 5.5 7.5 8223.139.11.137 0 Array
+(
+    [counselor_id] => 12
+    [date] => 2016-09-14
+    [time] => 16
+    [token] => tok_18sRPvE0AfOAbNQmvfzQ8Ucd
+    [news] => true
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 8
+)
+/tok_18sRPvE0AfOAbNQmvfzQ8Ucd/2016-09-14/16/12--1 2 3 4 5 5.5 7.5 8172.98.147.162 0 Array
+(
+    [counselor_id] => 5
+    [date] => 2016-09-14
+    [time] => 22
+    [token] => atok_18t9DqE0AfOAbNQmd56gOj1k
+    [news] => true
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => -5
+)
+/atok_18t9DqE0AfOAbNQmd56gOj1k/2016-09-14/22/5--1 2 3 4 5 5.5 7.5 8101.179.52.37 0 Array
+(
+    [counselor_id] => 61
+    [date] => 2016-09-23
+    [time] => 14
+    [token] => tok_18waaZHtLclpe6DrdhyapE54
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 9.5
+)
+/tok_18waaZHtLclpe6DrdhyapE54/2016-09-23/14/61--1 2 3 4 5 5.5 7.5 8158.121.249.20 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-10-05
+    [time] => 11
+    [token] => tok_190cz6HtLclpe6DrHvRiyR19
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => -5
+)
+/tok_190cz6HtLclpe6DrHvRiyR19/2016-10-05/11/6--1 2 3 4 5 5.5 7.5 8198.40.29.7 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-10-07
+    [time] => 22
+    [token] => tok_19103fHtLclpe6Drj6ZV8Yfe
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => -6
+)
+/tok_19103fHtLclpe6Drj6ZV8Yfe/2016-10-07/22/6--1 2 3 4 5 5.5 7.5 846.193.64.176 0 Array
+(
+    [counselor_id] => 6
+    [date] => 2016-10-12
+    [time] => 21
+    [token] => tok_193ABaHtLclpe6DrUTTz8Cdc
+    [news] => false
+    [fee] => Array
+        (
+            [twd] => 800
+            [usd] => 2400
+        )
+
+    [timezone] => 1
+)
+/tok_193ABaHtLclpe6DrUTTz8Cdc/2016-10-12/21/6--1 2 3 4 5 5.5 7.5 8118.165.8.2 0 Array
+(
+    [counselor_id] => 14
+    [date] => 2016-10-15
+    [time] => 23
+    [token] => tok_194Y6G2eZvKYlo2CnHQEIVcx
+    [news] => false
+    [fee_usd] => 5200
+    [fee_twd] => 1600
+    [timezone] => 8
+    [coupon] => kajin2016
+)
+/tok_194Y6G2eZvKYlo2CnHQEIVcx/2016-10-15/23/14--1 2 3 4 5 5.5 7 Array
+(
+    [counselor_id] => 14
+    [date] => 2016-10-15
+    [time] => 23
+    [token] => tok_194Y6G2eZvKYlo2CnHQEIVcx
+    [news] => false
+    [fee_usd] => 5200
+    [fee_twd] => 1600
+    [timezone] => 8
+    [coupon] => kajin2016
+)
+ Status is:400
+Type is:invalid_request_error
+Code is:
+Param is:source
+Message is:No such token: tok_194Y6G2eZvKYlo2CnHQEIVcx
+Array
+(
+    [type] => invalid_request_error
+    [message] => No such token: tok_194Y6G2eZvKYlo2CnHQEIVcx
+    [param] => source
+)
+118.165.8.2 0 Array
+(
+    [counselor_id] => 14
+    [date] => 2016-10-15
+    [time] => 23
+    [token] => tok_194YCo2eZvKYlo2C7XnLeYBP
+    [news] => false
+    [fee_usd] => 5200
+    [fee_twd] => 1600
+    [timezone] => 8
+    [coupon] => kajin2016
+)
+/tok_194YCo2eZvKYlo2C7XnLeYBP/2016-10-15/23/14--1 2 3 4 5 5.5 7 Array
+(
+    [counselor_id] => 14
+    [date] => 2016-10-15
+    [time] => 23
+    [token] => tok_194YCo2eZvKYlo2C7XnLeYBP
+    [news] => false
+    [fee_usd] => 5200
+    [fee_twd] => 1600
+    [timezone] => 8
+    [coupon] => kajin2016
+)
+ Status is:400
+Type is:invalid_request_error
+Code is:
+Param is:source
+Message is:No such token: tok_194YCo2eZvKYlo2C7XnLeYBP
+Array
+(
+    [type] => invalid_request_error
+    [message] => No such token: tok_194YCo2eZvKYlo2C7XnLeYBP
+    [param] => source
+)
+118.165.8.2 0 Array
+(
+    [counselor_id] => 14
+    [date] => 2016-10-15
+    [time] => 23
+    [token] => tok_194YKk2eZvKYlo2CC91WcE3N
+    [news] => false
+    [fee_usd] => 5200
+    [fee_twd] => 1600
+    [timezone] => 8
+    [coupon] => kajin2016
+)
+/tok_194YKk2eZvKYlo2CC91WcE3N/2016-10-15/23/14--1 2 3 4 5 5.5 7.5 8118.165.8.2 0 Array
+(
+    [counselor_id] => 14
+    [date] => 2016-10-15
+    [time] => 22
+    [token] => tok_194YYa2eZvKYlo2CcaVyzSks
+    [news] => false
+    [fee_usd] => 5850
+    [fee_twd] => 1800
+    [timezone] => 8
+    [coupon] => testcoupon2016
+)
+/tok_194YYa2eZvKYlo2CcaVyzSks/2016-10-15/22/14--1 2 3 4 5 5.5 7.5 8118.165.8.2 0 Array
+(
+    [counselor_id] => 14
+    [date] => 2016-10-15
+    [time] => 23
+    [token] => tok_194Ygo2eZvKYlo2CyuOvUVVQ
+    [news] => false
+    [fee_usd] => 5200
+    [fee_twd] => 1600
+    [timezone] => 8
+    [coupon] => kajin2016
+)
+/tok_194Ygo2eZvKYlo2CyuOvUVVQ/2016-10-15/23/14--
+1 2 3 4 5 5.5 7.5 8
+zoom_id=
