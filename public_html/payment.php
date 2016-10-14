@@ -56,6 +56,61 @@ $fee_usd = count_fee($data_user['id'], 'usd', array('default' => $data_appointme
 				$("#block").click(function(){
 					$("#block").fadeOut(300);
 				});
+                $('#coupon_chk').click(function(event) {
+                    /* Act on the event */
+                });
+                $('#step3 #book-confirm .next-step').on('click', function() {        			
+        			var self = this;
+        			var handler = StripeCheckout.configure({
+        				//key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
+        				key: 'pk_live_jL7Bu4XKJxHi7uQh7eqzPde9',
+        				image: './images/kajin.png',
+        				locale: 'auto',
+        				alipay: true,
+        				closed: function() {
+        					$(self).parent().children().prop('disabled', false);
+        					setTimeout(function() {
+        						$('iframe.stripe_checkout_app').remove();
+        					}, 100);
+        				},
+        				token: function(res) {
+        					$.ajax({
+        						url: 'ajax_api_start_pay.php', //real
+        						type: 'POST',
+        						data: {
+        							counselor_id: getTeacherId(),
+        							date: chooseTaiwanDate,
+        							time: chooseTaiwanTime,
+        							token: res.id,
+        							news: $('#enews-checkbox').prop('checked') ? true : false,
+        							fee: fee,
+        							timezone: Number($('select.choose-abroad').val())
+        						},
+        						dataType: 'json',
+        						success: function(data) {
+        							$(self).parent().children().prop('disabled', false);
+        							$('.modal').removeClass('active');
+        							$('#step3 #book-confirm').removeClass('active');
+        							if (data.error !== 1) {
+        								$('#counselor_name').val(getSelectTeacherName());
+        								$('#counselor_photo').val(getSelectTeacherPhoto());
+        								$('#need_help').val(answer1str);
+        								$('#sad_situation').val(answer2str);
+        								$('#select_date').val($('.select-date').html());
+        								$('#time_zone').val($('.time-zone').html());
+        								$('#finish_form').submit();
+        							} else
+        								moveToStep.call(self, $('#step-error'));
+        						}
+        					});
+        				}
+        			});
+        			handler.open({
+        				name: 'Kajin Health',
+        				description: '預約付款：美金' + (fee.usd / 100) + '元',
+        				amount: fee.usd
+        			});
+        		});
 			});
 		</script>
 		<?php include 'include_hotjar.php'; ?>
@@ -103,19 +158,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					日期：<?=$data_appointment['date']?><br>
 					時間：<?=sprintf('%02d:00', $data_appointment['time'])?><br>
 					<br>
-					若以上資訊無誤，您可點選下方的按鈕進行信用卡付款。
+					若以上資訊無誤，您可點選下方的按鈕進行付款。
 					<?php
                         if ($fee_twd == 800) {
                             echo '這是您第一次預約，諮商費用為 800 元 (約美金 24 元)。';
                         } elseif ($fee_twd == 2000) {
-                            echo '費用為 2000 元 (約美金 60 元)。';
+                            echo '費用為 2000 元 (約美金 65 元)。';
                         } else {
                             echo "費用為 $fee_twd 元 (約美金 ".($fee_usd / 100).' 元)。';
                         }
                     ?>
                     <br>
                     <br>
-                    優惠代碼：<input type="text" id="coupon">&nbsp;&nbsp;<button class="rate_btn" type="button" name="button">確認</button>
+                    優惠代碼：<input type="text" id="coupon">&nbsp;&nbsp;<button id="coupon_chk" class="rate_btn" type="button" name="button">確認</button>
                     <br>
                     <br>
                     （若您有優惠代碼，請輸入後按下確認鍵）
