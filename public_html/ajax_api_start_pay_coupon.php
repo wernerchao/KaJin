@@ -21,6 +21,7 @@ $token = $_POST['token'];
 $news = $_POST['news'];
 $fee_usd = $_POST['fee_usd'];
 $fee_twd = $_POST['fee_twd'];
+$code = $_POST['coupon'];
 fputs($f, print_r($_POST, true).'/'.$_POST['token'].'/'.$_POST['date'].'/'.$_POST['time'].'/'.$_POST['counselor_id'].'--'."\n");
 // 檢查個案登入狀態
 $data_user = load_user();
@@ -115,8 +116,8 @@ $zoom_id = create_meeting();
 $mysql->query("Update `appointment` Set `zoom_id` = '$zoom_id' Where `id` = '$data_appointment[id]'");
 fputs($f, 'zoom_id='.$zoom_id."\n");
 
-// 新增 coupon registration_confirmed
-$mysql->query("INSERT INTO `coupon_record`(`user_id`,`coupon_id`) VALUES('$data_user[id]',(SELECT `id` FROM `coupon` WHERE `code`='kajin2016'))");
+// 新增 coupon record
+$mysql->query("INSERT INTO `coupon_record`(`user_id`,`coupon_id`) VALUES('$data_user[id]',(SELECT `id` FROM `coupon` WHERE `code`='$code'))");
 
 // 寄信通知老師
 notification('reservation_to_counselor', $list_counselor[$data_appointment['counselor_id']]['email'], array('name' => $list_counselor[$data_appointment['counselor_id']]['name_ch'], 'date' => $data_appointment['date'], 'time' => sprintf(' %02d:00', $data_appointment['time'])));
