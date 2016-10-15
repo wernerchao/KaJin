@@ -12,12 +12,19 @@ if ($data_user == 'ERROR') {
     exit('{"error":1, "error_type":"NOT_LOGIN"}');
 }
 
+// 檢查 code 是否存在
 $sql = $mysql->query("SELECT * FROM `coupon` WHERE `code` = '$code'");
 if ($sql->num_rows == 1) {
     $code_info = $sql->fetch_assoc();
-    $output = array('status' => true, 'discount' => $code_info['discount']);
-} else {
-    $output = array('status' => false);
+    // 檢查使用者是否已用過目前 code
+    $used_sql = $mysql->query("SELECT * FROM `coupon_record` WHERE `user_id`='".$data_user['id']." AND `coupon_id`='".$code_info['id']."'");
+    if ($used_sql->num_rows > 0) { // 已使用過
+        $output = array('status' => 100);
+    } else { // 未使用過，回傳折扣
+        $output = array('status' => 0, 'discount' => $code_info['discount']);
+    }
+} else { // code 無效
+    $output = array('status' => 999);
 }
 
 echo json_encode($output);
