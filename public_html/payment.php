@@ -59,7 +59,7 @@ $fee_usd = count_fee($data_user['id'], 'usd', array('default' => $data_appointme
                 $('#coupon_chk').click(function(event) {
                     /* Act on the event */
                 });
-                $('#step3 #book-confirm .next-step').on('click', function() {        			
+                $('#step3 #book-confirm .next-step').on('click', function() {
         			var self = this;
         			var handler = StripeCheckout.configure({
         				//key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
@@ -163,7 +163,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         if ($fee_twd == 800) {
                             echo '這是您第一次預約，諮商費用為 800 元 (約美金 24 元)。';
                         } elseif ($fee_twd == 2000) {
-                            echo '費用為 2000 元 (約美金 65 元)。';
+                            echo '費用為 2000 元 (約美金 60 元)。';
                         } else {
                             echo "費用為 $fee_twd 元 (約美金 ".($fee_usd / 100).' 元)。';
                         }

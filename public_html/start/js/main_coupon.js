@@ -530,32 +530,38 @@
 			$('.modal').addClass('active');
 		});
 		$('#step3 #coupon_confirm').on('click', function() {
-			$.ajax({
-				url: '../ajax_api_conpon_confirm.php',
-				dataType: 'json',
-				data: {
-					code: $('#coupon_input').val()
-				}
-			}).done(function(result) {
-				if (result.status == 0) {
-					console.log(final_fee_twd, final_fee_usd, fee);
-					final_fee_twd = fee.twd * result.discount;
-					final_fee_usd = fee.usd * result.discount;
-					coupon_code = $('#coupon_input').val();
-					$('#coupon_hint').html('<p>已使用優惠代碼，您本次諮詢費用為美金' + final_fee_usd / 100 + '元。（原價' + fee.usd / 100 + '元）</p>')
-					console.log(final_fee_twd, final_fee_usd, fee);
-				} else {
-					final_fee_twd = fee.twd;
-					final_fee_usd = fee.usd;
-					if (result.status == 999) {
-						$('#coupon_hint').html('<p>優惠代碼無效，請重新輸入。</p>');
-					} else if (result.status == 100) {
-						$('#coupon_hint').html('<p>您已使用過此用代碼。</p>');
+			if (fee.twd == 800) { // 第一次預約
+				$.ajax({
+					url: '../ajax_api_conpon_confirm.php',
+					dataType: 'json',
+					data: {
+						code: $('#coupon_input').val()
 					}
-				}
-			}).fail(function() {
-				alert('系統出現異常，請重新操作！');
-			});
+				}).done(function(result) {
+
+					if (result.status == 0) {
+						// console.log(final_fee_twd, final_fee_usd, fee);
+						final_fee_twd = fee.twd * result.discount;
+						final_fee_usd = fee.usd * result.discount;
+						coupon_code = $('#coupon_input').val();
+						$('#coupon_hint').html('<p>使用代碼後，您本次諮詢費用為美金' + final_fee_usd / 100 + '元。（原價' + fee.usd / 100 + '元）</p>');
+						// console.log(final_fee_twd, final_fee_usd, fee);
+					} else {
+						final_fee_twd = fee.twd;
+						final_fee_usd = fee.usd;
+						if (result.status == 999) {
+							$('#coupon_hint').html('<p>優惠代碼無效，請重新輸入。</p>');
+						} else if (result.status == 100) {
+							$('#coupon_hint').html('<p>您已使用過此用代碼。</p>');
+						}
+					}
+
+				}).fail(function() {
+					alert('系統出現異常，請重新操作！');
+				});
+			} else { // 非第一次預約
+				$('#coupon_hint').html('<p>優惠代碼僅限首次諮詢使用。</p>');
+			}
 		});
 		$('#step3 #book-confirm .prev-step').on('click', function() {
 			$('#step3 #book-confirm').removeClass('active');
