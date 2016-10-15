@@ -537,7 +537,7 @@
 					code: $('#coupon_input').val()
 				}
 			}).done(function(result) {
-				if (result.status) {
+				if (result.status == 0) {
 					console.log(final_fee_twd, final_fee_usd, fee);
 					final_fee_twd = fee.twd * result.discount;
 					final_fee_usd = fee.usd * result.discount;
@@ -547,7 +547,11 @@
 				} else {
 					final_fee_twd = fee.twd;
 					final_fee_usd = fee.usd;
-					$('#coupon_hint').html('<p>優惠代碼無效，請重新輸入。</p>');
+					if (result.status == 999) {
+						$('#coupon_hint').html('<p>優惠代碼無效，請重新輸入。</p>');
+					} else if (result.status == 100) {
+						$('#coupon_hint').html('<p>您已使用過此用代碼。</p>');
+					}
 				}
 			}).fail(function() {
 				alert('系統出現異常，請重新操作！');
