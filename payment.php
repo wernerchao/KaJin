@@ -2,7 +2,6 @@
 
 include 'include_function.php';
 include 'include_setting.php';
-// include 'include_setting_test.php';
 
 // 個案登入
 login_user($_SESSION['user_email'], $_SESSION['user_password'], array('f_rd' => 'login.php'));
@@ -52,53 +51,20 @@ $fee_usd = count_fee($data_user['id'], 'usd', array('default' => $data_appointme
 		<link href="panelstyle.css" rel="stylesheet" type="text/css" media="all">
 		<script type="text/javascript" src="jquery-1.9.1.js"></script>
 		<link rel="shortcut icon" href="img/favicon.ico">
-        <script src="https://checkout.stripe.com/checkout.js"></script>
 		<script>
 			$(function(){
-                var coupon_code;
-                var final_fee = <?= $fee_usd; ?>;
-                var fee = <?= $fee_usd; ?>;
 				$("#block").click(function(){
 					$("#block").fadeOut(300);
 				});
                 $('#coupon_chk').click(function(event) {
-                    if (fee == 2400) { // 第一次預約
-        				$.ajax({
-        					url: '../ajax_api_conpon_confirm.php',
-        					dataType: 'json',
-        					data: {
-        						code: $('#coupon_input').val()
-        					}
-        				}).done(function(result) {
-        					if (result.status == 0) {
-        						// console.log(final_fee_twd, final_fee_usd, fee);
-        						// final_fee_twd = fee.twd * result.discount;
-        						final_fee = fee * result.discount;
-        						coupon_code = $('#coupon_input').val();
-        						$('#coupon_hint').html('<p>使用代碼後，您本次諮詢費用為美金' + final_fee / 100 + '元。（原價' + fee / 100 + '元）</p>');
-        						// console.log(final_fee_twd, final_fee_usd, fee);
-        					} else {
-        						// final_fee_twd = fee.twd;
-        						// final_fee_usd = fee.usd;
-        						if (result.status == 999) {
-        							$('#coupon_hint').html('<p>優惠代碼無效，請重新輸入。</p>');
-        						} else if (result.status == 100) {
-        							$('#coupon_hint').html('<p>您已使用過此用代碼。</p>');
-        						}
-        					}
-        				}).fail(function() {
-        					alert('系統出現異常，請重新操作！');
-        				});
-        			} else { // 非第一次預約
-        				$('#coupon_hint').html('<p>優惠代碼僅限首次諮詢使用。</p>');
-        			}
+                    /* Act on the event */
                 });
-                $('#pay_btn').on('click', function() {
+                $('#step3 #book-confirm .next-step').on('click', function() {
         			var self = this;
         			var handler = StripeCheckout.configure({
-        				// key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
+        				//key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
         				key: 'pk_live_jL7Bu4XKJxHi7uQh7eqzPde9',
-        				image: './img/logo.png',
+        				image: './images/kajin.png',
         				locale: 'auto',
         				alipay: true,
         				closed: function() {
@@ -109,29 +75,40 @@ $fee_usd = count_fee($data_user['id'], 'usd', array('default' => $data_appointme
         				},
         				token: function(res) {
         					$.ajax({
-        						url: 'work_payment.php', //real
+        						url: 'ajax_api_start_pay.php', //real
         						type: 'POST',
         						data: {
-        							appointment_id: <?=$_GET['appointment_id']?>,
-        							fee: final_fee,
-                                    coupon: coupon_code,
-                                    token: res.id
+        							counselor_id: getTeacherId(),
+        							date: chooseTaiwanDate,
+        							time: chooseTaiwanTime,
+        							token: res.id,
+        							news: $('#enews-checkbox').prop('checked') ? true : false,
+        							fee: fee,
+        							timezone: Number($('select.choose-abroad').val())
         						},
         						dataType: 'json',
         						success: function(data) {
-        							if (data.status == 0) {
-        								window.location = 'finish.php?appointment_id=<?=$_GET[appointment_id]?>';
+        							$(self).parent().children().prop('disabled', false);
+        							$('.modal').removeClass('active');
+        							$('#step3 #book-confirm').removeClass('active');
+        							if (data.error !== 1) {
+        								$('#counselor_name').val(getSelectTeacherName());
+        								$('#counselor_photo').val(getSelectTeacherPhoto());
+        								$('#need_help').val(answer1str);
+        								$('#sad_situation').val(answer2str);
+        								$('#select_date').val($('.select-date').html());
+        								$('#time_zone').val($('.time-zone').html());
+        								$('#finish_form').submit();
         							} else
-                                        window.location = 'error.php?type='+ data.status;
-        								// alert('付款失敗，請重新操作。');
+        								moveToStep.call(self, $('#step-error'));
         						}
         					});
         				}
         			});
         			handler.open({
         				name: 'Kajin Health',
-        				description: '預約付款：美金' + (final_fee / 100) + '元',
-        				amount: final_fee
+        				description: '預約付款：美金' + (fee.usd / 100) + '元',
+        				amount: fee.usd
         			});
         		});
 			});
@@ -192,15 +169,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         }
                     ?>
                     <br>
-                    <p>
-                        若您有優惠代碼，請輸入後按下確認鍵。
-                        <br>
-                        優惠代碼：<input type="text" id="coupon_input" style="height:inherit;">
-                        &nbsp;&nbsp;<button id="coupon_chk" class="rate_btn" type="button" name="button">確認</button>
-                    </p>
-                    <p id="coupon_hint" style="color:green"></p>
+                    <br>
+                    優惠代碼：<input type="text" id="coupon">&nbsp;&nbsp;<button id="coupon_chk" class="rate_btn" type="button" name="button">確認</button>
+                    <br>
+                    <br>
+                    （若您有優惠代碼，請輸入後按下確認鍵）
+                    <br>
 					<br>
-                    <button type="button" class="rate_btn" id="pay_btn">前往付款</button>
+					<form action="work_payment.php" method="POST">
+						<script
+						src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+						data-key="<?=$system['stripe']['public']?>"
+						data-currency="usd"
+						data-amount="<?=$fee_usd?>"
+						data-name="Kajin"
+						data-description="<?=$fee_text?>"
+						data-image="img/logo.png"
+						data-locale="auto"
+						data-alipay="true"
+						data-label="Pay with Card or Alipay">
+						</script>
+						<input type="hidden" name="appointment_id" value="<?=$_GET['appointment_id']?>">
+						<input type="hidden" name="fee" value="<?=$fee_twd?>">
+					</form>
 				</div>
 			</div>
 		</div>
