@@ -538,7 +538,6 @@
 						code: $('#coupon_input').val()
 					}
 				}).done(function(result) {
-
 					if (result.status == 0) {
 						// console.log(final_fee_twd, final_fee_usd, fee);
 						final_fee_twd = fee.twd * result.discount;
@@ -555,7 +554,6 @@
 							$('#coupon_hint').html('<p>您已使用過此用代碼。</p>');
 						}
 					}
-
 				}).fail(function() {
 					alert('系統出現異常，請重新操作！');
 				});
