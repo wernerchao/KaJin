@@ -6,11 +6,32 @@ include '../include_setting.php';
 login_admin('', $_SESSION['admin_password'], array('f_rd' => 'login.php'));
 
 if ($_POST) {
-    $_GET['id'] = $_POST['id'];
+    $_GET['id'] = $_POST['id'];  // 用來抓 form 要顯示的資訊
 
-    $str = "Update `appointment` Set `date` = '$_POST[date]', `time` = '$_POST[time]', `counselor_id` = '$_POST[counselor_id]', `user_id` = '$_POST[user_id]', `state_counsel` = '$_POST[state_counsel]', `state_payment` = '$_POST[state_payment]', `zoom_id` = '$_POST[zoom_id]', `goal` = '$_POST[goal]', `homework` = '$_POST[homework]', `note` = '$_POST[note]', `fee` = '$_POST[fee]' Where `id` = '$_GET[id]'";
-    $mysql->query($str);
-    echo "<script>alert('資料已修改');</script>";
+    // 檢查欲更新的時段是否存在
+    $sql = $mysql->query("Select * From `appointment` Where `date`='$_POST[date]' AND `time` = '$_POST[time]' AND `counselor_id`='$_POST[counselor_id]'");
+    if ($sql->num_rows == 1) { // 時段已存在
+        $data_appointment = $sql->fetch_assoc();
+        if ($data_appointment['user_id'] != $_POST['user_id'] && $data_appointment['user_id'] != 0) { // 時段已被預約
+            echo "<script>alert('此時段已有個案預約！');</script>";
+        } else { // 為本來個案時段或未被預約之時段
+            $str = "Update `appointment` Set `date` = '$_POST[date]', `time` = '$_POST[time]', `counselor_id` = '$_POST[counselor_id]', `user_id` = '$_POST[user_id]', `state_counsel` = '$_POST[state_counsel]', `state_payment` = '$_POST[state_payment]', `zoom_id` = '$_POST[zoom_id]', `goal` = '$_POST[goal]', `homework` = '$_POST[homework]', `note` = '$_POST[note]', `fee` = '$_POST[fee]' Where `id` = '$data_appointment[id]'";
+            $mysql->query($str);
+            if ($data_appointment['id'] != $_POST['id']) {
+                $clear_str = "Update `appointment` Set `user_id` = '0', `state_counsel` = '0', `state_payment` = '0', `zoom_id` = '', `goal` = '', `homework` = '', `note` = '', `fee` = '0' Where `id` = '$_POST[id]'";
+                $mysql->query($clear_str);
+                $_GET['id'] = $data_appointment['id'];
+            }
+            echo "<script>alert('資料已修改');</script>";
+        }
+    } else { // 時段不存在，新增時段資料
+        $insert_str = 'INSERT INTO `appointment`(`user_id`, `counselor_id`, `date`, `time` , `fee`, `state_counsel`, `state_payment`, `zoom_id`, `goal`, `homework`, `note`)'." VALUES ('$_POST[user_id]', '$_POST[counselor_id]', '$_POST[date]', '$_POST[time]', '$_POST[fee]', '$_POST[state_counsel]', '$_POST[state_payment]', '$_POST[zoom_id]', '$_POST[goal]', '$_POST[homework]', '$_POST[note]')";
+        $mysql->query($insert_str);
+        $_GET['id'] = $mysql->insert_id;
+        $clear_str = "Update `appointment` Set `user_id` = '0', `state_counsel` = '0', `state_payment` = '0', `zoom_id` = '', `goal` = '', `homework` = '', `note` = '', `fee` = '0' Where `id` = '$_POST[id]'";
+        $mysql->query($clear_str);
+        echo "<script>alert('資料已修改');</script>";
+    }
 }
 
 $sql = $mysql->query("Select * From `appointment` Where `id` = '$_GET[id]'");
@@ -42,7 +63,7 @@ $list_counselor = list_counselor();
 		</tr>
 		<tr>
 			<td>日期</td>
-			<td><input type="text" name="date" value="<?=$row['date']?>" size="6"></td>
+			<td><input type="text" name="date" value="<?=$row['date']?>"></td>
 		</tr>
 		<tr>
 			<td>時間</td>

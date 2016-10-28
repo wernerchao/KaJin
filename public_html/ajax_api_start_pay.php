@@ -1,10 +1,9 @@
 <?php
 
-
 include 'include_function.php';
-include 'include_setting_test.php';
+include 'include_setting.php';
 include 'include_stripe.php';
-include 'include_zoom_test.php';
+include 'include_zoom.php';
 
 $f = fopen('pay_e.txt', 'a');
 fputs($f, $_SERVER['REMOTE_ADDR'].' ');

@@ -21,6 +21,8 @@
 	var nowTeacherIndex = 0; //目前是可諮詢列表裡的第幾個老師
 	var taiwanSchedule = []; //server出來的時間+:00，之後可以用來做時區轉換
 	var fee = []; // fee['twd'], fee['usd']
+	var final_fee_usd, final_fee_twd;
+	var coupon_code;
 	$(document).ready(function() {
 
 		//----------test----------
@@ -319,34 +321,30 @@
 
 					'<div class="column1 col">' +
 					'<div class="title">預約諮詢師</div>' +
-					'<div class="content">' +
-					'<div class="col1 col">' +
 					'<div class="photo"></div>' +
 					'<div class="name-block">' +
 					'<div class="name">' + teacherinfo[value]['name_ch'] + '</div><br/>' +
 					'<div class="profession">心理諮詢師</div>' +
 					'</div>' +
 					'</div>' +
+					'<div class="column2 col">' +
+					'<div class="title">協助傾向</div>' +
+					'<div id="need-help"></div>' +
 					'</div>' +
+					'<div class="column3 col">' +
+					'<div class="title">困擾狀況</div>' +
+					'<div id="sad-situation"></div>' +
 					'</div>' +
-					// '<div class="column2 col">' +
-					// '<div class="title">協助傾向</div>' +
-					// '<div id="need-help"></div>' +
-					// '</div>' +
-					// '<div class="column3 col">' +
-					// '<div class="title">困擾狀況</div>' +
-					// '<div id="sad-situation"></div>' +
-					// '</div>' +
-					// '<div class="column4 col">' +
-					// '<div class="title">諮詢堂數</div>' +
-					// '<div>1堂課</div>' +
-					// '<div>(50分鐘/堂)</div>' +
-					// '</div>' +
-					// '<div class="column5 col">' +
-					// '<div class="title">選項</div>' +
-					// '<div class="choose-again">' +
-					// '重選' +
-					// '</div>' +
+					'<div class="column4 col">' +
+					'<div class="title">諮詢堂數</div>' +
+					'<div>1堂課</div>' +
+					'<div>(50分鐘/堂)</div>' +
+					'</div>' +
+					'<div class="column5 col">' +
+					'<div class="title">選項</div>' +
+					'<div class="choose-again">' +
+					'重選' +
+					'</div>' +
 					'</div>' +
 
 					'</div>' +
@@ -531,22 +529,47 @@
 			$('#step3 #book-confirm').addClass('active');
 			$('.modal').addClass('active');
 		});
+		$('#step3 #coupon_confirm').on('click', function() {
+			if (fee.twd == 800) { // 第一次預約
+				$.ajax({
+					url: '../ajax_api_conpon_confirm.php',
+					dataType: 'json',
+					data: {
+						code: $('#coupon_input').val()
+					}
+				}).done(function(result) {
+					if (result.status == 0) {
+						// console.log(final_fee_twd, final_fee_usd, fee);
+						final_fee_twd = fee.twd * result.discount;
+						final_fee_usd = fee.usd * result.discount;
+						coupon_code = $('#coupon_input').val();
+						$('#coupon_hint').html('<p>使用代碼後，您本次諮詢費用為美金' + final_fee_usd / 100 + '元。（原價' + fee.usd / 100 + '元）</p>');
+						// console.log(final_fee_twd, final_fee_usd, fee);
+					} else {
+						final_fee_twd = fee.twd;
+						final_fee_usd = fee.usd;
+						if (result.status == 999) {
+							$('#coupon_hint').html('<p>優惠代碼無效，請重新輸入。</p>');
+						} else if (result.status == 100) {
+							$('#coupon_hint').html('<p>您已使用過此用代碼。</p>');
+						}
+					}
+				}).fail(function() {
+					alert('系統出現異常，請重新操作！');
+				});
+			} else { // 非第一次預約
+				$('#coupon_hint').html('<p>優惠代碼僅限首次諮詢使用。</p>');
+			}
+		});
 		$('#step3 #book-confirm .prev-step').on('click', function() {
 			$('#step3 #book-confirm').removeClass('active');
 			$('.modal').removeClass('active');
-		});
-		$('#step3 #coupon_confirm').on('click', function() {
-			if ($('#coupon_input').val() == 'kajin2016') {
-				fee.twd = fee.twd * 0.8;
-				fee.usd = fee.usd * 0.8;
-				$(this).after('已使用優惠代碼，您本次諮詢費用為美金' + fee.usd / 100 + '元。')
-			}
 		});
 		$('#step3 #book-confirm .next-step').on('click', function() {
 			$(this).parent().children().prop('disabled', true);
 			var self = this;
 			var handler = StripeCheckout.configure({
-				//key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
+				// key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
 				key: 'pk_live_jL7Bu4XKJxHi7uQh7eqzPde9',
 				image: './images/kajin.png',
 				locale: 'auto',
@@ -567,8 +590,10 @@
 							time: chooseTaiwanTime,
 							token: res.id,
 							news: $('#enews-checkbox').prop('checked') ? true : false,
-							fee: fee,
-							timezone: Number($('select.choose-abroad').val())
+							fee_usd: final_fee_usd,
+							fee_twd: final_fee_twd,
+							timezone: Number($('select.choose-abroad').val()),
+							coupon: coupon_code
 						},
 						dataType: 'json',
 						success: function(data) {
@@ -591,8 +616,8 @@
 			});
 			handler.open({
 				name: 'Kajin Health',
-				description: '預約付款：美金' + (fee.usd / 100) + '元',
-				amount: fee.usd
+				description: '預約付款：美金' + (final_fee_usd / 100) + '元',
+				amount: final_fee_usd
 			});
 		});
 		$('.book-title.need-help button').on('click', function() {
@@ -751,6 +776,8 @@
 					$('input#taiwan-radio').prop('checked', true);
 					setSchedule(taiwanSchedule, 0);
 					fee = data.fee;
+					final_fee_twd = data.fee.twd;
+					final_fee_usd = data.fee.usd;
 				}
 			}
 		});
@@ -909,12 +936,5 @@
 			reset: true
 		});
 	})();
-
-
-
-
-
-
-
 
 })(window);
