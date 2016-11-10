@@ -12,6 +12,8 @@
         <link rel="stylesheet" type="text/css" href="./css/site_global.css">
         <link rel="stylesheet" type="text/css" href="./css/master_main1.css">
         <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel="stylesheet" type="text/css" href="./css/new_start_test.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
@@ -33,7 +35,7 @@
             }
 
             #navbar .container {
-                width: 960px;
+                width: 100%;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -64,19 +66,206 @@
             }
 
             #navbar .word.right {
-                float: right;
+                float: left;
+            }
+            /*RWD CSS Fixes*/
+
+            .available-teacher {
+                display: flex;
+            }
+
+            .prev-teacher-btn,
+            .next-teacher-btn {
+                width: 10vw;
+                margin: 0 6vw;
+            }
+
+            .choose-teacher-slide {
+                width: 70vw;
+            }
+
+            .grey-container1 .col .title {
+                border-bottom: 1px solid green;
+            }
+
+            .grey-container1 .column1,
+            .grey-container1 .column2,
+            .grey-container1 .column3,
+            .grey-container1 .column4,
+            .grey-container1 .column5 {
+                border-collapse: collapse;
+                width: 20%;
+                display: inline-block;
+                box-sizing: border-box;
+            }
+
+            .grey-container1 .content1 {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+                text-align: center;
+            }
+            /* Top box on scheduling page */
+
+            #step2 .grey-container1 .content1 .col {
+                width: 70vw;
+                min-height: 15vh;
+                padding: 0;
+            }
+
+            #step3 .visa-hint#agreement-hint {
+                width: 100%;
+            }
+
+            @media only screen and (max-width: 650px) {
+                .available-teacher {
+                    /* Top box on scheduling page */
+                    height: auto;
+                    /*for now, maybe need to be bigger*/
+                }
+                /* scheduling page prev-next buttons */
+                .prev-teacher-btn,
+                .next-teacher-btn {
+                    margin: 0 3vw;
+                }
+                /* Top box on scheduling page */
+                .available-teacher .slick-list,
+                .available-teacher .slick-slide {
+                    height: auto;
+                }
+                #step2 .grey-container1 .content1 .col {
+                    width: 70vw;
+                    min-height: 15vh;
+                    padding: 0;
+                }
+                #step2 .grey-container1 .content1 .column1 {
+                    height: 100%;
+                }
+                .grey-container1 .title {
+                    height: 25%;
+                }
+                .where-am-i {
+                    padding: 0;
+                    overflow: hidden;
+                }
+                .where-am-i .country-option:nth-child(2) input {
+                    margin: 8px 0px 0 50px;
+                }
+                .grey-container1 {
+                    margin: 20px 50px 50px;
+                }
+                .teacherFadingBox {
+                    /* width of the next prev buttons */
+                    width: 10vw;
+                }
+            }
+
+            @media only screen and (max-width: 950px) {
+                .grey-container2 .slick-slider,
+                .grey-container2 .slick-list {
+                    width: 100%;
+                }
+                /* for the columns on the scheduling page that contains small blocks*/
+                .grey-container2 .can-book-time .col,
+                .grey-container2 .week-name .col {
+                    width: 14.25%;
+                    box-sizing: border-box;
+                    font-size: 10px;
+                }
+                /* for top box on payment page */
+                #payment_topbox_title {
+                    width: 30%;
+                }
+                #payment_topbox_content {
+                    width: 70%;
+                }
+            }
+            /* the small blocks on scheduling page */
+
+            @media only screen and (max-width: 650px) {
+                .grey-container2 .can-book-time .col .book-time-small-block {
+                    margin: 0 auto;
+                    width: 100%;
+                    height: 30px;
+                    padding: 0 0 0 2px;
+                    font-size: 7px;
+                }
+                .grey-container2 .title {
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 150px;
+                    padding: 15px 0;
+                }
+                #navbar .container {
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .grey-container2 .title .time-icon.next {
+                    order: 2;
+                    margin: 0 auto;
+                }
+                .grey-container2 .title .week {
+                    order: 1;
+                    margin: 0 10px;
+                }
+                .grey-container2 .title .date {
+                    order: 3;
+                }
+                .grey-container2 .title .date.next {
+                    margin: 0 auto;
+                }
+                .grey-container2 .title .date.prev {
+                    margin: 0 auto;
+                }
+                .grey-container2 .title .time-bar {
+                    order: 4;
+                    margin: 0 auto;
+                }
+                .grey-container3 {
+                    height: 100px;
+                    padding: 0 5px;
+                }
+                .step-div>a {
+                    display: block;
+                }
+                .grey-container3 .select-date {
+                    margin: 0 auto;
+                }
+                .step-container h2.title {
+                    width: 100%;
+                }
+                #step2 #colelem3 .container {
+                    width: 100%;
+                    padding: 20px 5px;
+                    box-sizing: border-box;
+                }
+                #vip_help.book-title.need-help {
+                    /* bottom box of the payment page */
+                    height: 200px;
+                    padding: 5px;
+                }
+                .step-container #colelem-finish-choose .suggest:nth-child(2) h3 {
+                    /* the text for 推薦機制 */
+                    text-align: center;
+                }
+                .step-container #colelem-finish-choose .suggest:nth-child(1) {
+                    /* the box above 推薦機制 */
+                    margin: 0 20px 0 85px;
+                }
             }
         </style>
         <div id="page">
             <div id="step1" class="step-container">
                 <div id="colelem1" class="colelem">
-                    <div class="container"><span><div class="words active">Step1.挑選諮詢師</div><div class="words dot"></div><div class="words">Step2.挑選時間</div><div class="words dot"></div><div class="words">Step3.付款資訊</div></span></div>
+                    <div class="container"><span><div class="words active">Step1.挑選諮詢師</div> &nbsp <div class="words">Step2.挑選時間</div> &nbsp <div class="words">Step3.付款資訊</div></span></div>
                 </div>
                 <div id="colelem2" class="colelem">
                     <div id="colelem-slide" class="show active">
-                        <button class="slide-prev hide"></button>
+                        <button class="slide-prev hide">上一題</button>
                         <div class="slide-hover left-hover"></div>
-                        <button class="slide-next hide"></button>
+                        <button class="slide-next hide">下一題</button>
                         <div class="slide-hover right-hover"></div>
                         <div class="slide">
                             <div class="container">
@@ -87,11 +276,13 @@
                                 <div class="askforhelp-dot-main"></div>
                                 <p class="askforhelp-main-description2">我是第一次尋求心裡諮詢的幫助</p>
                                 <div class="askforhelp-main-question">
-                                    <button id="askforhelpchoose" class="askforhelp1">直接選</button>
+                                    <div class="oralreadyknow">已有想選的諮詢師
+                                        <br />
+                                        <button id="askforhelpchoose" class="askforhelp1">直接選</button>
+                                    </div>
                                     <button id="askforhelpyes" class="askforhelp1">是</button>
                                     <button id="askforhelpno" class="askforhelp1">否</button>
                                 </div>
-                                <div class="oralreadyknow">已有想選的諮詢師</div>
                             </div>
                             <div class="container">
                                 <p class="askforhelp-title">讓我們瞭解你的情況</p>
@@ -99,7 +290,8 @@
                                 <p class="askforhelp-description">我最近在困擾的是...(複選)</p>
                                 <div class="askforhelp-option" id="question2-option">
                                     <!--<button class="askforhelp2"><span class="green-word">自我困擾</span> (內在探索，例如：憂鬱、緊張、自我實現等)</button>-->
-                                </div><span class="prev-next-question"><p class="prevquestion">上一題</p><p class="nextquestion">下一題</p></span>
+                                </div>
+                                <!--<span class="prev-next-question"><p class="prevquestion">上一題</p><p class="nextquestion">下一題</p></span>-->
                                 <div class="red-hint not-answer-question question1">請至少回答一個選項</div>
                             </div>
                             <div class="container">
@@ -108,7 +300,8 @@
                                 <p class="askforhelp-description">我希望用____的方式來談我的困擾(複選)</p>
                                 <div class="askforhelp-option" id="question3-option">
                                     <!--<button class="askforhelp3">發覺我的潛意識，解釋並分析</button>-->
-                                </div><span class="prev-next-question"><p class="prevquestion">上一題</p><p class="nextquestion">下一題</p></span>
+                                </div>
+                                <!--<span class="prev-next-question"><p class="prevquestion">上一題</p><p class="nextquestion">下一題</p></span>-->
                                 <div class="red-hint not-answer-question question2">請至少回答一個選項</div>
                             </div>
                             <div class="container">
@@ -116,11 +309,14 @@
                                 <div class="askforhelp-dot slide4"></div>
                                 <p class="askforhelp-description">我想要與____諮詢老師談</p>
                                 <div class="askforhelp-option">
-                                    <button tabindex="0" class="askforhelp4">女性</button><button tabindex="1" class="askforhelp4">男性</button><button tabindex="2" class="askforhelp4">都可以</button>
+                                    <button tabindex="0" class="askforhelp4">女性</button><button tabindex="1" class="askforhelp4">男性</button>
+                                    <button tabindex="2" class="askforhelp4">都可以</button>
                                 </div>
                                 <div class="askforhelp-option">
                                     <button class="askforhelp-analyze">開始分析</button>
-                                </div><span class="prev-next-question"><p class="prevquestion">上一題</p></span></div>
+                                </div>
+                                <!--<span class="prev-next-question"><p class="prevquestion">上一題</p></span>-->
+                            </div>
                         </div>
                     </div>
                     <div id="colelem-choose">
@@ -153,10 +349,12 @@
                                     <div style="text-align:center;">
                                         <span class="number">1</span><span>位</span>
                                     </div>
-                                    <h5>老師適合你的情況</h5></div>
+                                    <h5>老師適合你的情況</h5>
+                                </div>
                                 <div class="suggest">
                                     <h3>推薦機制</h3>
-                                    <p>我們將艱澀專業的心理學派轉化成一般口語化的用語，老師跟您填寫的是一樣的問卷。當分數越接近，表示您們的心理以及專業最為契合。您被分配的心理師，將是會最貼切您現在的狀態，如果你還要多了解一些KaJin 的心理師，請點老師的圖像觀看更多。</p>
+                                    <p>我們將艱澀專業的心理學派轉化成一般口語化的用語，老師跟您填寫的是一樣的問卷。當分數越接近，表示您們的心理以及專業最為契合。您被分配的心理師，將是會最貼切您現在的狀態，如果你還要多了解一些KaJin 的心理師，請點老師的圖像觀看更多。
+                                    </p>
                                 </div>
                                 <div class="down-arrow"></div>
                             </div>
@@ -189,20 +387,56 @@
             </div>
             <div id="step2" class="step-container">
                 <div id="colelem1" class="colelem">
-                    <div class="container"><span><div class="words">Step1.挑選諮詢師</div><div class="words dot"></div><div class="words active">Step2.挑選時間</div><div class="words dot"></div><div class="words">Step3.付款資訊</div></span></div>
+                    <div class="container"><span><div class="words">Step1.挑選諮詢師</div> &nbsp <div class="words active">Step2.挑選時間</div> &nbsp <div class="words">Step3.付款資訊</div></span></div>
                 </div>
                 <div id="colelem2" class="colelem">
                     <div class="container">
-                        <div class="side-hint step2-book-item-side-hint">點擊左右箭頭鈕可以查看不同老師的時間表</div>
-                        <div class="side-hint step2-book-time-side-hint">選擇自己的時區，並點擊時間方框選擇預約時間，若無可預約時間，可將畫面上滑更換老師</div>
+                        <!--<div class="side-hint step2-book-item-side-hint">點擊左右箭頭鈕可以查看不同老師的時間表</div>-->
+                        <!--<div class="side-hint step2-book-time-side-hint">選擇自己的時區，並點擊時間方框選擇預約時間，若無可預約時間，可將畫面上滑更換老師</div>-->
                         <div class="book-title">
                             <div class="icon"></div>
                             <div class="word">預約項目</div>
                         </div>
                         <div class="available-teacher">
-                            <div class="prev-teacher-btn"></div>
+                            <div class="prev-teacher-btn">
+                                <div class='teacherFadingBox'></div>
+                            </div>
                             <div class="choose-teacher-slide">
                                 <div class="grey-container1">
+                                    <!--<div class="content">
+                                    <div class="col col1">
+                                        <div class="title">預約諮詢</div>
+                                        <div class="content1">
+                                            <div class="photo">[img]</div>
+                                            <div class="name-block">
+                                                <div class="name">something some name</div>
+                                                <br/>
+                                                <div class="profession">Therapist</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col2">
+                                        <div class="title">協助傾向</div>
+                                        <div id="need-help" class="content2">Content 2 right here hehehe</div>
+                                    </div>
+                                    <div class="col col3">
+                                        <div class="title">困擾狀況</div>
+                                        <div id="sad-situation" class="content3">Content 3 right here hahaha</div>
+                                    </div>
+                                    <div class="col col4">
+                                        <div class="title">諮詢堂數</div>
+                                        <div class="content4">
+                                            <div>1堂課 Content 4</div>
+                                            <div>(50分鐘/堂)</div>
+                                        </div>
+                                    </div>
+                                    <div class="col col5">
+                                        <div class="title">選項</div>
+                                        <div class="content5">
+                                            <div class="choose-again">重選 Content 5</div>
+                                        </div>
+                                    </div>
+                                </div>-->
                                     <div class="title">
                                         <div class="col col1">預約諮詢 </div>
                                         <div class="col col2">協助傾向</div>
@@ -215,6 +449,7 @@
                                             <div class="photo"></div>
                                             <div class="name-block">
                                                 <div class="name"></div>
+                                                <br/>
                                                 <div class="profession"></div>
                                             </div>
                                         </div>
@@ -230,22 +465,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="next-teacher-btn"></div>
-                        </div>
-                        <div class="where-am-i">
-                            <div class="country-option">
-                                <input id="taiwan-radio" type="radio" name="country-radio" checked><span></span>
-                                <label for="taiwan-radio" class="country-discription">我在台灣</label>
-                            </div>
-                            <div class="country-option">
-                                <input id="abroad-radio" type="radio" name="country-radio" checked><span></span>
-                                <label for="abroad-radio" class="country-discription">我在</label>
-                                <select disabled class="choose-abroad"></select>
+                            <div class="next-teacher-btn">
+                                <div class="teacherFadingBox"></div>
                             </div>
                         </div>
                         <div class="book-title">
                             <div class="icon"></div>
                             <div class="word">預約時間</div>
+                        </div>
+                        <div class="where-am-i">
+                            <div class="country-option">
+                                <input id="taiwan-radio" type="radio" name="country-radio" checked><span class="countryRadio"></span>
+                                <label for="taiwan-radio" class="country-discription">我在台灣</label>
+                            </div>
+                            <div class="country-option">
+                                <input id="abroad-radio" type="radio" name="country-radio" checked><span class="countryRadio"></span>
+                                <label for="abroad-radio" class="country-discription">我在</label>
+                                <select disabled class="choose-abroad"></select>
+                            </div>
                         </div>
                         <div class="grey-container2">
                             <div class="title">
@@ -397,44 +634,56 @@
                 </div>
                 <div id="colelem2" class="colelem">
                     <div class="container">
-                        <div class="side-hint step3-book-item-side-hint">確認您的預約項目</div>
+                        <!--<div class="side-hint step3-book-item-side-hint">確認您的預約項目</div>
                         <div class="side-hint step3-book-time-side-hint">確認您的預約時間</div>
                         <div class="side-hint step3-payment-side-hint">Kajin Health提供兩種付款方式</div>
-                        <div class="side-hint step3-other-side-hint">請閱讀諮詢同意書，喜歡我們的服務也歡迎訂閱電子報</div>
+                        <div class="side-hint step3-other-side-hint">請閱讀諮詢同意書，喜歡我們的服務也歡迎訂閱電子報</div>-->
                         <div class="book-title">
                             <div class="icon"></div>
                             <div class="word">預約項目</div>
                         </div>
                         <div class="grey-container1">
-                            <div class="title">
-                                <div class="col col1">預約諮詢 </div>
-                                <div class="col col2">協助傾向</div>
-                                <div class="col col3">困擾狀況</div>
-                                <div class="col col4">諮詢堂數</div>
-                                <div class="col col5">選項</div>
-                            </div>
+                            <!-- PAYMENT PAGE top box -->
                             <div class="content">
-                                <div class="col col1">
+                                <div id="payment_topbox_title" class="col col1">預約諮詢 </div>
+                                <div id="payment_topbox_content" class="col col1">
                                     <div class="photo"></div>
                                     <div class="name-block">
                                         <div class="name"></div>
+                                        <br/>
                                         <div class="profession">心理諮詢師</div>
                                     </div>
                                 </div>
-                                <div id="need-help" class="col col2"></div>
-                                <div id="sad-situation" class="col col3"></div>
-                                <div class="col col4">
-                                    <div>1堂課</div>
-                                    <div>(50分鐘/堂)</div>
-                                </div>
-                                <div class="col col5">
-                                    <div class="choose-again">重選</div>
+                            </div>
+                            <!--<div class="title">
+                            <div class="col col1">預約諮詢 </div>
+                            <div class="col col2">協助傾向</div>
+                            <div class="col col3">困擾狀況</div>
+                            <div class="col col4">諮詢堂數</div>
+                            <div class="col col5">選項</div>
+                        </div>
+                        <div class="content">
+                            <div class="col col1">
+                                <div class="photo"></div>
+                                <div class="name-block">
+                                    <div class="name"></div>
+                                    <div class="profession">心理諮詢師</div>
                                 </div>
                             </div>
+                            <div id="need-help" class="col col2"></div>
+                            <div id="sad-situation" class="col col3"></div>
+                            <div class="col col4">
+                                <div>1堂課</div>
+                                <div>(50分鐘/堂)</div>
+                            </div>
+                            <div class="col col5">
+                                <div class="choose-again">重選</div>
+                            </div>
+                        </div>-->
                         </div>
                         <div class="book-title">
                             <div class="icon"></div>
-                            <div class="word">預約項目</div>
+                            <div class="word fadingBox">預約時間</div>
                         </div>
                         <div class="grey-container3">
                             <div class="confirm-time">預約諮詢時間</div>
@@ -443,7 +692,7 @@
                         </div>
                         <div class="book-title">
                             <div class="icon"></div>
-                            <div class="word">付款方式</div>
+                            <div class="word fadingBox">付款方式</div>
                         </div>
                         <div class="grey-container4">
                             <p>Kajin Health 提供兩種付款方式，分別是<span class="green">信用卡付款</span>和<span class="green">支付寶付款</span>。</p>
@@ -458,7 +707,18 @@
                         </div>
                         <div class="book-title">
                             <div class="icon"></div>
-                            <div class="word">諮詢同意書&電子報</div>
+                            <div class="word fadingBox">優惠代碼</div>
+                        </div>
+                        <div class="grey-container4">
+                            若您有優惠代碼，請在下方欄位輸入後點選確認。
+                            <br>
+                            <input id="coupon_input" type="text" name="coupon_input" style="border:1px solid #a6a6a6;color:#a6a6a6;padding:5px;">
+                            <button type="button" id="coupon_confirm" style="border:1px solid #66c5cc;padding:5px 10px; color:#66c5cc;background:none;">確認</button>
+                            <div id="coupon_hint"></div>
+                        </div>
+                        <div class="book-title">
+                            <div class="icon"></div>
+                            <div class="word fadingBox">諮詢同意書&電子報</div>
                         </div>
                         <div class="grey-container4">
                             <div class="check-line agreement-check">
@@ -475,10 +735,10 @@
                             <button class="prev-step">上一步</button>
                             <button class="next-step">預約確認</button>
                         </div>
-                        <div class="book-title need-help">
+                        <div id="vip_help" class="book-title need-help">
                             <div class="icon"></div>
-                            <div class="word">遇到問題，需要專人協助</div>
-                            <div class="word help">透過Kajin專人協助預約諮詢</div>
+                            <div class="word">遇到問題，需要專人協助。透過Kajin專人協助預約諮詢</div>
+                            <!--<div class="word help">透過Kajin專人協助預約諮詢</div>-->
                             <button>由專人協助預約</button>
                         </div>
                     </div>
@@ -587,19 +847,26 @@
         <script src="./js/slick.min.js"></script>
         <script src="./js/moment.js"></script>
         <script src="./js/scrollreveal.min.js"></script>
-        <script src="./js/main.js"></script>
+        <script src="./js/main_coupon.js"></script>
+        <script src="./js/reminderBox.js"></script>
         <script>
-        // Hotjar Tracking Code for https://www.kajinhealth.com/start
-           (function(h,o,t,j,a,r){
-               h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-               h._hjSettings={hjid:219545,hjsv:5};
-               a=o.getElementsByTagName('head')[0];
-               r=o.createElement('script');r.async=1;
-               r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-               a.appendChild(r);
-           })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+            // Hotjar Tracking Code for https://www.kajinhealth.com/start
+            (function(h, o, t, j, a, r) {
+                h.hj = h.hj || function() {
+                    (h.hj.q = h.hj.q || []).push(arguments)
+                };
+                h._hjSettings = {
+                    hjid: 219545,
+                    hjsv: 5
+                };
+                a = o.getElementsByTagName('head')[0];
+                r = o.createElement('script');
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
 
-           function validNumber(e, pnumber, digit, target) {
+            function validNumber(e, pnumber, digit, target) {
                 var re = new RegExp("^\\d{0," + digit + "}$");
                 var changere = new RegExp("^\\d{0," + digit + "}");
                 if (!re.test(pnumber))
@@ -608,10 +875,31 @@
                     target.next().next().focus();
             }
             // window.onbeforeunload =function() {
-                // event.returnValue = "所有已填寫的資料都會被清除";
+            // event.returnValue = "所有已填寫的資料都會被清除";
             // }
         </script>
-</script>
-</body>
+
+        <!-- Google Tag Manager -->
+        <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WFLZTQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+        <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-WFLZTQ');
+        </script>
+        <!-- End Google Tag Manager -->
+    </body>
 
 </html>
