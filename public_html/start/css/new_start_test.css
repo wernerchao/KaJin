@@ -1,107 +1,352 @@
-            /*New CSS for Start*/
+        /*New CSS for Start*/
 
-            .step-container #colelem1 {
-                border: none;
-                margin: 80px auto 50px;
-            }
+        .step-container #colelem1 {
+            border: none;
+            margin: 80px auto 50px;
+        }
 
-            .step-container #colelem1 .words {
-                margin: 10px auto 0;
-            }
+        .step-container #colelem1 .words {
+            margin: 10px auto 0;
+        }
 
-            .step-container > .colelem .container {
-                width: 100%;
-                /* border-bottom: 1px solid #e5e5e5; this is a line below 開始分析 */
-            }
+        .step-container > .colelem .container {
+            width: 100%;
+            /* border-bottom: 1px solid #e5e5e5; this is a line below 開始分析 */
+        }
 
-            #colelem1 .container {
-                width: 100%;
-                margin: 10px auto;
-                padding: 10px;
-            }
+        #colelem1 .container {
+            width: 100%;
+            margin: 10px auto;
+            padding: 10px;
+        }
 
-            #step1 .slide {
-                width: 100%;
-            }
+        #step1 .slide {
+            width: 100%;
+        }
 
-            #step1 .slide-prev, #step1 .slide-next {
-                top: 290px; /* align with 1234 image */
-                color: #66c5cc;
-            }
+        #step1 .slide-prev, #step1 .slide-next {
+            top: 290px; /* align with 1234 image */
+            color: #66c5cc;
+        }
 
-            #step1 .slide-next {
-                right: 2px;
-            }
+        #step1 .slide-next {
+            right: 2px;
+        }
 
-            #step1 .slide-prev {
-                left: 2px;
-            }
+        #step1 .slide-prev {
+            left: 2px;
+        }
 
-            #step1 .centerinnerword {
-                width: 90%;
-            }
+        #step1 .centerinnerword {
+            width: 90%;
+        }
 
-            #step1 .askforhelp-dot-main, #step1 .askforhelp-dot {
-                width: 150px;
-            }
+        #step1 .askforhelp-dot-main, #step1 .askforhelp-dot {
+            width: 150px;
+        }
 
-            #step1 .askforhelp2 {
-                width: 90%;
-                padding: 0 0 0 0px;
-                text-align: center;
-            }
+        #step1 .askforhelp2 {
+            width: 90%;
+            padding: 0 0 0 0px;
+            text-align: center;
+        }
 
-            #step1 .askforhelp3 {
-                width: 90%;
-            }
+        #step1 .askforhelp3 {
+            width: 90%;
+        }
 
-            #step1 .centerword, 
-            #step1 .askforhelp-title, 
-            #step1 .askforhelp-main-description1,   
-            #step1 .askforhelp-main-description2, 
-            #step1 .askforhelp-main-question, 
-            #step1 .askforhelp-description, 
-            #step1 .askforhelp-option, 
-            #step1 .askforhelp-oralreadyknow, 
-            #step1 .askforhelp-input-div 
-            {
-                width: 100%;
-            }
+        #step1 .centerword, 
+        #step1 .askforhelp-title, 
+        #step1 .askforhelp-main-description1,   
+        #step1 .askforhelp-main-description2, 
+        #step1 .askforhelp-main-question, 
+        #step1 .askforhelp-description, 
+        #step1 .askforhelp-option, 
+        #step1 .askforhelp-oralreadyknow, 
+        #step1 .askforhelp-input-div 
+        {
+            width: 100%;
+        }
 
-            #step1 .askforhelp-analyze {
-                width: 50%;
-            }
+        #step1 .askforhelp-analyze {
+            width: 50%;
+        }
 
-            #colelem2.colelem {
-                width: 100%;
-            }
+        #colelem2.colelem {
+            width: 100%;
+        }
 
-            .step-container #colelem-finish-choose h3 ~ p {
-                width: 90%;
-            }
+        .step-container #colelem-finish-choose h3 ~ p {
+            width: 90%;
+        }
 
-            .step-container #colelem-finish-choose .container > div {
-                width: 100%;
-            }
+        .step-container #colelem-finish-choose .container > div {
+            width: 100%;
+        }
 
-            .step-container #colelem-finish-choose .container > div:nth-child(3) h3 ~ p {
-                width: 300px;
-            }
+        .step-container #colelem-finish-choose .container > div:nth-child(3) h3 ~ p {
+            width: 300px;
+        }
 
-            .step-container #colelem-finish-choose .choose-card-next-btn {
-                right: 10%;
-            }
+        .step-container #colelem-finish-choose .choose-card-next-btn {
+            right: 10%;
+        }
 
-            .step-container #colelem-finish-choose .choose-card-prev-btn {
-                left: 10%;
-            }
+        .step-container #colelem-finish-choose .choose-card-prev-btn {
+            left: 10%;
+        }
 
-            .step-container #colelem-finish-choose .suggest:nth-child(2) {
-                width: 300px;
-            }
+        .step-container #colelem-finish-choose .suggest:nth-child(2) {
+            width: 300px;
+        }
 
-            @media only screen and (max-width: 650px) {
-                .step-container #colelem-finish-choose .choose-card-next-btn, .step-container #colelem-finish-choose .choose-card-prev-btn {
-                    top: 120px;
-                }
+        @media only screen and (max-width: 650px) {
+            .step-container #colelem-finish-choose .choose-card-next-btn, .step-container #colelem-finish-choose .choose-card-prev-btn {
+                top: 120px;
             }
+        }
+
+#navbar {
+        position: absolute;
+        z-index: 1001;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 0;
+        border: #e5e5e5 none 1px;
+        border-bottom-style: solid;
+        background: $white;
+    }
+    
+    #navbar .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #navbar .logo {
+        float: left;
+        width: 45px;
+        height: 45px;
+        margin-right: 20px;
+        opacity: 0.85;
+        background: transparent url("./images/kajin.png") no-repeat center center;
+    }
+    
+    #navbar .word {
+        position: relative;
+        top: 5px;
+        float: left;
+        background-color: transparent;
+        opacity: 0.9;
+        color: #66C5CC;
+        line-height: 36px;
+        text-align: left;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+        font-weight: bold;
+    }
+    
+    #navbar .word.right {
+        float: left;
+    }
+
+    /*RWD CSS Fixes*/
+    .available-teacher {
+        display: flex;
+    }
+
+    .prev-teacher-btn, .next-teacher-btn {
+        width: 10vw;
+        margin: 0 6vw;
+    }
+
+    .choose-teacher-slide {
+        width: 70vw;
+    }
+
+    .grey-container1 .col .title {
+        border-bottom: 1px solid green;
+    }
+    
+    .grey-container1 .column1, .grey-container1 .column2, .grey-container1 .column3, .grey-container1 .column4, .grey-container1 .column5 {
+        border-collapse: collapse;
+        width: 20%;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    
+    .grey-container1 .content1 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    /* Top box on scheduling page */
+    #step2 .grey-container1 .content1 .col {
+        width: 70vw;
+        min-height: 15vh;
+        padding: 0;
+    }
+
+    #step3 .visa-hint#agreement-hint {
+        width: 100%;
+    }
+    
+    @media only screen and (max-width: 650px) {
+        .available-teacher { /* Top box on scheduling page */
+            height: auto; /*for now, maybe need to be bigger*/
+        }
+
+        /* scheduling page prev-next buttons */
+        .prev-teacher-btn, .next-teacher-btn {
+            margin: 0 3vw;
+        }
+
+        /* Top box on scheduling page */
+        .available-teacher .slick-list, .available-teacher .slick-slide {
+            height: auto;
+        }
+
+        #step2 .grey-container1 .content1 .col {
+            width: 70vw;
+            min-height: 15vh;
+            padding: 0;
+        }
+
+        #step2 .grey-container1 .content1 .column1 {
+            height: 100%;
+        } 
+
+        .grey-container1 .title {
+            height: 25%;
+        }
+
+        .where-am-i {
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .where-am-i .country-option:nth-child(2) input {
+            margin: 8px 0px 0 50px;
+        }
+
+        .grey-container1 {
+            margin: 20px 50px 50px;
+        }
+
+        .teacherFadingBox { /* width of the next prev buttons */
+            width: 10vw;
+        }
+    }
+
+    @media only screen and (max-width: 950px) {
+        .grey-container2 .slick-slider, .grey-container2 .slick-list {
+            width: 100%;
+        }
+
+        /* for the columns on the scheduling page that contains small blocks*/
+        .grey-container2 .can-book-time .col, .grey-container2 .week-name .col {
+            width: 14.25%;
+            box-sizing: border-box;
+            font-size: 10px;
+        }
+
+        /* for top box on payment page */
+        #payment_topbox_title {
+            width: 30%;
+        }
+        #payment_topbox_content {
+            width: 70%;
+        }
+    }
+
+    /* the small blocks on scheduling page */
+    @media only screen and (max-width: 650px) {
+        .grey-container2 .can-book-time .col .book-time-small-block {
+            margin: 0 auto;
+            width: 100%;
+            height: 30px;
+            padding: 0 0 0 2px;
+            font-size: 7px;
+        }
+
+        .grey-container2 .title {
+            display: flex;
+            flex-wrap: wrap;
+            height: 150px;
+            padding: 15px 0;
+        }
+
+        #navbar .container {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .grey-container2 .title .time-icon.next {
+            order: 2;
+            margin: 0 auto;
+        }
+
+        .grey-container2 .title .week {
+            order: 1;
+            margin: 0 10px;
+        }
+
+        .grey-container2 .title .date {
+            order: 3;
+        }
+
+        .grey-container2 .title .date.next {
+            margin: 0 auto;
+        }
+
+        .grey-container2 .title .date.prev {
+            margin: 0 auto;
+        }
+
+        .grey-container2 .title .time-bar {
+            order: 4;
+            margin: 0 auto;
+        }
+
+        .grey-container3 {
+            height: 100px;
+            padding: 0 5px;
+        }
+
+        .step-div > a {
+            display: block;
+        }
+
+        .grey-container3 .select-date {
+            margin: 0 auto;
+        }
+
+        .step-container h2.title {
+            width: 100%;
+        }
+
+        #step2 #colelem3 .container {
+            width: 100%;
+            padding: 20px 5px;
+            box-sizing: border-box;
+        }
+
+        #vip_help.book-title.need-help { /* bottom box of the payment page */
+            height: 200px;
+            padding: 5px;
+            
+        }
+        .step-container #colelem-finish-choose .suggest:nth-child(2) h3 { /* the text for 推薦機制 */
+            text-align: center;
+        }
+        .step-container #colelem-finish-choose .suggest:nth-child(1) { /* the box above 推薦機制 */
+            margin: 0 20px 0 85px;
+        }
+    }
