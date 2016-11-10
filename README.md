@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 # KaJin
 Online Mental Health Platform
+Please view here for [demo](https://www.kajinonline.com)
 
 ## Table of Contents
 - Installation
@@ -11,15 +11,11 @@ Online Mental Health Platform
   - phone
 - Creators
 - Copyright and License
-=======
-# This Is The Repository for KaJinHealth
->>>>>>> start-rwd-fixes
 
 ## Installation
 
 To start using this repository
 
-<<<<<<< HEAD
 >  ```> $ git clone https://github.com/wernerchao/KaJin.git```
 
 ## Folder Structure
@@ -96,8 +92,6 @@ This folder contains a wordpress blog. You will mostly use wordpress to maintain
 
 Code and documentation copyright 2016 KaJin
 Authors and released under the MIT license.
-=======
->  ```> $ git clone https://github.com/wernerchao```
 
 ## Usage
 
@@ -117,4 +111,3 @@ start folder consists of the process of onboarding new customers. Including anal
 ### 3. phone
 
 phone folder contains the mobile version of the main website, excluding the *start* process. 
->>>>>>> start-rwd-fixes
